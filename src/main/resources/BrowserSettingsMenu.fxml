@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--/*
+ * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
+ * See LICENSE for details.
+ */-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" prefHeight="441.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrowserSettings">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Settings">
+         <font>
+            <Font name="Tahoma Bold" size="35.0" />
+         </font>
+      </Label>
+      <Separator layoutY="58.0" prefHeight="6.0" prefWidth="600.0" />
+      <Label layoutX="12.0" layoutY="73.0" text="Max History">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Label>
+      <JFXSlider fx:id="historySlider" layoutX="118.0" layoutY="78.0" prefHeight="14.0" prefWidth="464.0" snapToTicks="true" />
+      <JFXToggleButton fx:id="javaScriptToggle" focusTraversable="false" layoutX="14.0" layoutY="189.0" text="Javascript">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXToggleButton fx:id="popUpToggle" disable="true" focusTraversable="false" layoutX="12.0" layoutY="317.0" text="Block Pop-ups">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </JFXToggleButton>
+      <Label layoutX="11.0" layoutY="109.0" text="Home-page URL:">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="homePageField" focusTraversable="false" layoutX="159.0" layoutY="105.0" prefHeight="31.0" prefWidth="427.0" text="https://duckduckgo.com/?kae=d&amp;k1=1&amp;kak=-1&amp;kax=-1&amp;kaq=-1&amp;kap=-1&amp;kao=-1&amp;kg=p">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="applyBtn" layoutX="480.0" layoutY="393.0" onAction="#apply" prefHeight="38.0" prefWidth="114.0" text="Apply">
+         <font>
+            <Font name="Tahoma" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backBtn" layoutX="4.0" layoutY="393.0" onAction="#back" prefHeight="44.0" prefWidth="114.0" text="Back">
+         <font>
+            <Font name="Tahoma" size="23.0" />
+         </font>
+      </JFXButton>
+      <JFXToggleButton fx:id="clearExitToggle" disable="true" focusTraversable="false" layoutX="339.0" layoutY="253.0" text="Clear on Exit">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXToggleButton fx:id="httpsToggle" focusTraversable="false" layoutX="12.0" layoutY="253.0" text="https Only">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXButton fx:id="resetBtn" layoutX="165.0" layoutY="20.0" onAction="#reset" prefHeight="33.0" prefWidth="69.0" text="reset">
+         <font>
+            <Font name="Tahoma" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXToggleButton fx:id="cookieToggle" focusTraversable="false" layoutX="339.0" layoutY="317.0" text="Cookies">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXTextField fx:id="agentField" focusTraversable="false" layoutX="169.0" layoutY="147.0" prefHeight="31.0" prefWidth="417.0" text="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/604.1 (KHTML, like Gecko) JavaFX/8.0 Safari/604.1">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="11.0" layoutY="151.0" text="User Agent String:">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="torToggle" disable="true" focusTraversable="false" layoutX="339.0" layoutY="189.0" text="Tor">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font>
+      </JFXToggleButton>
+   </children>
+</AnchorPane>

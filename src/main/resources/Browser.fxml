@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--/*
+ * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
+ * See LICENSE for details.
+ */-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Browser">
+   <children>
+      <WebView fx:id="browserView" layoutY="65.0" prefHeight="385.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0" />
+      <JFXTextField fx:id="urlField" focusColor="#3434dd" layoutY="-3.0" onAction="#goToWebSite" prefHeight="32.0" prefWidth="793.0" promptText="TYPE URL /  WEBSITE ADDRESS" unFocusColor="#808080" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="107.0" AnchorPane.topAnchor="-3.0">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="goBtn" layoutX="793.0" layoutY="2.0" onAction="#goToWebSite" prefHeight="32.0" prefWidth="108.0" text="Go" AnchorPane.rightAnchor="-1.0">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutY="64.0" prefHeight="0.0" prefWidth="900.0" />
+      <JFXButton fx:id="backBtn" layoutY="32.0" onAction="#back" prefHeight="32.0" prefWidth="89.0" text="Back" />
+      <JFXButton fx:id="homeBtn" layoutX="803.0" layoutY="32.0" onAction="#home" prefHeight="32.0" prefWidth="89.0" text="Home" AnchorPane.rightAnchor="8.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="settingsBtn" layoutX="714.0" layoutY="32.0" onAction="#settings" prefHeight="32.0" prefWidth="89.0" text="Settings" AnchorPane.rightAnchor="97.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="refreshBtn" layoutX="89.0" layoutY="32.0" onAction="#refresh" prefHeight="32.0" prefWidth="89.0" text="Refresh">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="historyBtn" disable="true" layoutX="625.0" layoutY="32.0" onAction="#history" prefHeight="32.0" prefWidth="89.0" text="History" AnchorPane.rightAnchor="186.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="forwardBtn" layoutX="178.0" layoutY="32.0" onAction="#forward" prefHeight="32.0" prefWidth="89.0" text="Forward" />
+   </children>
+</AnchorPane>

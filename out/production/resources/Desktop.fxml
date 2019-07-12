@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--/*
+ * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
+ * See LICENSE for details.
+ */-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Desktop">
+   <children>
+      <ImageView fx:id="wallpaper" cache="true" cacheHint="QUALITY" fitHeight="720.0" fitWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@wallpapericon.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="calculatorBtn" focusTraversable="false" layoutX="14.0" layoutY="25.0" onAction="#calculator" prefHeight="84.0" prefWidth="104.0" text=" ">
+         <graphic>
+            <ImageView cache="true" cacheHint="QUALITY" fitHeight="77.0" fitWidth="76.0" preserveRatio="true">
+               <image>
+                  <Image url="@calculatoricon.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Label fx:id="timeLbl" layoutX="575.0" layoutY="637.0" prefHeight="69.0" prefWidth="130.0" text="00:00" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="50.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="settingsBtn" focusTraversable="false" layoutX="14.0" layoutY="116.0" onAction="#settings" prefHeight="69.0" prefWidth="76.0" text=" ">
+         <graphic>
+            <ImageView cache="true" cacheHint="QUALITY" fitHeight="76.0" fitWidth="76.0" preserveRatio="true">
+               <image>
+                  <Image url="@settingsicon.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="terminalBtn" focusTraversable="false" layoutX="14.0" layoutY="200.0" onAction="#terminal" text=" ">
+         <graphic>
+            <ImageView cache="true" cacheHint="QUALITY" fitHeight="84.0" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <Image url="@terminalicon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="browserBtn" focusTraversable="false" layoutX="10.0" layoutY="292.0" onAction="#browser" text=" ">
+         <graphic>
+            <ImageView fitHeight="84.0" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <Image url="@browsericon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton focusTraversable="false" layoutX="6.0" layoutY="384.0" onAction="#moviePlayer" text=" ">
+         <graphic>
+            <ImageView fitHeight="92.0" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <Image url="@movieicon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="powerBtn" focusTraversable="false" layoutX="1188.0" layoutY="14.0" onAction="#shutdown" prefHeight="62.0" prefWidth="61.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="54.0" preserveRatio="true">
+               <image>
+                  <Image url="@powericon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="mailBtn" focusTraversable="false" layoutX="8.0" layoutY="484.0" onAction="#mail" text=" ">
+         <graphic>
+            <ImageView fitHeight="92.0" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <Image url="@mailicon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

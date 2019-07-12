@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--/*
+ * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
+ * See LICENSE for details.
+ */-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" prefHeight="485.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmailClient">
+   <children>
+      <JFXButton fx:id="sendBtn" focusTraversable="false" layoutX="484.0" layoutY="14.0" onAction="#send" prefHeight="27.0" prefWidth="98.0" text="Send" textFill="#455efb" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Tahoma Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="accountBtn" focusTraversable="false" layoutX="14.0" layoutY="14.0" onAction="#settings" prefHeight="29.0" prefWidth="154.0" text="Account Settings" textFill="#455efb">
+         <font>
+            <Font name="Tahoma Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="addressField" focusTraversable="false" layoutX="15.0" layoutY="43.0" prefHeight="25.0" prefWidth="570.0" promptText="Address (seperate by comma)" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="subjectField" focusTraversable="false" layoutX="15.0" layoutY="166.0" prefHeight="39.0" prefWidth="235.0" promptText="Subjext" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="350.0">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </JFXTextField>
+      <TextArea fx:id="messageArea" focusTraversable="false" layoutX="14.0" layoutY="232.0" prefHeight="239.0" prefWidth="570.0" promptText="Message" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="232.0">
+         <font>
+            <Font name="Tahoma" size="19.0" />
+         </font></TextArea>
+      <JFXButton fx:id="attachBtn" buttonType="RAISED" focusTraversable="false" layoutX="428.0" layoutY="171.0" onAction="#attach" prefHeight="34.0" prefWidth="154.0" style="-fx-background-color: #455efb;" text="Add Attach" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="removeBtn" buttonType="RAISED" focusTraversable="false" layoutX="260.0" layoutY="171.0" onAction="#remove" prefHeight="34.0" prefWidth="154.0" style="-fx-background-color: #455efb;" text="Remove Attach" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="bccField" focusTraversable="false" layoutX="14.0" layoutY="83.0" prefHeight="25.0" prefWidth="570.0" promptText="Bcc (seperate by comma)">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="ccField" focusTraversable="false" layoutX="15.0" layoutY="125.0" prefHeight="25.0" prefWidth="570.0" promptText="cc (seperate by comma)">
+         <font>
+            <Font name="Tahoma" size="21.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="attachLbl" layoutX="260.0" layoutY="213.0" prefHeight="19.0" prefWidth="322.0" text="Attachments: none" textFill="GREY">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

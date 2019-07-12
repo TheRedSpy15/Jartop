@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Jartop_main.jnlp">
+  <information>
+    <title>Jartop_main</title>
+    <vendor>Unknown</vendor>
+    <description>Jartop_main</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Jartop_main.jar" size="1221163" download="eager" />
+    <jar href="activation-1.1.jar" size="62983" download="eager" />
+    <jar href="animal-sniffer-annotations-1.14.jar" size="3482" download="eager" />
+    <jar href="checker-compat-qual-2.0.0.jar" size="31547" download="eager" />
+    <jar href="commons-email-1.5.jar" size="54495" download="eager" />
+    <jar href="error_prone_annotations-2.1.3.jar" size="13704" download="eager" />
+    <jar href="guava-24.0-jre.jar" size="2719791" download="eager" />
+    <jar href="j2objc-annotations-1.1.jar" size="8782" download="eager" />
+    <jar href="jackson-core-2.8.7.jar" size="282314" download="eager" />
+    <jar href="javax.mail-1.5.6.jar" size="608084" download="eager" />
+    <jar href="jfoenix-8.0.1.jar" size="2405714" download="eager" />
+    <jar href="jsr305-1.3.9.jar" size="33015" download="eager" />
+    <jar href="sentry-1.7.1.jar" size="153952" download="eager" />
+    <jar href="slf4j-api-1.7.24.jar" size="41205" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="Core"  name="Jartop_main" />
+  <update check="background"/>
+</jnlp>

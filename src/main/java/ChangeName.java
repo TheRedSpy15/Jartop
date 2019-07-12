@@ -1,0 +1,48 @@
+import com.jfoenix.controls.JFXTextField;
+import com.jfoenix.controls.JFXToggleButton;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.Logger;
+
+/*
+ * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
+ * See LICENSE for details.
+ */
+
+public class ChangeName {
+
+    @FXML private JFXTextField nameField;
+    @FXML private JFXToggleButton fileNameToggle;
+    @FXML private AnchorPane background;
+
+    @FXML private void change() throws IOException {
+
+        Core.getUserData().setName(nameField.getText());
+
+        Logger.getAnonymousLogger().info("Named changed");
+
+        if(fileNameToggle.selectedProperty().getValue()) changeFileName();
+
+        Parent settingsPane = FXMLLoader.load(Core.class.getResource("Settings.fxml"));
+
+        Desktop.getAppWindow().setScene(new Scene(settingsPane));
+    }
+
+    private void changeFileName(){
+
+        // Creates a new file with new name, but does not replace old one
+        Core.getUserData().getUserFile().renameTo(new File(nameField.getText() + ".ser"));
+    }
+
+    @FXML private void initialize(){
+
+        background.setStyle("-fx-background-color: " + Core.getUserData().getPreferredColor());
+    }
+}

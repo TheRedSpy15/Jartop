@@ -1,0 +1,5 @@
+<root>
+    <item name='PwnedPasswords boolean hashAndPwn(java.lang.String)'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

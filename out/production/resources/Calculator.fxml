@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--/*
+ * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
+ * See LICENSE for details.
+ */-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" prefHeight="383.0" prefWidth="340.0" style="-fx-background-color: #cedede;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculator">
+   <children>
+      <Label fx:id="sumLbl" layoutX="24.0" layoutY="14.0" prefHeight="79.0" prefWidth="289.0" text="0">
+         <font>
+            <Font name="Tahoma" size="55.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="seven" buttonType="RAISED" focusTraversable="false" layoutX="27.0" layoutY="152.0" onAction="#seven" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white;" text="7">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="eight" buttonType="RAISED" focusTraversable="false" layoutX="86.0" layoutY="152.0" onAction="#eight" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white;" text="8">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="nine" buttonType="RAISED" focusTraversable="false" layoutX="144.0" layoutY="152.0" onAction="#nine" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white;" text="9">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="four" buttonType="RAISED" focusTraversable="false" layoutX="27.0" layoutY="205.0" onAction="#four" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white;" text="4">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="five" buttonType="RAISED" focusTraversable="false" layoutX="86.0" layoutY="205.0" onAction="#five" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white;" text="5">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="six" buttonType="RAISED" focusTraversable="false" layoutX="144.0" layoutY="205.0" onAction="#six" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white;" text="6">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="one" buttonType="RAISED" focusTraversable="false" layoutX="27.0" layoutY="255.0" onAction="#one" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white;" text="1">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="two" buttonType="RAISED" focusTraversable="false" layoutX="86.0" layoutY="255.0" onAction="#two" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white;" text="2">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="three" buttonType="RAISED" focusTraversable="false" layoutX="144.0" layoutY="255.0" onAction="#three" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: white;" text="3">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="sumUp" buttonType="RAISED" focusTraversable="false" layoutX="196.0" layoutY="152.0" onAction="#sumUp" prefHeight="143.0" prefWidth="118.0" style="-fx-background-color: white;" text="=">
+         <font>
+            <Font name="Tahoma" size="46.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="zero" buttonType="RAISED" focusTraversable="false" layoutX="26.0" layoutY="306.0" onAction="#zero" prefHeight="40.0" prefWidth="289.0" style="-fx-background-color: white;" text="0">
+         <font>
+            <Font name="Tahoma" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="clearBtn" focusTraversable="false" layoutX="299.0" layoutY="14.0" onAction="#clear" text="C" textFill="RED">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="valuesLbl" cache="true" cacheHint="SPEED" focusTraversable="false" layoutX="26.0" layoutY="93.0" prefHeight="35.0" prefWidth="289.0" text=" " textFill="GREY">
+         <font>
+            <Font name="Tahoma" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

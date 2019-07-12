@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--/*
+ * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
+ * See LICENSE for details.
+ */-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+
+<AnchorPane prefHeight="175.0" prefWidth="275.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Authenticate">
+   <children>
+      <Label layoutX="76.0" layoutY="24.0" text="Verify user!">
+         <font>
+            <Font name="Tahoma Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="passwordField" focusColor="BLACK" labelFloat="true" layoutX="49.0" layoutY="74.0" onAction="#ok" prefHeight="26.0" prefWidth="176.0" promptText="Password">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="okBtn" buttonType="RAISED" layoutX="95.0" layoutY="124.0" onAction="#ok" prefHeight="36.0" prefWidth="85.0" style="-fx-background-color: grey;" text="Ok">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

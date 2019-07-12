@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--/*
+ * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
+ * See LICENSE for details.
+ */-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" prefHeight="196.0" prefWidth="301.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shutdown">
+   <children>
+      <Label layoutX="82.0" layoutY="30.0" prefHeight="33.0" prefWidth="137.0" text="Shutdown?">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="noBtn" buttonType="RAISED" focusTraversable="false" layoutX="26.0" layoutY="101.0" onAction="#back" prefHeight="51.0" prefWidth="113.0" style="-fx-background-color: white;" text="No!">
+         <font>
+            <Font name="Tahoma" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="yesBtn" buttonType="RAISED" focusTraversable="false" layoutX="163.0" layoutY="101.0" onAction="#shutdown" prefHeight="51.0" prefWidth="113.0" style="-fx-background-color: white;" text="Yes">
+         <font>
+            <Font name="Tahoma" size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
