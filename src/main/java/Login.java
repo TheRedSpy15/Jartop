@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.stage.FileChooser;
 import org.controlsfx.control.Notifications;
 
-import java.awt.*;
+import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.io.File;
