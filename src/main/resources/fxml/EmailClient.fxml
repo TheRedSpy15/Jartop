@@ -6,13 +6,11 @@
  * See LICENSE for details.
  */-->
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.*?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <AnchorPane fx:id="background" prefHeight="485.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmailClient">
    <children>
       <JFXButton fx:id="sendBtn" focusTraversable="false" layoutX="484.0" layoutY="14.0" onAction="#send" prefHeight="27.0" prefWidth="98.0" text="Send" textFill="#455efb" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="14.0">

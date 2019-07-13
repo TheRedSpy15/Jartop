@@ -48,7 +48,7 @@ public class BrowserSettings extends Browser{
 
     @FXML private void apply() throws IOException {
 
-        if (!homePageField.getText().trim().equals(""))
+        if (!homePageField.getText().trim().isEmpty())
             Core.getUserData().setHomePageUrl(homePageField.getText());
 
         Core.getUserData().setMaxHistory((int) historySlider.getValue());

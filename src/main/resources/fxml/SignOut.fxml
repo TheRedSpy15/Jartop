@@ -10,7 +10,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 <AnchorPane fx:id="background" prefHeight="196.0" prefWidth="301.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignOut">
     <children>
         <Label layoutX="91.0" layoutY="29.0" prefHeight="33.0" prefWidth="120.0" text="Sign out?">

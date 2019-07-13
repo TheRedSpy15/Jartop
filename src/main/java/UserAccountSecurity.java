@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  * See LICENSE for details.
  */
 
-class UserAccountSecurity extends User {
+class UserAccountSecurity {
 
     private boolean verified = false;
 

@@ -131,7 +131,7 @@ public class Core extends Application {
 
         desktop = primaryStage;
 
-        Parent loginScene = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Parent loginScene = FXMLLoader.load(getClass().getResource("fxml/login.fxml"));
 
         // window config
         desktop.setScene(new Scene(loginScene));
@@ -172,14 +172,13 @@ public class Core extends Application {
     static void loadAndTitle(String fxmlName) throws IOException {
 
         final String suffix = ".fxml";
+        final String folder = "fxml/";
 
-        Parent pane = FXMLLoader.load(Core.class.getResource(fxmlName + suffix));
+        Parent pane = FXMLLoader.load(Core.class.getResource(folder + fxmlName + suffix));
 
         Desktop.getAppWindow().setTitle(fxmlName);
         Desktop.getAppWindow().setScene(new Scene(pane));
-
         Desktop.getAppWindow().show();
-
         Logger.getAnonymousLogger().info("Loading app : " + fxmlName);
     }
 

@@ -22,7 +22,7 @@ public class Browser {
 
     @FXML protected void goToWebSite() {
 
-        if (!(urlField.getText().trim().equals(""))) {
+        if (!(urlField.getText().trim().isEmpty())) {
             if (urlField.getText().contains(".com") || urlField.getText().contains(".gov") || urlField.getText().contains(".edu"))
                 engine.load(urlField.getText());
             else engine.load("https://duckduckgo.com/?q=" + urlField.getText());

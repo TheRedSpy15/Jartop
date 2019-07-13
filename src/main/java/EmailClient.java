@@ -12,16 +12,16 @@ import org.apache.commons.mail.EmailAttachment;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.MultiPartEmail;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /*
  * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
  * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
  * See LICENSE for details.
  */
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayDeque;
-import java.util.Deque;
 
 public class EmailClient {
 
@@ -65,8 +65,8 @@ public class EmailClient {
         mail.addTo(addressReceiver);
 
         // bcc & cc
-        if (!bccField.getText().trim().equals("")) mail.addBcc(bccField.getText());
-        if (!ccField.getText().trim().equals("")) mail.addCc(ccField.getText());
+        if (!bccField.getText().trim().isEmpty()) mail.addBcc(bccField.getText());
+        if (!ccField.getText().trim().isEmpty()) mail.addCc(ccField.getText());
 
         if (attachments != null) {
 

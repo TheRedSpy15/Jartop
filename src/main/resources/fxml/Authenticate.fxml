@@ -7,11 +7,10 @@
  */-->
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<?import com.jfoenix.controls.JFXPasswordField?>
-
 <AnchorPane prefHeight="175.0" prefWidth="275.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Authenticate">
    <children>
       <Label layoutX="76.0" layoutY="24.0" text="Verify user!">

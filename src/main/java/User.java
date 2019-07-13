@@ -1,8 +1,5 @@
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import org.controlsfx.control.Notifications;
 
 import javax.crypto.*;
@@ -204,8 +201,7 @@ public class User implements Serializable {
         // Loading desktop
         if (loggedIn) {
 
-            Parent desktopScene = FXMLLoader.load(Core.class.getResource("Desktop.fxml"));
-            Core.getDesktop().setScene(new Scene(desktopScene));
+            Core.loadAndTitle("Desktop");
             Core.getUserData().guest = false;
 
             Logger.getAnonymousLogger().info("Logged in successfully");

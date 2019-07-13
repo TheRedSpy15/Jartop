@@ -22,7 +22,7 @@
                      <children>
                         <ImageView fx:id="wallpaperPreview" cache="true" cacheHint="SCALE" fitHeight="191.0" fitWidth="353.0" layoutX="124.0" layoutY="28.0" pickOnBounds="true" AnchorPane.bottomAnchor="146.0" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="28.0">
                            <image>
-                              <Image url="@images/wallpapericon.jpg" />
+                              <Image url="@../images/wallpapericon.jpg" />
                            </image>
                         </ImageView>
                         <JFXButton fx:id="changeBtn" buttonType="RAISED" disable="true" focusTraversable="false" layoutX="227.0" layoutY="263.0" onAction="#changeWallpaper" prefHeight="55.0" prefWidth="147.0" style="-fx-background-color: white;" text="Change" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="226.0">

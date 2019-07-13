@@ -41,7 +41,7 @@ public class ChangePassword {
                 .showInformation();
 
         // blank
-        if (passwordField.getText().trim().equals("")) {
+        if (passwordField.getText().trim().isEmpty()) {
 
             Logger.getAnonymousLogger().warning("New password is blank - zero security");
 

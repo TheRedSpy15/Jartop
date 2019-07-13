@@ -1,9 +1,6 @@
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXToggleButton;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.FileChooser;
 import org.controlsfx.control.Notifications;
@@ -69,8 +66,7 @@ public class Login {
 
         Core.getUserData().setGuest(true);
 
-        Parent desktopScene = FXMLLoader.load(Core.class.getResource("Desktop.fxml"));
-        Core.getDesktop().setScene(new Scene(desktopScene));
+        Core.loadAndTitle("Desktop");
 
         Logger.getAnonymousLogger().info("Logging in as guest");
 

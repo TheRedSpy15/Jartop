@@ -15,14 +15,14 @@
    <children>
       <ImageView fx:id="wallpaper" cache="true" cacheHint="QUALITY" fitHeight="720.0" fitWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@images/wallpapericon.jpg" />
+            <Image url="@../images/wallpapericon.jpg" />
          </image>
       </ImageView>
       <JFXButton fx:id="calculatorBtn" focusTraversable="false" layoutX="14.0" layoutY="25.0" onAction="#calculator" prefHeight="84.0" prefWidth="104.0" text=" ">
          <graphic>
             <ImageView cache="true" cacheHint="QUALITY" fitHeight="77.0" fitWidth="76.0" preserveRatio="true">
                <image>
-                  <Image url="@images/calculatoricon.png" />
+                  <Image url="@../images/calculatoricon.png" />
                </image>
             </ImageView>
          </graphic></JFXButton>
@@ -35,7 +35,7 @@
          <graphic>
             <ImageView cache="true" cacheHint="QUALITY" fitHeight="76.0" fitWidth="76.0" preserveRatio="true">
                <image>
-                  <Image url="@images/settingsicon.png" />
+                  <Image url="@../images/settingsicon.png" />
                </image>
             </ImageView>
          </graphic></JFXButton>
@@ -43,7 +43,7 @@
          <graphic>
             <ImageView cache="true" cacheHint="QUALITY" fitHeight="84.0" fitWidth="100.0" preserveRatio="true">
                <image>
-                  <Image url="@images/terminalicon.png" />
+                  <Image url="@../images/terminalicon.png" />
                </image>
             </ImageView>
          </graphic>
@@ -52,7 +52,7 @@
          <graphic>
             <ImageView fitHeight="84.0" fitWidth="100.0" preserveRatio="true">
                <image>
-                  <Image url="@images/browsericon.png" />
+                  <Image url="@../images/browsericon.png" />
                </image>
             </ImageView>
          </graphic>
@@ -61,7 +61,7 @@
          <graphic>
             <ImageView fitHeight="92.0" fitWidth="100.0" preserveRatio="true">
                <image>
-                  <Image url="@images/movieicon.png" />
+                  <Image url="@../images/movieicon.png" />
                </image>
             </ImageView>
          </graphic>
@@ -70,7 +70,7 @@
          <graphic>
             <ImageView fitHeight="58.0" fitWidth="54.0" preserveRatio="true">
                <image>
-                  <Image url="@images/powericon.png" />
+                  <Image url="@../images/powericon.png" />
                </image>
             </ImageView>
          </graphic>
@@ -79,7 +79,7 @@
          <graphic>
             <ImageView fitHeight="92.0" fitWidth="100.0" preserveRatio="true">
                <image>
-                  <Image url="@images/mailicon.png" />
+                  <Image url="@../images/mailicon.png" />
                </image>
             </ImageView>
          </graphic>

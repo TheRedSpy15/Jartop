@@ -27,12 +27,12 @@ public class Terminal {
         try {
             process = Runtime.getRuntime().exec(command);
             process.waitFor();
-            BufferedReader reader =
-                    new BufferedReader(new InputStreamReader(process.getInputStream()));
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
 
-            String line;
-            while ((line = reader.readLine())!= null) {
-                output.append(line).append("\n");
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    output.append(line).append("\n");
+                }
             }
 
             Logger.getAnonymousLogger().info("Finished command");
