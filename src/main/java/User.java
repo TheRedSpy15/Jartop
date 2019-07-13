@@ -35,7 +35,7 @@ public class User implements Serializable {
     static boolean internetConnection = false;
     static final String saveExtension = ".jtop";
     private static final long serialVersionUID = 42L; // NEVER change unless ABSOLUTELY necessary
-    // changing will prevent all .ser files with a different value from being deserialized
+    // changing will prevent all .jtop files with a different value from being deserialized
     // MIGHT remove with a full release, and this class rarely changes
 
     // Browser
