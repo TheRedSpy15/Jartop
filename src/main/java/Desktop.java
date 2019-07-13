@@ -92,7 +92,7 @@ public class Desktop {
 
     @FXML private void initialize() {
 
-        setAppWindow(new Stage());
+        appWindow = new Stage();
 
         // clock thread
         Thread timeThread = new Thread(this::updateTime);
@@ -102,7 +102,7 @@ public class Desktop {
         updateWallpaper();
         Core.testConnection();
 
-        getAppWindow().setOnCloseRequest(e -> Logger.getAnonymousLogger().info("App window closed"));
+        appWindow.setOnCloseRequest(e -> Logger.getAnonymousLogger().info("App window closed"));
     }
 
     private void loadApp(String nameOfApp, boolean UASApp) throws IOException {
@@ -127,7 +127,7 @@ public class Desktop {
             DateFormat df = new SimpleDateFormat("HH:mm");
             Date date = new Date();
 
-            Platform.runLater(() -> timeLbl.setText(String.valueOf(df.format(date))));
+            Platform.runLater(() -> timeLbl.setText(df.format(date)));
 
             try {
                 Thread.sleep(pollRate);

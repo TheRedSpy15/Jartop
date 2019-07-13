@@ -7,12 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-/*
- * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
- * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
- * See LICENSE for details.
- */
-
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
@@ -22,6 +16,12 @@ import java.net.URL;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.logging.Logger;
+
+/*
+ * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
+ * See LICENSE for details.
+ */
 
 public class Core extends Application {
 
@@ -129,17 +129,17 @@ public class Core extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        setDesktop(primaryStage);
+        desktop = primaryStage;
 
         Parent loginScene = FXMLLoader.load(getClass().getResource("login.fxml"));
 
         // window config
-        getDesktop().setScene(new Scene(loginScene));
-        getDesktop().setTitle("Jartop - " + version);
-        getDesktop().setOnCloseRequest(e -> shutdown());
+        desktop.setScene(new Scene(loginScene));
+        desktop.setTitle("Jartop - " + version);
+        desktop.setOnCloseRequest(e -> shutdown());
 
-        getDesktop().initStyle(StageStyle.TRANSPARENT);
-        getDesktop().show();
+        desktop.initStyle(StageStyle.TRANSPARENT);
+        desktop.show();
     }
 
     static void shutdown() {

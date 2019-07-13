@@ -38,7 +38,7 @@ public class SignOut {
 
         if (saveOnOut) Core.nonGuestSave();
 
-        Parent loginScene = FXMLLoader.load(Core.class.getResource("Login.fxml"));
+        Parent loginScene = FXMLLoader.load(Core.class.getResource("login.fxml"));
 
         if (Desktop.getAppWindow().isShowing()) Desktop.getAppWindow().close();
         if (Core.getUAS().getSecurityWindow().isShowing()) Core.getUAS().getSecurityWindow().close();

@@ -6,21 +6,18 @@
  * See LICENSE for details.
  */-->
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXPasswordField?>
-<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.jfoenix.controls.*?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.BoxBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-
+<?import javafx.scene.text.*?>
 <AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #efdecd;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login">
    <children>
       <ImageView fitHeight="720.0" fitWidth="1280.0">
          <image>
-            <Image url="@wallpapericon.jpg" />
+            <Image url="@images/wallpapericon.jpg" />
          </image>
          <effect>
             <BoxBlur iterations="3" />
@@ -28,7 +25,7 @@
       </ImageView>
       <ImageView fitHeight="233.0" fitWidth="226.0" layoutX="527.0" layoutY="14.0" preserveRatio="true">
          <image>
-            <Image url="@javaicon.png.png" />
+            <Image url="@images/javaicon.png.png" />
          </image>
       </ImageView>
       <Label layoutX="558.0" layoutY="295.0" prefHeight="65.0" prefWidth="165.0" text="Jartop" textFill="WHITE">

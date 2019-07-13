@@ -6,19 +6,12 @@
  * See LICENSE for details.
  */-->
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXColorPicker?>
-<?import com.jfoenix.controls.JFXSlider?>
-<?import com.jfoenix.controls.JFXTabPane?>
-<?import com.jfoenix.controls.JFXToggleButton?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.Tab?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cedede;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Settings">
    <children>
       <JFXTabPane fx:id="background" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -29,7 +22,7 @@
                      <children>
                         <ImageView fx:id="wallpaperPreview" cache="true" cacheHint="SCALE" fitHeight="191.0" fitWidth="353.0" layoutX="124.0" layoutY="28.0" pickOnBounds="true" AnchorPane.bottomAnchor="146.0" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="28.0">
                            <image>
-                              <Image url="@wallpapericon.jpg" />
+                              <Image url="@images/wallpapericon.jpg" />
                            </image>
                         </ImageView>
                         <JFXButton fx:id="changeBtn" buttonType="RAISED" disable="true" focusTraversable="false" layoutX="227.0" layoutY="263.0" onAction="#changeWallpaper" prefHeight="55.0" prefWidth="147.0" style="-fx-background-color: white;" text="Change" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="226.0">

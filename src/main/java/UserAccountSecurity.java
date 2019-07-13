@@ -27,18 +27,18 @@ class UserAccountSecurity extends User {
 
     UserAccountSecurity(){
 
-        setSecurityWindow(new Stage());
+        securityWindow = new Stage();
 
-        getSecurityWindow().initModality(Modality.APPLICATION_MODAL);
-        getSecurityWindow().setTitle("UAS");
+        securityWindow.initModality(Modality.APPLICATION_MODAL);
+        securityWindow.setTitle("UAS");
     }
 
     private void authenticate() throws IOException {
 
         Parent authenticatePane = FXMLLoader.load(Core.class.getResource("Authenticate.fxml"));
 
-        getSecurityWindow().setScene(new Scene(authenticatePane));
-        getSecurityWindow().showAndWait();
+        securityWindow.setScene(new Scene(authenticatePane));
+        securityWindow.showAndWait();
     }
 
     final synchronized void secureDelete(File file, boolean signOut) throws IOException {
@@ -78,16 +78,16 @@ class UserAccountSecurity extends User {
 
     final void UASLoadFXML(String fxmlName) throws IOException {
 
-        if (Core.getUAS().isVerified() || // load
+        if (Core.getUAS().verified || // load
                 Core.getUserData().isGuest() ||
-                Core.getUserData().getPassword().trim().equals("")){
+                Core.getUserData().getPassword().trim().isEmpty()){
 
             Core.loadAndTitle(fxmlName);
         } else {
 
             Core.getUAS().authenticate();
 
-            if (Core.getUAS().isVerified()){ // load
+            if (Core.getUAS().verified){ // load
 
                 Core.loadAndTitle(fxmlName);
             }

@@ -17,7 +17,7 @@ public class Browser {
 
     @FXML private WebView browserView = new WebView();
     @FXML private JFXTextField urlField;
-    protected WebEngine engine;
+    WebEngine engine;
     private String homePage = Core.getUserData().getHomePageUrl();
 
     @FXML protected void goToWebSite() {

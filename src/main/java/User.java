@@ -5,33 +5,21 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import org.controlsfx.control.Notifications;
 
-/*
- * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
- * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
- * See LICENSE for details.
- */
-
-import javax.crypto.BadPaddingException;
-import javax.crypto.Cipher;
-import javax.crypto.CipherInputStream;
-import javax.crypto.CipherOutputStream;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.NoSuchPaddingException;
-import javax.crypto.SealedObject;
+import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.logging.Logger;
+
+/*
+ * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
+ * See LICENSE for details.
+ */
 
 public class User implements Serializable {
 
@@ -80,7 +68,7 @@ public class User implements Serializable {
     private boolean sentryReporting = true;
     private boolean torConnection = false;
 
-    private String wallpaperPath = "wallpapericon.jpg";
+    private String wallpaperPath = "images/wallpapericon.jpg";
     private String preferredColor = "#FFFFFF";
 
     private double volume = 0.3;
@@ -107,13 +95,13 @@ public class User implements Serializable {
         // Determining key size
         byte keySize;
 
-        if (Core.getUserData().isEncryptWith256()) keySize = 32; // 256
+        if (Core.getUserData().encryptWith256) keySize = 32; // 256
         else keySize = 16; // 128
 
         // Hashing
         final String hash =
                 Hashing.sha256()
-                        .hashString(getPassword(), Charsets.UTF_8)
+                        .hashString(password, Charsets.UTF_8)
                         .toString().substring(0, keySize);
 
         // Creating keys
@@ -128,7 +116,7 @@ public class User implements Serializable {
         final SealedObject sealedUser = new SealedObject(Core.getUserData(), cipher);
 
         // Streams
-        final FileOutputStream fileOutputStream = new FileOutputStream(getUserFile().getAbsoluteFile());
+        final FileOutputStream fileOutputStream = new FileOutputStream(userFile.getAbsoluteFile());
         final CipherOutputStream cipherOutputStream = new CipherOutputStream(fileOutputStream, cipher);
         try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(cipherOutputStream)) {
 
@@ -171,7 +159,7 @@ public class User implements Serializable {
                 cipher.init(Cipher.DECRYPT_MODE, sks);
 
                 // Streams
-                final FileInputStream fileInputStream = new FileInputStream(getUserFile().getAbsoluteFile());
+                final FileInputStream fileInputStream = new FileInputStream(userFile.getAbsoluteFile());
                 try (fileInputStream; CipherInputStream cipherInputStream = new CipherInputStream(fileInputStream, cipher); ObjectInputStream objectInputStream = new ObjectInputStream(cipherInputStream)) {
 
                     // Reading
@@ -198,7 +186,7 @@ public class User implements Serializable {
             // secure delete
             if (Core.getUAS().getFailedAttempts() >= maximumTries){
 
-                Core.getUAS().secureDelete(Core.getUserData().getUserFile(), false);
+                Core.getUAS().secureDelete(Core.getUserData().userFile, false);
             }
 
             Core.getUserData().wait(bruteForcePauseLength); // to slow down brute force attacks
@@ -218,14 +206,14 @@ public class User implements Serializable {
 
             Parent desktopScene = FXMLLoader.load(Core.class.getResource("Desktop.fxml"));
             Core.getDesktop().setScene(new Scene(desktopScene));
-            Core.getUserData().setGuest(false);
+            Core.getUserData().guest = false;
 
             Logger.getAnonymousLogger().info("Logged in successfully");
 
             Notifications
                     .create()
                     .title("Notice")
-                    .text("Logged in as " + getName())
+                    .text("Logged in as " + name)
                     .darkStyle()
                     .showInformation();
         }

@@ -6,7 +6,290 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="008349cb-e046-406d-992a-9a09156c87f8" name="Default" comment="" />
+    <list default="true" id="008349cb-e046-406d-992a-9a09156c87f8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Jartop_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Jartop_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Jartop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Jartop_main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Jartop_test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hunter.jtop" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Account_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Account_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Authenticate_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Authenticate_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Bleach_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Bleach_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/BrowserSettings_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/BrowserSettings_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Browser_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Browser_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/BrowsingHistory_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/BrowsingHistory_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Calculator_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Calculator_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/ChangeName_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/ChangeName_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/ChangePassword_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/ChangePassword_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Desktop_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Desktop_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/EmailClient_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/EmailClient_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/EmailSettings_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/EmailSettings_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Login_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Login_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/MoviePlayer_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/MoviePlayer_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/NewPassword_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/NewPassword_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/NewUser_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/NewUser_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/PasswordManager_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/PasswordManager_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Settings_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Settings_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Shutdown_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Shutdown_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/SignOut_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/SignOut_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Terminal_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/Terminal_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/UserAccountSecurity_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/UserAccountSecurity_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/User_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/best-tests/User_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/Account.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/Authenticate.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/Bleach.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/Browser.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/BrowserSettings.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/BrowsingHistory.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/Calculator.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/ChangeName.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/ChangePassword.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/Desktop.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/EmailClient.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/EmailSettings.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/Login.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/MoviePlayer.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/NewPassword.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/NewUser.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/PasswordManager.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/Settings.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/Shutdown.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/SignOut.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/Terminal.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/User.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/evosuite-seeds/UserAccountSecurity.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/project_info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/Account.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/Authenticate.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/Bleach.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/Browser.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/BrowserSettings.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/BrowsingHistory.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/Calculator.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/ChangeName.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/ChangePassword.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/Desktop.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/EmailClient.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/EmailSettings.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/Login.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/MoviePlayer.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/NewPassword.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/NewUser.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/PasswordManager.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/Settings.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/Shutdown.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/SignOut.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/Terminal.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/User.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/pools/UserAccountSecurity.pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/Account/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/Authenticate/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/Bleach/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/Browser/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/BrowserSettings/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/BrowsingHistory/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/Calculator/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/ChangeName/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/ChangePassword/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/Desktop/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/EmailClient/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/EmailSettings/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/Login/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/MoviePlayer/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/NewPassword/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/NewUser/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/PasswordManager/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/Settings/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/Shutdown/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/SignOut/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/Terminal/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/User/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/reports/UserAccountSecurity/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/Account.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/Authenticate.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/Bleach.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/Browser.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/BrowserSettings.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/BrowsingHistory.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/Calculator.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/ChangeName.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/ChangePassword.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/Desktop.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/EmailClient.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/EmailSettings.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/Login.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/MoviePlayer.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/NewPassword.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/NewUser.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/PasswordManager.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/Settings.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/Shutdown.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/SignOut.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/Terminal.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/User.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/seeds/UserAccountSecurity.seed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Account_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Account_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Authenticate_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Authenticate_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Bleach_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Bleach_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/BrowserSettings_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/BrowserSettings_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Browser_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Browser_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/BrowsingHistory_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/BrowsingHistory_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Calculator_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Calculator_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/ChangeName_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/ChangeName_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/ChangePassword_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/ChangePassword_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Desktop_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Desktop_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/EmailClient_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/EmailClient_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/EmailSettings_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/EmailSettings_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Login_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Login_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/MoviePlayer_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/MoviePlayer_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/NewPassword_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/NewPassword_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/NewUser_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/NewUser_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/PasswordManager_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/PasswordManager_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Settings_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Settings_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Shutdown_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Shutdown_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/SignOut_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/SignOut_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Terminal_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/Terminal_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/UserAccountSecurity_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/UserAccountSecurity_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/User_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/.evosuite/tmp_2018_04_07_02_05_08/tests/User_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Browser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Desktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Desktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SignOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SignOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserAccountSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserAccountSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Authenticate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Authenticate.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Bleach.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Bleach.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Browser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Browser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/BrowserSettingsMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/BrowserSettingsMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/BrowsingHistory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/BrowsingHistory.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Calculator.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Calculator.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ChangeName.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/ChangeName.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ChangePassword.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/ChangePassword.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Desktop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Desktop.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/EmailClient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/EmailClient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/EmailSettings.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/EmailSettings.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MoviePlayer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MoviePlayer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/NewPassword.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/NewPassword.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/PasswordManager.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/PasswordManager.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Settings.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Settings.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Shutdown.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Shutdown.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SignOut.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/SignOut.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Terminal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Terminal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/browsericon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/browsericon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/calculatoricon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/calculatoricon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javaicon.png.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/javaicon.png.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mailicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/mailicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/movieicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/movieicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/powericon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/powericon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/settingsicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/settingsicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/terminalicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/terminalicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/wallpapericon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/wallpapericon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Account_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Account_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Authenticate_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Authenticate_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Bleach_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Bleach_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/BrowserSettings_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/BrowserSettings_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Browser_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Browser_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/BrowsingHistory_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/BrowsingHistory_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Calculator_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Calculator_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/ChangeName_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/ChangeName_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/ChangePassword_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/ChangePassword_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Desktop_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Desktop_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/EmailClient_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/EmailClient_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/EmailSettings_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/EmailSettings_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Login_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Login_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/MoviePlayer_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/MoviePlayer_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/NewPassword_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/NewPassword_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/NewUser_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/NewUser_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/PasswordManager_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/PasswordManager_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Settings_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Settings_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Shutdown_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Shutdown_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/SignOut_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/SignOut_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Terminal_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/Terminal_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/UserAccountSecurity_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/UserAccountSecurity_ESTest_scaffolding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/User_ESTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/src/evo/User_ESTest_scaffolding.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -15,6 +298,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Jartop$Core.coverage" NAME="Core Coverage Results" MODIFIED="1520222865309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -41,41 +327,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/MoviePlayer.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/NewPassword.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/PasswordManager.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="149" column="31" lean-forward="true" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="31" />
+            <state relative-caret-position="374">
+              <caret line="178" column="40" lean-forward="true" selection-start-line="178" selection-start-column="40" selection-end-line="178" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Desktop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="92" column="33" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,8 +363,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Core.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3810">
-              <caret line="150" column="23" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
+            <state relative-caret-position="2200">
+              <caret line="123" column="63" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,44 +373,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Desktop.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/login.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-132">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Settings.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="21" column="126" selection-start-line="21" selection-start-column="126" selection-end-line="21" selection-end-column="126" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Terminal.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="13" column="124" selection-start-line="13" selection-start-column="124" selection-end-line="13" selection-end-column="124" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -152,6 +398,9 @@
       <find>\n</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -159,7 +408,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Email.java" />
         <option value="$PROJECT_DIR$/src/main/java/BrowserSettingsMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/BrowsingHistory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Calculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ChangeName.java" />
         <option value="$PROJECT_DIR$/src/main/resources/NewUser.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/Shutdown.java" />
@@ -172,20 +420,14 @@
         <option value="$PROJECT_DIR$/src/main/java/NewPassword.java" />
         <option value="$PROJECT_DIR$/src/main/java/EmailSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/Authenticate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SignOut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/UserAccountSecurity.java" />
         <option value="$PROJECT_DIR$/src/main/java/MoviePlayer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Terminal.java" />
         <option value="$PROJECT_DIR$/src/main/java/NewUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Desktop.java" />
         <option value="$PROJECT_DIR$/src/main/java/BrowserSettings.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/Settings.java" />
         <option value="$PROJECT_DIR$/src/main/java/ChangePassword.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Browser.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Bleach.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/Authenticate.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/Browser.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/BrowserSettingsMenu.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/Calculator.fxml" />
@@ -202,10 +444,17 @@
         <option value="$PROJECT_DIR$/src/main/resources/Shutdown.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/Terminal.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/SignOut.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/login.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/Desktop.java" />
         <option value="$PROJECT_DIR$/src/main/java/Core.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UserAccountSecurity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Browser.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/resources/Authenticate.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/SignOut.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/login.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/User.java" />
       </list>
     </option>
   </component>
@@ -220,7 +469,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,7 +492,7 @@
               <item name="Jartop" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Jartop" type="b2602c69:ProjectViewProjectNode" />
@@ -252,16 +500,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_151" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Hunter/IdeaProjects/Jartop/src/main/java/NewUser.java" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537659987093" />
     <property name="cores_evosuite_param" value="4" />
@@ -269,13 +520,13 @@
     <property name="evosuite_gui_dialog_width" value="619" />
     <property name="evosuite_jar_location" value="D:\Evo Suite\evosuite-1.0.6.jar" />
     <property name="execution_mode" value="MVN" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/openjfx-12.0.1_windows-x64_bin-sdk/javafx-sdk-12.0.1/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/fxml" />
     <property name="memory_evosuite_param" value="2000" />
     <property name="mvn_location" value="" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36434782" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
     <property name="target_folder_evosuite_param" value="src/evo" />
     <property name="time_evosuite_param" value="3" />
   </component>
@@ -292,6 +543,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Core">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -299,6 +559,8 @@
       </method>
     </configuration>
     <configuration name="Core" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Core" />
       <module name="Jartop_main" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\openjfx-12.0.1_windows-x64_bin-sdk\javafx-sdk-12.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
@@ -359,15 +621,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Core" />
       <item itemvalue="Gradle.Jartop [dependencies]" />
@@ -375,8 +628,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Core" />
         <item itemvalue="Gradle.Jartop [dependencies]" />
+        <item itemvalue="Application.Core" />
       </list>
     </recent_temporary>
   </component>
@@ -394,10 +647,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="3086" height="1702" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12623926" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2013889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -406,17 +659,17 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962024" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32902393" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946582" visible="true" weight="0.3288889" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39949366" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005342" side_tool="true" weight="0.3288889" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" order="9" weight="0.32902393" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32979262" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32902393" />
-      <window_info anchor="bottom" id="EvoSuite" order="12" weight="0.32962024" />
+      <window_info anchor="bottom" id="Build" order="9" weight="0.3288889" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32902393" />
+      <window_info anchor="bottom" id="EvoSuite" order="11" weight="0.32962024" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3288889" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -432,129 +685,221 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ChangeName.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Bleach.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        <state relative-caret-position="82">
+          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Shutdown.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Browser.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        <state relative-caret-position="615">
+          <caret line="15" column="173" selection-start-line="15" selection-start-column="173" selection-end-line="15" selection-end-column="173" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EmailClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/BrowserSettingsMenu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+        <state relative-caret-position="697">
+          <caret line="17" column="106" selection-start-line="17" selection-start-column="106" selection-end-line="17" selection-end-column="106" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Apps.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Password.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/BrowsingHistory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Calculator.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="533">
+          <caret line="13" column="145" selection-start-line="13" selection-start-column="145" selection-end-line="13" selection-end-column="145" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Account.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/BrowsingHistory.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        <state relative-caret-position="574">
+          <caret line="14" column="173" selection-start-line="14" selection-start-column="173" selection-end-line="14" selection-end-column="173" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PasswordManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ChangeName.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="574">
+          <caret line="14" column="145" selection-start-line="14" selection-start-column="145" selection-end-line="14" selection-end-column="145" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/EmailSettings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ChangePassword.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="533">
+          <caret line="13" column="145" selection-start-line="13" selection-start-column="145" selection-end-line="13" selection-end-column="145" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NewPassword.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Desktop.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="615">
+          <caret line="15" column="88" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SignOut.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/EmailClient.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="15" column="106" selection-start-line="15" selection-start-column="106" selection-end-line="15" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/EmailSettings.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="16" column="106" selection-start-line="16" selection-start-column="106" selection-end-line="16" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/SignOut.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Shutdown.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="106" selection-start-line="13" selection-start-column="106" selection-end-line="13" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MoviePlayer.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Terminal.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="124" selection-start-line="13" selection-start-column="124" selection-end-line="13" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/NewPassword.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/PasswordManager.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MoviePlayer.java">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hunter.jtop">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="-462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Settings.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="126" selection-start-line="21" selection-start-column="126" selection-end-line="21" selection-end-column="126" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/UserAccountSecurity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Authenticate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4428" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/.evosuite/best-tests/Settings_ESTest_scaffolding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/.evosuite/best-tests/Account_ESTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="622">
+          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Terminal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="94">
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Shutdown.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1589">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="44">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="134" column="17" lean-forward="true" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PasswordManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NewUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
+        <state relative-caret-position="396">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NewPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MoviePlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512">
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -563,195 +908,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1353">
-          <caret line="48" column="39" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+        <state relative-caret-position="-66">
+          <caret line="78" column="32" lean-forward="true" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Settings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/EmailSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3731">
-          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="528">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ChangePassword.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/EmailClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2419">
-          <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+        <state relative-caret-position="-1546">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Browser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BrowserSettings.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Authenticate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="176">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bleach.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
+        <state relative-caret-position="44">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Bleach.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Browser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        <state relative-caret-position="-396">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Authenticate.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/BrowserSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="14" column="122" selection-start-line="14" selection-start-column="122" selection-end-line="14" selection-end-column="122" />
+        <state relative-caret-position="-144">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Browser.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/BrowsingHistory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="15" column="173" selection-start-line="15" selection-start-column="173" selection-end-line="15" selection-end-column="173" />
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/BrowserSettingsMenu.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="17" column="106" selection-start-line="17" selection-start-column="106" selection-end-line="17" selection-end-column="106" />
+        <state relative-caret-position="506">
+          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Calculator.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ChangeName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="13" column="145" selection-start-line="13" selection-start-column="145" selection-end-line="13" selection-end-column="145" />
+        <state relative-caret-position="176">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/BrowsingHistory.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ChangePassword.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="14" column="173" selection-start-line="14" selection-start-column="173" selection-end-line="14" selection-end-column="173" />
+        <state relative-caret-position="308">
+          <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ChangeName.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="14" column="145" selection-start-line="14" selection-start-column="145" selection-end-line="14" selection-end-column="145" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ChangePassword.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="13" column="145" selection-start-line="13" selection-start-column="145" selection-end-line="13" selection-end-column="145" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Desktop.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="15" column="88" selection-start-line="15" selection-start-column="88" selection-end-line="15" selection-end-column="88" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/EmailClient.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="15" column="106" selection-start-line="15" selection-start-column="106" selection-end-line="15" selection-end-column="106" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/EmailSettings.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="16" column="106" selection-start-line="16" selection-start-column="106" selection-end-line="16" selection-end-column="106" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SignOut.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Shutdown.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="106" selection-start-line="13" selection-start-column="106" selection-end-line="13" selection-end-column="106" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/login.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/MoviePlayer.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/NewPassword.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/PasswordManager.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Core.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3810">
-          <caret line="150" column="23" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
+        <state relative-caret-position="2200">
+          <caret line="123" column="63" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -760,44 +1005,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Desktop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        <state relative-caret-position="446">
+          <caret line="92" column="33" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Settings.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="21" column="126" selection-start-line="21" selection-start-column="126" selection-end-line="21" selection-end-column="126" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1122" />
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="110">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Terminal.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="124" selection-start-line="13" selection-start-column="124" selection-end-line="13" selection-end-column="124" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Authenticate.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/SignOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/login.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="149" column="31" lean-forward="true" selection-start-line="149" selection-start-column="31" selection-end-line="149" selection-end-column="31" />
+        <state relative-caret-position="374">
+          <caret line="178" column="40" lean-forward="true" selection-start-line="178" selection-start-column="40" selection-end-line="178" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -846,7 +1100,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>12</last-edited>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -858,7 +1112,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Jartop_main|Jartop</last-edited>
+          <last-edited>Jartop</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -870,7 +1124,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -882,7 +1136,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib</last-edited>
+          <last-edited>Gradle: com.github.RandomAdversary:PwnedPasswords:3.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

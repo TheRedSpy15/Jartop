@@ -8,7 +8,7 @@ import javafx.scene.control.Label;
 import javafx.stage.FileChooser;
 import org.controlsfx.control.Notifications;
 
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.io.File;
@@ -30,9 +30,9 @@ public class Login {
 
     @FXML private void login() throws IOException {
 
-        if (getUserFile() != null && passwordField.getText() != null){
+        if (userFile != null && passwordField.getText() != null){
 
-            Core.getUserData().setUserFile(this.getUserFile());
+            Core.getUserData().setUserFile(this.userFile);
 
             try {
                 Core.getUserData().login(passwordField.getText(), load256Toggle.selectedProperty().getValue());
@@ -56,10 +56,10 @@ public class Login {
                         "*" + User.saveExtension)
         );
 
-        setUserFile(fileChooser.showOpenDialog(Desktop.getAppWindow()));
-        if (getUserFile() != null) {
+        userFile = fileChooser.showOpenDialog(Desktop.getAppWindow());
+        if (userFile != null) {
 
-            userLbl.setText("Selected User: " + getUserFile().getName());
+            userLbl.setText("Selected User: " + userFile.getName());
 
             Core.getUAS().setFailedAttempts((byte) 0);
         }
