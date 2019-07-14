@@ -24,6 +24,6 @@ public class NewPassword {
 
     @FXML private void back() throws IOException {
 
-        Core.loadAndTitle("PasswordManager");
+        Core.loadAndTitle("PasswordManager", true);
     }
 }

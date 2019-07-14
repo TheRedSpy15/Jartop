@@ -66,7 +66,7 @@ public class Login {
 
         Core.getUserData().setGuest(true);
 
-        Core.loadAndTitle("Desktop");
+        Core.loadAndTitle("Desktop", false);
 
         Logger.getAnonymousLogger().info("Logging in as guest");
 

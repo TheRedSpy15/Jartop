@@ -42,7 +42,7 @@ public class Browser {
 
     @FXML private void settings() throws IOException {
 
-        Core.getUAS().UASLoadFXML("BrowserSettingsMenu");
+        Core.getUAS().UASLoadFXML("BrowserSettingsMenu", true);
     }
 
     @FXML private void refresh() {
@@ -68,7 +68,7 @@ public class Browser {
 
     @FXML private void history() throws IOException {
 
-        Core.getUAS().UASLoadFXML("BrowsingHistory");
+        Core.getUAS().UASLoadFXML("BrowsingHistory", true);
     }
 
     @FXML private void initialize() {

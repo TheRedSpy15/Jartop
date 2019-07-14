@@ -35,7 +35,7 @@ class UserAccountSecurity {
 
     private void authenticate() throws IOException {
 
-        Parent authenticatePane = FXMLLoader.load(Core.class.getResource("Authenticate.fxml"));
+        Parent authenticatePane = FXMLLoader.load(Core.class.getResource("fxml/Authenticate.fxml"));
 
         securityWindow.setScene(new Scene(authenticatePane));
         securityWindow.showAndWait();
@@ -76,20 +76,20 @@ class UserAccountSecurity {
         if (signOut) new SignOut().signOut(false);
     }
 
-    final void UASLoadFXML(String fxmlName) throws IOException {
+    final void UASLoadFXML(String fxmlName, boolean isApp) throws IOException {
 
         if (Core.getUAS().verified || // load
                 Core.getUserData().isGuest() ||
                 Core.getUserData().getPassword().trim().isEmpty()){
 
-            Core.loadAndTitle(fxmlName);
+            Core.loadAndTitle(fxmlName, isApp);
         } else {
 
             Core.getUAS().authenticate();
 
             if (Core.getUAS().verified){ // load
 
-                Core.loadAndTitle(fxmlName);
+                Core.loadAndTitle(fxmlName, isApp);
             }
         }
     }

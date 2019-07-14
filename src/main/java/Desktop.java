@@ -109,10 +109,10 @@ public class Desktop {
 
         if (UASApp) {
 
-            Core.getUAS().UASLoadFXML(nameOfApp);
+            Core.getUAS().UASLoadFXML(nameOfApp, true);
         } else {
 
-            Core.loadAndTitle(nameOfApp);
+            Core.loadAndTitle(nameOfApp, true);
         }
     }
 

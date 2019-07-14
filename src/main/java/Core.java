@@ -169,17 +169,23 @@ public class Core extends Application {
         }
     }
 
-    static void loadAndTitle(String fxmlName) throws IOException {
+    static void loadAndTitle(String fxmlName, boolean isApp) throws IOException {
 
         final String suffix = ".fxml";
         final String folder = "fxml/";
 
         Parent pane = FXMLLoader.load(Core.class.getResource(folder + fxmlName + suffix));
 
-        Desktop.getAppWindow().setTitle(fxmlName);
-        Desktop.getAppWindow().setScene(new Scene(pane));
-        Desktop.getAppWindow().show();
-        Logger.getAnonymousLogger().info("Loading app : " + fxmlName);
+        // app window vs desktop window
+        if (isApp) {
+            Desktop.getAppWindow().setTitle(fxmlName);
+            Desktop.getAppWindow().setScene(new Scene(pane));
+            Desktop.getAppWindow().show();
+            Logger.getAnonymousLogger().info("Loading app : " + fxmlName);
+        } else {
+            desktop.setScene(new Scene(pane));
+            Logger.getAnonymousLogger().info("Loading scene : " + fxmlName);
+        }
     }
 
     private static String versionChecksum() {

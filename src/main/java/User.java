@@ -102,10 +102,7 @@ public class User implements Serializable {
             IllegalBlockSizeException {
 
         // Determining key size
-        byte keySize;
-
-        if (Core.getUserData().encryptWith256) keySize = 32; // 256
-        else keySize = 16; // 128
+        byte keySize = (byte) (Core.getUserData().encryptWith256 ? 32 : 16); // 256 / 128
 
         // Hashing
         final String hash =
@@ -145,10 +142,7 @@ public class User implements Serializable {
         final byte maximumTries = 20;
 
         // Determining key size
-        byte keySize;
-
-        if (loadWith256) keySize = 32; // 256
-        else keySize = 16; // 128
+        byte keySize = (byte) (loadWith256 ? 32 : 16); // 256 / 128
 
         try {
             try {
@@ -213,7 +207,7 @@ public class User implements Serializable {
         // Loading desktop
         if (loggedIn) {
 
-            Core.loadAndTitle("Desktop");
+            Core.loadAndTitle("Desktop", false);
             Core.getUserData().guest = false;
 
             Logger.getAnonymousLogger().info("Logged in successfully");

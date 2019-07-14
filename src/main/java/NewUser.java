@@ -23,8 +23,7 @@ class NewUser extends Login {
         Core.getUserData().setUserFile(userFile);
         Core.getUserData().setName(Core.getUserData().getUserFile().getName().replace(".ser",""));
 
-        Parent desktopScene = FXMLLoader.load(Core.class.getResource("Desktop.fxml"));
-        Core.getDesktop().setScene(new Scene(desktopScene));
+        Core.loadAndTitle("Desktop", false);
 
         Core.nonGuestSave();
 

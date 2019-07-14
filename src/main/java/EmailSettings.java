@@ -30,7 +30,7 @@ public class EmailSettings extends EmailClient {
 
     @FXML private void back() throws IOException {
 
-        Core.loadAndTitle("Settings");
+        Core.loadAndTitle("Settings", true);
     }
 
     @FXML private void initialize(){

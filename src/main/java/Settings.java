@@ -59,22 +59,22 @@ public class Settings {
 
     @FXML private void changeName() throws IOException {
 
-        Core.getUAS().UASLoadFXML("ChangeName");
+        Core.getUAS().UASLoadFXML("ChangeName", true);
     }
 
     @FXML private void changePassword() throws IOException {
 
-        Core.getUAS().UASLoadFXML("ChangePassword");
+        Core.getUAS().UASLoadFXML("ChangePassword", true);
     }
 
     @FXML private void browserSettings() throws IOException {
 
-        Core.getUAS().UASLoadFXML("BrowserSettingsMenu");
+        Core.getUAS().UASLoadFXML("BrowserSettingsMenu", true);
     }
 
     @FXML private void emailSettings() throws IOException {
 
-        Core.getUAS().UASLoadFXML("EmailSettings");
+        Core.getUAS().UASLoadFXML("EmailSettings", true);
     }
 
     @FXML private void changeColor() {
@@ -87,17 +87,17 @@ public class Settings {
 
     @FXML private void signOut() throws IOException {
 
-        Core.loadAndTitle("SignOut");
+        Core.loadAndTitle("SignOut", true);
     }
 
     @FXML private void createAccount() throws IOException {
 
-        Core.loadAndTitle("NewUser");
+        Core.loadAndTitle("NewUser", true);
     }
 
     @FXML private void bleach() throws IOException {
 
-        Core.getUAS().UASLoadFXML("Bleach");
+        Core.getUAS().UASLoadFXML("Bleach", true);
     }
 
     @FXML private void toggleTor() { // change to tor
