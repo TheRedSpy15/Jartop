@@ -98,7 +98,7 @@ class UserAccountSecurity {
         return verified;
     }
 
-    protected final void setVerified() {
+    final void setVerified() {
         this.verified = true;
     }
 

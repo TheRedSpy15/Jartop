@@ -1,6 +1,3 @@
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import org.controlsfx.control.Notifications;
 
 import java.io.File;
