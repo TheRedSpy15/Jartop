@@ -6,9 +6,6 @@ plugins {
 group 'Jartop'
 version '1.0'
 
-sourceCompatibility = 11
-mainClassName = 'Core'
-
 apply plugin: 'java'
 
 javafx {

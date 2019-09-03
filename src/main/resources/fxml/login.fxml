@@ -6,79 +6,83 @@
  * See LICENSE for details.
  */-->
 
-<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.BoxBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.*?>
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #efdecd;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login">
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login">
    <children>
-      <ImageView fitHeight="720.0" fitWidth="1280.0">
+      <ImageView fx:id="wallpaper" cache="true" cacheHint="SPEED" preserveRatio="true">
          <image>
             <Image url="@../images/wallpapericon.jpg" />
          </image>
-         <effect>
-            <BoxBlur iterations="3" />
-         </effect>
       </ImageView>
-      <ImageView fitHeight="233.0" fitWidth="226.0" layoutX="527.0" layoutY="14.0" preserveRatio="true">
-         <image>
-            <Image url="@../images/javaicon.png.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="558.0" layoutY="295.0" prefHeight="65.0" prefWidth="165.0" text="Jartop" textFill="WHITE">
+      <HBox alignment="CENTER" layoutX="527.0" layoutY="14.0" AnchorPane.leftAnchor="527.0" AnchorPane.rightAnchor="527.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <ImageView cache="true" cacheHint="SPEED" fitHeight="233.0" fitWidth="226.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/javaicon.png.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Jartop" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="561.0" AnchorPane.rightAnchor="561.0" AnchorPane.topAnchor="299.0">
          <font>
-            <Font name="Tahoma Bold" size="51.0" />
+            <Font size="51.0" />
          </font>
       </Label>
-      <JFXButton fx:id="selectBtn" focusTraversable="false" layoutX="14.0" layoutY="655.0" onAction="#select" prefHeight="51.0" prefWidth="148.0" text="Select User" textFill="WHITE">
+      <JFXButton fx:id="selectBtn" focusTraversable="false" layoutX="14.0" layoutY="655.0" onAction="#select" text="Select User" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="22.0">
          <font>
             <Font name="Tahoma" size="21.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="loginBtn" focusTraversable="false" layoutX="566.0" layoutY="523.0" onAction="#login" prefHeight="51.0" prefWidth="148.0" text="Login" textFill="WHITE">
+      <JFXButton fx:id="loginBtn" focusTraversable="false" onAction="#login" text="Login" textFill="WHITE" AnchorPane.leftAnchor="566.0" AnchorPane.rightAnchor="566.0" AnchorPane.topAnchor="523.0">
          <font>
             <Font name="Tahoma Bold" size="31.0" />
          </font>
       </JFXButton>
-      <Label fx:id="userLbl" layoutX="14.0" layoutY="14.0" prefHeight="39.0" text="Selected User: none" textFill="WHITE">
+      <Label fx:id="userLbl" layoutX="14.0" layoutY="14.0" text="Selected User: none" textFill="WHITE" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="14.0">
          <font>
             <Font name="Tahoma" size="18.0" />
          </font>
       </Label>
-      <JFXButton fx:id="guestBtn" focusTraversable="false" layoutX="1118.0" layoutY="655.0" onAction="#guest" prefHeight="51.0" prefWidth="148.0" text="Guest Login" textFill="WHITE">
+      <JFXButton fx:id="guestBtn" focusTraversable="false" layoutX="1118.0" layoutY="655.0" onAction="#guest" text="Guest Login" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="22.0">
          <font>
             <Font name="Tahoma" size="20.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="newBtn" focusTraversable="false" layoutX="175.0" layoutY="655.0" onAction="#newUser" prefHeight="51.0" prefWidth="148.0" text="New User" textFill="WHITE">
+      <JFXButton fx:id="newBtn" focusTraversable="false" layoutX="175.0" layoutY="655.0" onAction="#newUser" text="New User" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="200.0">
          <font>
             <Font name="Tahoma" size="20.0" />
          </font>
       </JFXButton>
-      <JFXToggleButton fx:id="load256Toggle" focusTraversable="false" layoutX="554.0" layoutY="375.0" text="AES-256" toggleColor="#a84040">
+      <JFXToggleButton fx:id="load256Toggle" focusTraversable="false" layoutX="548.0" layoutY="371.0" text="AES-256" toggleColor="#d0c4c1" AnchorPane.leftAnchor="548.0" AnchorPane.rightAnchor="548.0" AnchorPane.topAnchor="371.0">
          <font>
             <Font name="Tahoma" size="23.0" />
          </font>
       </JFXToggleButton>
-      <Label fx:id="defaultLbl" layoutX="528.0" layoutY="584.0" prefHeight="39.0" text="Default password: password" textFill="WHITE">
+      <Label fx:id="defaultLbl" alignment="CENTER" layoutX="497.0" layoutY="584.0" text="Default password: password" textFill="WHITE" AnchorPane.leftAnchor="497.0" AnchorPane.rightAnchor="497.0" AnchorPane.topAnchor="584.0">
          <font>
             <Font name="Tahoma" size="18.0" />
          </font>
       </Label>
-      <JFXButton fx:id="copyBtn" focusTraversable="false" layoutX="619.0" layoutY="623.0" onAction="#copy" text="Copy" textFill="WHITE">
+      <JFXButton fx:id="copyBtn" focusTraversable="false" layoutX="616.0" layoutY="619.0" onAction="#copy" text="Copy" textFill="WHITE" AnchorPane.leftAnchor="616.0" AnchorPane.rightAnchor="616.0" AnchorPane.topAnchor="619.0">
          <font>
             <Font name="Tahoma" size="12.0" />
          </font>
       </JFXButton>
-      <JFXPasswordField fx:id="passwordField" focusColor="WHITE" focusTraversable="false" labelFloat="true" layoutX="502.0" layoutY="472.0" onAction="#login" prefHeight="39.0" prefWidth="278.0" promptText="Password" unFocusColor="WHITE">
+      <JFXPasswordField fx:id="passwordField" alignment="CENTER" focusColor="WHITE" focusTraversable="false" labelFloat="true" layoutX="497.0" layoutY="477.0" onAction="#login" promptText="Password" unFocusColor="WHITE" AnchorPane.leftAnchor="497.0" AnchorPane.rightAnchor="498.0" AnchorPane.topAnchor="477.0">
          <font>
             <Font name="Tahoma" size="24.0" />
          </font>
       </JFXPasswordField>
-      <JFXButton fx:id="exitBtn" focusTraversable="false" layoutX="1192.0" layoutY="14.0" onAction="#exit" prefHeight="39.0" prefWidth="76.0" text="Exit" textFill="WHITE">
+      <JFXButton fx:id="exitBtn" focusTraversable="false" layoutX="1192.0" layoutY="14.0" onAction="#exit" text="Exit" textFill="WHITE" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="14.0">
          <font>
             <Font name="Tahoma" size="20.0" />
          </font>

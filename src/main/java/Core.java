@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
@@ -140,7 +139,6 @@ public class Core extends Application {
         desktop.setTitle("Jartop - " + version);
         desktop.setOnCloseRequest(e -> shutdown());
 
-        //desktop.initStyle(StageStyle.TRANSPARENT);
         desktop.setFullScreen(true);
         desktop.show();
     }
@@ -186,7 +184,7 @@ public class Core extends Application {
             Desktop.getAppWindow().show();
             Logger.getAnonymousLogger().info("Loading app : " + fxmlName);
         } else {
-            desktop.setScene(new Scene(pane));
+            desktop.getScene().setRoot(pane);
             Logger.getAnonymousLogger().info("Loading scene : " + fxmlName);
         }
     }

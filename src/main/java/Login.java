@@ -2,6 +2,7 @@ import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXToggleButton;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import org.controlsfx.control.Notifications;
 
@@ -23,6 +24,7 @@ public class Login {
     @FXML private JFXPasswordField passwordField;
     @FXML private Label userLbl, defaultLbl;
     @FXML private JFXToggleButton load256Toggle;
+    @FXML private ImageView wallpaper;
     private File userFile;
 
     @FXML private void login() throws IOException {
@@ -98,6 +100,10 @@ public class Login {
     }
 
     @FXML private void initialize() {
+
+        // resize wallpaper listener
+        wallpaper.fitHeightProperty().bind(Core.getDesktop().heightProperty());
+        wallpaper.fitWidthProperty().bind(Core.getDesktop().widthProperty());
 
         Logger.getAnonymousLogger().info("encryption size limited to 128 : " + Core.encryptionLimit);
 
