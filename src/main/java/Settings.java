@@ -7,6 +7,7 @@ import com.jfoenix.controls.JFXTabPane;
 import com.jfoenix.controls.JFXToggleButton;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
@@ -29,7 +30,7 @@ public class Settings {
     @FXML private JFXSlider volumeSlider;
     @FXML private JFXColorPicker colorPicker;
     @FXML private JFXToggleButton torToggle;
-    @FXML private JFXTabPane background;
+    @FXML private TabPane background;
     @FXML private JFXButton createBtn, bleachBtn;
 
     @FXML private void changeWallpaper() {

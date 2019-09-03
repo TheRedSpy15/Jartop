@@ -120,8 +120,6 @@ public class EmailClient {
 
     @FXML private void settings() throws IOException {
 
-        Parent settingsPane = FXMLLoader.load(Core.class.getResource("EmailSettings.fxml"));
-
-        Desktop.getAppWindow().setScene(new Scene(settingsPane));
+        Core.loadAndTitle("EmailSettings", true);
     }
 }

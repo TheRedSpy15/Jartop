@@ -13,7 +13,6 @@
     </properties>
     <root id="root">
       <element id="archive" name="Jartop_main.jar">
-        <element id="module-output" name="Jartop_main" />
         <element id="library" level="project" name="Gradle: org.apache.commons:commons-email:1.5" />
         <element id="library" level="project" name="Gradle: com.github.RandomAdversary:PwnedPasswords:3.0" />
         <element id="library" level="project" name="Gradle: com.sun.mail:javax.mail:1.5.6" />

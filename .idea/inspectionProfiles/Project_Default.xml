@@ -1,6 +1,7 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="AnonymousInnerClassMayBeStatic" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="BooleanExpressionMayBeConditional" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="BooleanMethodNameMustStartWithQuestion" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoreBooleanMethods" value="false" />
@@ -36,6 +37,7 @@
     </inspection_tool>
     <inspection_tool class="IfMayBeConditional" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="IfStatementWithIdenticalBranches" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="InnerClassMayBeStatic" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="JDBCResource" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="insideTryAllowed" value="false" />
     </inspection_tool>
@@ -66,6 +68,7 @@
       <option name="superClassString" value="java.awt.Component" />
     </inspection_tool>
     <inspection_tool class="NonSerializableWithSerialVersionUIDField" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ObjectInstantiationInEqualsHashCode" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="OnDemandImport" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PointlessIndexOfComparison" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="QuestionableName" enabled="true" level="WARNING" enabled_by_default="true">
@@ -88,6 +91,9 @@
     <inspection_tool class="StringBufferMustHaveInitialCapacity" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="StringBufferToStringInConcatenation" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="StringEqualsEmptyString" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="StringReplaceableByStringBuffer" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="onlyWarnOnLoop" value="true" />
+    </inspection_tool>
     <inspection_tool class="TrivialStringConcatenation" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="UnnecessaryInheritDoc" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="UnnecessaryJavaDocLink" enabled="true" level="WARNING" enabled_by_default="true">

@@ -92,6 +92,11 @@ public class Desktop {
 
     @FXML private void initialize() {
 
+        // resize wallpaper listener
+        wallpaper.fitHeightProperty().bind(Core.getDesktop().heightProperty());
+        wallpaper.fitWidthProperty().bind(Core.getDesktop().widthProperty());
+        updateWallpaper();
+
         appWindow = new Stage();
 
         // clock thread
@@ -99,7 +104,6 @@ public class Desktop {
         timeThread.setPriority(Thread.currentThread().getPriority() - 1);
         timeThread.start();
 
-        updateWallpaper();
         Core.testConnection();
 
         appWindow.setOnCloseRequest(e -> Logger.getAnonymousLogger().info("App window closed"));

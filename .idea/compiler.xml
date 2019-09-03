@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
-      <module name="Jartop.main" target="11" />
-      <module name="Jartop.test" target="11" />
-    </bytecodeTargetLevel>
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="1000" />
   </component>
 </project>

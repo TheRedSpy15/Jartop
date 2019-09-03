@@ -10,11 +10,13 @@ import javafx.stage.StageStyle;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+import java.util.concurrent.locks.Lock;
 import java.util.logging.Logger;
 
 /*
@@ -138,7 +140,8 @@ public class Core extends Application {
         desktop.setTitle("Jartop - " + version);
         desktop.setOnCloseRequest(e -> shutdown());
 
-        desktop.initStyle(StageStyle.TRANSPARENT);
+        //desktop.initStyle(StageStyle.TRANSPARENT);
+        desktop.setFullScreen(true);
         desktop.show();
     }
 
