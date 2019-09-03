@@ -29,11 +29,9 @@ public class MoviePlayer {
     @FXML private void select(){
 
         File file;
-
         FileChooser fileChooser = new FileChooser();
 
-        fileChooser.setTitle("Select an image");
-
+        fileChooser.setTitle("Select a video");
         fileChooser.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter(
                         "video Files (.mp4)",
