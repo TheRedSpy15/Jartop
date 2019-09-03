@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="008349cb-e046-406d-992a-9a09156c87f8" name="Default" comment="resizeable windows, can be launched by ./gradlew run now" />
+    <list default="true" id="008349cb-e046-406d-992a-9a09156c87f8" name="Default" comment="fixing github CI" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567484177095</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fixing github CI">
+      <created>1567484602207</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1567484602207</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -319,6 +326,7 @@
     <MESSAGE value="improved gitignore" />
     <MESSAGE value="re-added .jtop to gitignore" />
     <MESSAGE value="resizeable windows, can be launched by ./gradlew run now" />
-    <option name="LAST_COMMIT_MESSAGE" value="resizeable windows, can be launched by ./gradlew run now" />
+    <MESSAGE value="fixing github CI" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing github CI" />
   </component>
 </project>
