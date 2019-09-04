@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <AnchorPane fx:id="background" prefHeight="196.0" prefWidth="301.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShutdownController">
    <children>
-      <Label layoutX="82.0" layoutY="30.0" prefHeight="33.0" prefWidth="137.0" text="ShutdownController?">
+      <Label layoutX="82.0" layoutY="30.0" prefHeight="33.0" prefWidth="137.0" text="Shutdown?">
          <font>
             <Font name="Tahoma Bold" size="24.0" />
          </font>

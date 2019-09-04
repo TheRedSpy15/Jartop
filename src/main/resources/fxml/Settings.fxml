@@ -68,12 +68,12 @@
                               <Font name="Tahoma" size="16.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton fx:id="browserBtn" buttonType="RAISED" focusTraversable="false" layoutX="206.0" layoutY="95.0" onAction="#browserSettings" style="-fx-background-color: white;" text="BrowserController SettingsController" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="95.0">
+                        <JFXButton fx:id="browserBtn" buttonType="RAISED" focusTraversable="false" layoutX="206.0" layoutY="95.0" onAction="#browserSettings" style="-fx-background-color: white;" text="Browser Settings" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="95.0">
                            <font>
                               <Font name="Tahoma" size="19.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton fx:id="emailBtn" buttonType="RAISED" focusTraversable="false" layoutX="219.0" layoutY="142.0" onAction="#emailSettings" style="-fx-background-color: white;" text="Email SettingsController" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="219.0" AnchorPane.topAnchor="142.0">
+                        <JFXButton fx:id="emailBtn" buttonType="RAISED" focusTraversable="false" layoutX="219.0" layoutY="142.0" onAction="#emailSettings" style="-fx-background-color: white;" text="Email Settings" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="219.0" AnchorPane.topAnchor="142.0">
                            <font>
                               <Font name="Tahoma" size="19.0" />
                            </font>
@@ -88,7 +88,7 @@
                               <Font name="Tahoma" size="16.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton fx:id="bleachBtn" focusTraversable="false" layoutX="13.0" layoutY="301.0" onAction="#bleach" text="BleachController Account" textFill="GREY" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="13.0">
+                        <JFXButton fx:id="bleachBtn" focusTraversable="false" layoutX="13.0" layoutY="301.0" onAction="#bleach" text="Bleach Account" textFill="GREY" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="13.0">
                            <font>
                               <Font name="Tahoma" size="16.0" />
                            </font>

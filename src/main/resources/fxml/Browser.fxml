@@ -31,7 +31,7 @@
             <Font name="Tahoma" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="settingsBtn" layoutX="714.0" layoutY="32.0" onAction="#settings" prefHeight="32.0" prefWidth="89.0" text="SettingsController" AnchorPane.rightAnchor="97.0">
+      <JFXButton fx:id="settingsBtn" layoutX="714.0" layoutY="32.0" onAction="#settings" prefHeight="32.0" prefWidth="89.0" text="Settings" AnchorPane.rightAnchor="97.0">
          <font>
             <Font name="Tahoma" size="12.0" />
          </font>

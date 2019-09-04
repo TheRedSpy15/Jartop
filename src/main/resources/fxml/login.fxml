@@ -42,7 +42,7 @@
             <Font name="Tahoma" size="21.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="loginBtn" focusTraversable="false" onAction="#login" text="LoginController" textFill="WHITE" AnchorPane.leftAnchor="566.0" AnchorPane.rightAnchor="566.0" AnchorPane.topAnchor="523.0">
+      <JFXButton fx:id="loginBtn" focusTraversable="false" onAction="#login" text="Login" textFill="WHITE" AnchorPane.leftAnchor="566.0" AnchorPane.rightAnchor="566.0" AnchorPane.topAnchor="523.0">
          <font>
             <Font name="Tahoma Bold" size="31.0" />
          </font>
@@ -52,7 +52,7 @@
             <Font name="Tahoma" size="18.0" />
          </font>
       </Label>
-      <JFXButton fx:id="guestBtn" focusTraversable="false" layoutX="1118.0" layoutY="655.0" onAction="#guest" text="Guest LoginController" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="22.0">
+      <JFXButton fx:id="guestBtn" focusTraversable="false" layoutX="1118.0" layoutY="655.0" onAction="#guest" text="Guest Login" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="22.0">
          <font>
             <Font name="Tahoma" size="20.0" />
          </font>
