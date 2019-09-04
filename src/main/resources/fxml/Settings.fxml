@@ -31,7 +31,7 @@
                               <Image url="@../images/wallpapericon.jpg" />
                            </image>
                         </ImageView>
-                        <JFXButton fx:id="changeBtn" buttonType="RAISED" disable="true" focusTraversable="false" layoutX="227.0" layoutY="263.0" onAction="#changeWallpaper" prefHeight="55.0" prefWidth="147.0" style="-fx-background-color: white;" text="Change" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="226.0">
+                        <JFXButton fx:id="changeBtn" buttonType="RAISED" focusTraversable="false" layoutX="227.0" layoutY="263.0" onAction="#changeWallpaper" prefHeight="55.0" prefWidth="147.0" style="-fx-background-color: white;" text="Change" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="226.0">
                            <font>
                               <Font name="Tahoma Bold" size="28.0" />
                            </font>

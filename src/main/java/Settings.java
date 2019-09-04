@@ -52,7 +52,7 @@ public class Settings {
 
         file = fileChooser.showOpenDialog(Desktop.getAppWindow());
         if (file != null) {
-            Core.getUserData().setWallpaperPath("file:\\" + file.getAbsolutePath());
+            Core.getUserData().setWallpaperPath(file.getPath());
             wallpaperPreview.setImage(new Image(Core.getUserData().getWallpaperPath()));
             new Desktop().updateWallpaper();
         }
@@ -119,13 +119,6 @@ public class Settings {
         Core.testConnection();
 
         statusLbl.setText("Status: " + User.internetConnection);
-    }
-
-    @FXML private void hintGC() {
-
-        System.gc();
-
-        Logger.getAnonymousLogger().info("GC hinted");
     }
 
     @FXML private void initialize() throws IOException {

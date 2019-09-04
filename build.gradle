@@ -1,4 +1,5 @@
 plugins {
+    id 'java'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.8'
 }
@@ -8,8 +9,6 @@ version '1.0'
 
 sourceCompatibility = 11
 mainClassName = 'Core'
-
-apply plugin: 'java'
 
 javafx {
     version = "11.0.2"

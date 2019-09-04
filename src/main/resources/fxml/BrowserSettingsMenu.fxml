@@ -6,24 +6,29 @@
  * See LICENSE for details.
  */-->
 
-<?import com.jfoenix.controls.*?>
-<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.*?>
-<AnchorPane fx:id="background" prefHeight="441.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrowserSettings">
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrowserSettings">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" text="Settings">
+      <Label layoutX="14.0" layoutY="14.0" text="Settings" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
          <font>
             <Font name="Tahoma Bold" size="35.0" />
          </font>
       </Label>
-      <Separator layoutY="58.0" prefHeight="6.0" prefWidth="600.0" />
-      <Label layoutX="12.0" layoutY="73.0" text="Max History">
+      <Separator layoutY="58.0" />
+      <Label layoutX="12.0" layoutY="73.0" text="Max History:" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="73.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
       </Label>
-      <JFXSlider fx:id="historySlider" layoutX="118.0" layoutY="78.0" prefHeight="14.0" prefWidth="464.0" snapToTicks="true" />
+      <JFXSlider fx:id="historySlider" layoutX="129.0" layoutY="77.0" snapToTicks="true" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="77.0" />
       <JFXToggleButton fx:id="javaScriptToggle" focusTraversable="false" layoutX="14.0" layoutY="189.0" text="Javascript">
          <font>
             <Font name="Tahoma" size="19.0" />
@@ -34,27 +39,27 @@
             <Font name="Tahoma" size="19.0" />
          </font>
       </JFXToggleButton>
-      <Label layoutX="11.0" layoutY="109.0" text="Home-page URL:">
+      <Label layoutX="11.0" layoutY="109.0" text="Home-page URL:" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="109.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="homePageField" focusTraversable="false" layoutX="159.0" layoutY="105.0" prefHeight="31.0" prefWidth="427.0" text="https://duckduckgo.com/?kae=d&amp;k1=1&amp;kak=-1&amp;kax=-1&amp;kaq=-1&amp;kap=-1&amp;kao=-1&amp;kg=p">
+      <JFXTextField fx:id="homePageField" focusTraversable="false" layoutX="172.0" layoutY="105.0" text="https://duckduckgo.com/?kae=d&amp;k1=1&amp;kak=-1&amp;kax=-1&amp;kaq=-1&amp;kap=-1&amp;kao=-1&amp;kg=p" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="105.0">
          <font>
             <Font name="Tahoma" size="18.0" />
          </font>
       </JFXTextField>
-      <JFXButton fx:id="applyBtn" layoutX="480.0" layoutY="393.0" onAction="#apply" prefHeight="38.0" prefWidth="114.0" text="Apply">
+      <JFXButton fx:id="applyBtn" layoutX="480.0" layoutY="393.0" onAction="#apply" text="Apply">
          <font>
             <Font name="Tahoma" size="23.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="backBtn" layoutX="4.0" layoutY="393.0" onAction="#back" prefHeight="44.0" prefWidth="114.0" text="Back">
+      <JFXButton fx:id="backBtn" layoutX="4.0" layoutY="393.0" onAction="#back" text="Back">
          <font>
             <Font name="Tahoma" size="23.0" />
          </font>
       </JFXButton>
-      <JFXToggleButton fx:id="clearExitToggle" disable="true" focusTraversable="false" layoutX="339.0" layoutY="253.0" text="Clear on Exit">
+      <JFXToggleButton fx:id="clearExitToggle" disable="true" focusTraversable="false" layoutX="339.0" layoutY="253.0" text="Clear on Exit" AnchorPane.rightAnchor="83.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
@@ -64,22 +69,22 @@
             <Font name="Tahoma" size="19.0" />
          </font>
       </JFXToggleButton>
-      <JFXButton fx:id="resetBtn" layoutX="165.0" layoutY="20.0" onAction="#reset" prefHeight="33.0" prefWidth="69.0" text="reset">
+      <JFXButton fx:id="resetBtn" layoutX="165.0" layoutY="20.0" onAction="#reset" text="reset" AnchorPane.leftAnchor="165.0" AnchorPane.topAnchor="20.0">
          <font>
             <Font name="Tahoma" size="17.0" />
          </font>
       </JFXButton>
-      <JFXToggleButton fx:id="cookieToggle" focusTraversable="false" layoutX="339.0" layoutY="317.0" text="Cookies">
+      <JFXToggleButton fx:id="cookieToggle" focusTraversable="false" layoutX="339.0" layoutY="317.0" text="Cookies" AnchorPane.bottomAnchor="57.0" AnchorPane.rightAnchor="83.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
       </JFXToggleButton>
-      <JFXTextField fx:id="agentField" focusTraversable="false" layoutX="169.0" layoutY="147.0" prefHeight="31.0" prefWidth="417.0" text="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/604.1 (KHTML, like Gecko) JavaFX/8.0 Safari/604.1">
+      <JFXTextField fx:id="agentField" focusTraversable="false" layoutX="191.0" layoutY="147.0" text="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/604.1 (KHTML, like Gecko) JavaFX/8.0 Safari/604.1" AnchorPane.leftAnchor="191.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="147.0">
          <font>
             <Font name="Tahoma" size="18.0" />
          </font>
       </JFXTextField>
-      <Label layoutX="11.0" layoutY="151.0" text="User Agent String:">
+      <Label layoutX="11.0" layoutY="151.0" text="User Agent String:" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="151.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>

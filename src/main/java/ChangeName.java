@@ -38,7 +38,7 @@ public class ChangeName {
     private void changeFileName(){
 
         // Creates a new file with new name, but does not replace old one
-        Core.getUserData().getUserFile().renameTo(new File(nameField.getText() + ".ser"));
+        Core.getUserData().getUserFile().renameTo(new File(nameField.getText() + User.saveExtension));
     }
 
     @FXML private void initialize(){
