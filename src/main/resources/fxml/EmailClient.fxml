@@ -18,7 +18,7 @@
             <Font name="Tahoma Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="accountBtn" focusTraversable="false" layoutX="14.0" layoutY="14.0" onAction="#settings" prefHeight="29.0" prefWidth="154.0" text="Account SettingsController" textFill="#455efb">
+      <JFXButton fx:id="accountBtn" focusTraversable="false" layoutX="14.0" layoutY="14.0" onAction="#settings" prefHeight="29.0" prefWidth="154.0" text="Account Settings" textFill="#455efb">
          <font>
             <Font name="Tahoma Bold" size="15.0" />
          </font>
