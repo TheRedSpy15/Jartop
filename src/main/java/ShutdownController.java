@@ -7,7 +7,7 @@ import javafx.scene.layout.AnchorPane;
  * See LICENSE for details.
  */
 
-public class Shutdown {
+public class ShutdownController {
 
     @FXML private AnchorPane background;
 
@@ -18,7 +18,7 @@ public class Shutdown {
 
     @FXML private void back(){
 
-        Desktop.getAppWindow().close();
+        DesktopController.getAppWindow().close();
     }
 
     @FXML private void shutdown(){

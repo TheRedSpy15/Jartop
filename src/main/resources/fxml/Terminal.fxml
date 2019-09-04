@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--/*
- * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Jartop - Virtual DesktopController Emulator. The MIT License (MIT).
  * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
  * See LICENSE for details.
  */-->
@@ -10,7 +10,7 @@
 <?import com.jfoenix.controls.JFXTextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<AnchorPane prefHeight="437.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Terminal">
+<AnchorPane prefHeight="437.0" prefWidth="700.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TerminalController">
    <children>
       <JFXTextArea fx:id="textArea" cache="true" cacheHint="SPEED" focusColor="#04da04" layoutX="12.0" layoutY="11.0" prefHeight="345.0" prefWidth="677.0" style="-fx-text-fill: #04da04;" unFocusColor="WHITE">
          <font>

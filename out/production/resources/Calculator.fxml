@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--/*
- * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Jartop - Virtual DesktopController Emulator. The MIT License (MIT).
  * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
  * See LICENSE for details.
  */-->
@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="background" prefHeight="383.0" prefWidth="340.0" style="-fx-background-color: #cedede;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculator">
+<AnchorPane fx:id="background" prefHeight="383.0" prefWidth="340.0" style="-fx-background-color: #cedede;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalculatorController">
    <children>
       <Label fx:id="sumLbl" layoutX="24.0" layoutY="14.0" prefHeight="79.0" prefWidth="289.0" text="0">
          <font>

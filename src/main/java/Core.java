@@ -9,13 +9,11 @@ import javafx.stage.Stage;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
-import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.util.concurrent.locks.Lock;
 import java.util.logging.Logger;
 
 /*
@@ -114,7 +112,7 @@ public class Core extends Application {
     private static final String version = "Pre-Alpha";
 
     private static User userData = new User();
-    private static UserAccountSecurity UAS = new UserAccountSecurity();
+    private static UserAccountSecurity security = new UserAccountSecurity();
 
     private static Stage desktop;
 
@@ -179,9 +177,9 @@ public class Core extends Application {
 
         // app window vs desktop window
         if (isApp) {
-            Desktop.getAppWindow().setTitle(fxmlName);
-            Desktop.getAppWindow().setScene(new Scene(pane));
-            Desktop.getAppWindow().show();
+            DesktopController.getAppWindow().setTitle(fxmlName);
+            DesktopController.getAppWindow().setScene(new Scene(pane));
+            DesktopController.getAppWindow().show();
             Logger.getAnonymousLogger().info("Loading app : " + fxmlName);
         } else {
             desktop.getScene().setRoot(pane);
@@ -212,7 +210,7 @@ public class Core extends Application {
         }
     }
 
-    protected static Stage getDesktop() {
+    static Stage getDesktop() {
         return desktop;
     }
 
@@ -228,11 +226,11 @@ public class Core extends Application {
         Core.userData = userData;
     }
 
-    protected static UserAccountSecurity getUAS() {
-        return UAS;
+    protected static UserAccountSecurity getSecurity() {
+        return security;
     }
 
-    static void setUAS(UserAccountSecurity UAS) {
-        Core.UAS = UAS;
+    static void setSecurity(UserAccountSecurity security) {
+        Core.security = security;
     }
 }

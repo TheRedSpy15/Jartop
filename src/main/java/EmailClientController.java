@@ -1,8 +1,5 @@
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
@@ -23,7 +20,7 @@ import java.util.Deque;
  * See LICENSE for details.
  */
 
-public class EmailClient {
+public class EmailClientController {
 
     private MultiPartEmail mail = new MultiPartEmail();
     private Deque<EmailAttachment> attachments = new ArrayDeque<>();
@@ -78,7 +75,7 @@ public class EmailClient {
 
         mail.send();
 
-        Desktop.getAppWindow().close();
+        DesktopController.getAppWindow().close();
     }
 
     @FXML private void attach(){
@@ -97,7 +94,7 @@ public class EmailClient {
                         "*.*")
         );
 
-        file = fileChooser.showOpenDialog(Desktop.getAppWindow());
+        file = fileChooser.showOpenDialog(DesktopController.getAppWindow());
         if (file != null) {
 
             attachment.setPath(file.getPath());

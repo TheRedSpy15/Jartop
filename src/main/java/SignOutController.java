@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  * See LICENSE for details.
  */
 
-public class SignOut {
+public class SignOutController {
 
     @FXML private AnchorPane background;
 
@@ -24,9 +24,9 @@ public class SignOut {
 
         Parent settingsPane = FXMLLoader.load(Core.class.getResource(nameOfApp + ".fxml"));
 
-        Desktop.getAppWindow().setScene(new Scene(settingsPane));
-        Desktop.getAppWindow().show();
-        Desktop.getAppWindow().setTitle(nameOfApp);
+        DesktopController.getAppWindow().setScene(new Scene(settingsPane));
+        DesktopController.getAppWindow().show();
+        DesktopController.getAppWindow().setTitle(nameOfApp);
     }
 
     @FXML private void signOut() throws IOException {
@@ -40,13 +40,13 @@ public class SignOut {
 
         Parent loginScene = FXMLLoader.load(Core.class.getResource("login.fxml"));
 
-        if (Desktop.getAppWindow().isShowing()) Desktop.getAppWindow().close();
-        if (Core.getUAS().getSecurityWindow().isShowing()) Core.getUAS().getSecurityWindow().close();
+        if (DesktopController.getAppWindow().isShowing()) DesktopController.getAppWindow().close();
+        if (Core.getSecurity().getSecurityWindow().isShowing()) Core.getSecurity().getSecurityWindow().close();
 
         Core.getDesktop().setScene(new Scene(loginScene));
 
         Core.setUserData(new User());
-        Core.setUAS(new UserAccountSecurity());
+        Core.setSecurity(new UserAccountSecurity());
 
         Logger.getAnonymousLogger().info("Signed out");
 

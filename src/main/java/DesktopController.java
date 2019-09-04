@@ -18,7 +18,7 @@ import java.util.logging.Logger;
  * See LICENSE for details.
  */
 
-public class Desktop {
+public class DesktopController {
 
     private static Stage appWindow;
     @FXML private Label timeLbl;
@@ -45,17 +45,14 @@ public class Desktop {
         final String nameOfApp = "Terminal";
         final boolean UASApp = true;
 
-        if (!Core.getUserData().isGuest()) {
-
-            loadApp(nameOfApp, UASApp);
-
+        if (!Core.getUserData().isGuest()) loadApp(nameOfApp, UASApp);
+        else
             Notifications
                     .create()
                     .title("Warning")
                     .text("Terminal app disabled when guest")
                     .darkStyle()
                     .showWarning();
-        }
     }
 
     @FXML final void browser() throws IOException {
@@ -109,11 +106,11 @@ public class Desktop {
         appWindow.setOnCloseRequest(e -> Logger.getAnonymousLogger().info("App window closed"));
     }
 
-    private void loadApp(String nameOfApp, boolean UASApp) throws IOException {
+    private static void loadApp(String nameOfApp, boolean UASApp) throws IOException {
 
         if (UASApp) {
 
-            Core.getUAS().UASLoadFXML(nameOfApp, true);
+            UserAccountSecurity.UASLoadFXML(nameOfApp, true);
         } else {
 
             Core.loadAndTitle(nameOfApp, true);
@@ -153,6 +150,6 @@ public class Desktop {
     }
 
     private static void setAppWindow(Stage appWindow) {
-        Desktop.appWindow = appWindow;
+        DesktopController.appWindow = appWindow;
     }
 }

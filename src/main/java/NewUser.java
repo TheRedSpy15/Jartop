@@ -10,7 +10,7 @@ import java.util.logging.Logger;
  * See LICENSE for details.
  */
 
-class NewUser extends Login {
+class NewUser extends LoginController {
 
     final void create() throws IOException {
 

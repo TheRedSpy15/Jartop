@@ -9,13 +9,13 @@ import java.io.IOException;
  * See LICENSE for details.
  */
 
-public class BrowsingHistory extends Browser{
+public class BrowsingHistoryController extends BrowserController {
 
     @FXML private JFXTextArea historyArea;
 
     @FXML private void back() throws IOException {
 
-        new Desktop().browser();
+        new DesktopController().browser();
     }
 
     @FXML private void clear(){

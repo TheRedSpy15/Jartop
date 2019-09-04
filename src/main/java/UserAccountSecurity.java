@@ -73,21 +73,21 @@ class UserAccountSecurity {
             }
         }
 
-        if (signOut) new SignOut().signOut(false);
+        if (signOut) new SignOutController().signOut(false);
     }
 
-    final void UASLoadFXML(String fxmlName, boolean isApp) throws IOException {
+    static void UASLoadFXML(String fxmlName, boolean isApp) throws IOException {
 
-        if (Core.getUAS().verified || // load
+        if (Core.getSecurity().verified || // load
                 Core.getUserData().isGuest() ||
                 Core.getUserData().getPassword().trim().isEmpty()){
 
             Core.loadAndTitle(fxmlName, isApp);
         } else {
 
-            Core.getUAS().authenticate();
+            Core.getSecurity().authenticate();
 
-            if (Core.getUAS().verified){ // load
+            if (Core.getSecurity().verified){ // load
 
                 Core.loadAndTitle(fxmlName, isApp);
             }

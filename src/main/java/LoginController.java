@@ -19,7 +19,7 @@ import java.util.logging.Logger;
  * See LICENSE for details.
  */
 
-public class Login {
+public class LoginController {
 
     @FXML private JFXPasswordField passwordField;
     @FXML private Label userLbl, defaultLbl;
@@ -55,12 +55,12 @@ public class Login {
                         "*" + User.saveExtension)
         );
 
-        userFile = fileChooser.showOpenDialog(Desktop.getAppWindow());
+        userFile = fileChooser.showOpenDialog(DesktopController.getAppWindow());
         if (userFile != null) {
 
             userLbl.setText("Selected User: " + userFile.getName());
 
-            Core.getUAS().setFailedAttempts((byte) 0);
+            Core.getSecurity().setFailedAttempts((byte) 0);
         }
     }
 

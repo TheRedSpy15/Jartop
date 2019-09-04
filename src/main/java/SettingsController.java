@@ -3,7 +3,6 @@ import com.google.common.io.Files;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXColorPicker;
 import com.jfoenix.controls.JFXSlider;
-import com.jfoenix.controls.JFXTabPane;
 import com.jfoenix.controls.JFXToggleButton;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -22,7 +21,7 @@ import java.util.logging.Logger;
  * See LICENSE for details.
  */
 
-public class Settings {
+public class SettingsController {
 
     @FXML private Label nameLbl, guestLbl, statusLbl, hashLbl;
     @FXML private JFXToggleButton sentryToggle, aes256Toggle;
@@ -50,32 +49,32 @@ public class Settings {
                         "*.*")
         );
 
-        file = fileChooser.showOpenDialog(Desktop.getAppWindow());
+        file = fileChooser.showOpenDialog(DesktopController.getAppWindow());
         if (file != null) {
             Core.getUserData().setWallpaperPath(file.getPath());
             wallpaperPreview.setImage(new Image(Core.getUserData().getWallpaperPath()));
-            new Desktop().updateWallpaper();
+            new DesktopController().updateWallpaper();
         }
     }
 
     @FXML private void changeName() throws IOException {
 
-        Core.getUAS().UASLoadFXML("ChangeName", true);
+        UserAccountSecurity.UASLoadFXML("ChangeName", true);
     }
 
     @FXML private void changePassword() throws IOException {
 
-        Core.getUAS().UASLoadFXML("ChangePassword", true);
+        UserAccountSecurity.UASLoadFXML("ChangePassword", true);
     }
 
     @FXML private void browserSettings() throws IOException {
 
-        Core.getUAS().UASLoadFXML("BrowserSettingsMenu", true);
+        UserAccountSecurity.UASLoadFXML("BrowserSettingsMenu", true);
     }
 
     @FXML private void emailSettings() throws IOException {
 
-        Core.getUAS().UASLoadFXML("EmailSettings", true);
+        UserAccountSecurity.UASLoadFXML("EmailSettings", true);
     }
 
     @FXML private void changeColor() {
@@ -98,7 +97,7 @@ public class Settings {
 
     @FXML private void bleach() throws IOException {
 
-        Core.getUAS().UASLoadFXML("Bleach", true);
+        UserAccountSecurity.UASLoadFXML("Bleach", true);
     }
 
     @FXML private void toggleTor() { // change to tor

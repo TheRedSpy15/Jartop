@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  * See LICENSE for details.
  */
 
-public class ChangePassword {
+public class ChangePasswordController {
 
     @FXML private JFXTextField passwordField;
     @FXML private AnchorPane background;
@@ -94,6 +94,6 @@ public class ChangePassword {
         }
 
         Parent settingsPane = FXMLLoader.load(Core.class.getResource("Settings.fxml"));
-        Desktop.getAppWindow().setScene(new Scene(settingsPane));
+        DesktopController.getAppWindow().setScene(new Scene(settingsPane));
     }
 }

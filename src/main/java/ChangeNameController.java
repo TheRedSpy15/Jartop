@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  * See LICENSE for details.
  */
 
-public class ChangeName {
+public class ChangeNameController {
 
     @FXML private JFXTextField nameField;
     @FXML private JFXToggleButton fileNameToggle;
@@ -32,7 +32,7 @@ public class ChangeName {
 
         Parent settingsPane = FXMLLoader.load(Core.class.getResource("Settings.fxml"));
 
-        Desktop.getAppWindow().setScene(new Scene(settingsPane));
+        DesktopController.getAppWindow().setScene(new Scene(settingsPane));
     }
 
     private void changeFileName(){

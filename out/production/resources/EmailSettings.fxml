@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--/*
- * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Jartop - Virtual DesktopController Emulator. The MIT License (MIT).
  * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
  * See LICENSE for details.
  */-->
@@ -14,9 +14,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="background" prefHeight="441.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmailSettings">
+<AnchorPane fx:id="background" prefHeight="441.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmailSettingsController">
     <children>
-        <Label layoutX="14.0" layoutY="14.0" text="Settings">
+        <Label layoutX="14.0" layoutY="14.0" text="SettingsController">
             <font>
                 <Font name="Tahoma Bold" size="35.0" />
             </font>

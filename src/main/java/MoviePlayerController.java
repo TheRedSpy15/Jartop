@@ -12,7 +12,7 @@ import java.io.File;
  * See LICENSE for details.
  */
 
-public class MoviePlayer {
+public class MoviePlayerController {
 
     @FXML private MediaView player;
 
@@ -41,7 +41,7 @@ public class MoviePlayer {
                         "*.*")
         );
 
-        file = fileChooser.showOpenDialog(Desktop.getAppWindow());
+        file = fileChooser.showOpenDialog(DesktopController.getAppWindow());
         if (file != null) {
             Media media = new Media(file.toURI().toString());
             MediaPlayer mediaPlayer = new MediaPlayer(media);

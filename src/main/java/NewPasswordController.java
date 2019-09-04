@@ -9,7 +9,7 @@ import java.io.IOException;
  * See LICENSE for details.
  */
 
-public class NewPassword {
+public class NewPasswordController {
 
     @FXML private JFXTextField accountField, passwordField;
 

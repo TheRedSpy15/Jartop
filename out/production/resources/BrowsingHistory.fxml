@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--/*
- * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Jartop - Virtual DesktopController Emulator. The MIT License (MIT).
  * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
  * See LICENSE for details.
  */-->
@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrowsingHistory">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrowsingHistoryController">
    <children>
       <JFXTextArea fx:id="historyArea" editable="false" layoutX="14.0" layoutY="46.0" prefHeight="350.0" prefWidth="570.0">
          <font>

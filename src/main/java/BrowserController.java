@@ -13,7 +13,7 @@ import java.util.logging.Logger;
  * See LICENSE for details.
  */
 
-public class Browser {
+public class BrowserController {
 
     @FXML private WebView browserView = new WebView();
     @FXML private JFXTextField urlField;
@@ -42,7 +42,7 @@ public class Browser {
 
     @FXML private void settings() throws IOException {
 
-        Core.getUAS().UASLoadFXML("BrowserSettingsMenu", true);
+        UserAccountSecurity.UASLoadFXML("BrowserSettingsMenu", true);
     }
 
     @FXML private void refresh() {
@@ -68,7 +68,7 @@ public class Browser {
 
     @FXML private void history() throws IOException {
 
-        Core.getUAS().UASLoadFXML("BrowsingHistory", true);
+        UserAccountSecurity.UASLoadFXML("BrowsingHistory", true);
     }
 
     @FXML private void initialize() {

@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * See LICENSE for details.
  */
 
-public class Calculator {
+public class CalculatorController {
 
     @FXML private Label sumLbl, valuesLbl;
     @FXML private AnchorPane background;

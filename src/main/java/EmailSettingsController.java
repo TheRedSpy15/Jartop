@@ -11,7 +11,7 @@ import java.io.IOException;
  * See LICENSE for details.
  */
 
-public class EmailSettings extends EmailClient {
+public class EmailSettingsController extends EmailClientController {
 
     @FXML private JFXTextField addressField, passwordField, providerField, portField;
     @FXML private JFXToggleButton sslToggle;

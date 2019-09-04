@@ -12,7 +12,7 @@ import java.io.IOException;
  * See LICENSE for details.
  */
 
-public class BrowserSettings extends Browser{
+public class BrowserSettingsController extends BrowserController {
 
     // Defaults
     static final byte defaultHistory = 100;
@@ -43,7 +43,7 @@ public class BrowserSettings extends Browser{
 
     @FXML private void back() throws IOException {
 
-        new Desktop().browser();
+        new DesktopController().browser();
     }
 
     @FXML private void apply() throws IOException {

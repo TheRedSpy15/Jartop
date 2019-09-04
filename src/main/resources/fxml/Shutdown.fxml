@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--/*
- * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Jartop - Virtual DesktopController Emulator. The MIT License (MIT).
  * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
  * See LICENSE for details.
  */-->
@@ -10,9 +10,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<AnchorPane fx:id="background" prefHeight="196.0" prefWidth="301.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shutdown">
+<AnchorPane fx:id="background" prefHeight="196.0" prefWidth="301.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShutdownController">
    <children>
-      <Label layoutX="82.0" layoutY="30.0" prefHeight="33.0" prefWidth="137.0" text="Shutdown?">
+      <Label layoutX="82.0" layoutY="30.0" prefHeight="33.0" prefWidth="137.0" text="ShutdownController?">
          <font>
             <Font name="Tahoma Bold" size="24.0" />
          </font>

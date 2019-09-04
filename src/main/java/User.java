@@ -39,16 +39,16 @@ public class User implements Serializable {
     // MIGHT remove with a full release, and this class rarely changes
 
     // Browser
-    private boolean javascriptAllow = BrowserSettings.defaultJavaScript;
-    private boolean popUpAllow = BrowserSettings.defaultPopUp;
-    private boolean autoDelete = BrowserSettings.defaultClearExit;
-    private boolean httpsOnly = BrowserSettings.defaultHttps;
-    private boolean cookiesAllowed = BrowserSettings.defaultCookies;
+    private boolean javascriptAllow = BrowserSettingsController.defaultJavaScript;
+    private boolean popUpAllow = BrowserSettingsController.defaultPopUp;
+    private boolean autoDelete = BrowserSettingsController.defaultClearExit;
+    private boolean httpsOnly = BrowserSettingsController.defaultHttps;
+    private boolean cookiesAllowed = BrowserSettingsController.defaultCookies;
 
-    private String homePageUrl = BrowserSettings.defaultHomePage;
-    private String userAgent = BrowserSettings.defaultUserAgent;
+    private String homePageUrl = BrowserSettingsController.defaultHomePage;
+    private String userAgent = BrowserSettingsController.defaultUserAgent;
 
-    private int maxHistory = BrowserSettings.defaultHistory;
+    private int maxHistory = BrowserSettingsController.defaultHistory;
 
     // Check List
     private Deque<String> todos = new ArrayDeque<>(); // not yet used
@@ -184,12 +184,12 @@ public class User implements Serializable {
 
             loggedIn = false;
 
-            Core.getUAS().setFailedAttempts((byte) (Core.getUAS().getFailedAttempts() + 1));
+            Core.getSecurity().setFailedAttempts((byte) (Core.getSecurity().getFailedAttempts() + 1));
 
             // secure delete
-            if (Core.getUAS().getFailedAttempts() >= maximumTries){
+            if (Core.getSecurity().getFailedAttempts() >= maximumTries){
 
-                Core.getUAS().secureDelete(Core.getUserData().userFile, false);
+                Core.getSecurity().secureDelete(Core.getUserData().userFile, false);
             }
 
             Core.getUserData().wait(bruteForcePauseLength); // to slow down brute force attacks

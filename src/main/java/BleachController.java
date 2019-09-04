@@ -2,10 +2,10 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
-public class Bleach {
+public class BleachController {
 
     @FXML private void bleach() throws IOException {
 
-        Core.getUAS().secureDelete(Core.getUserData().getUserFile(), true);
+        Core.getSecurity().secureDelete(Core.getUserData().getUserFile(), true);
     }
 }

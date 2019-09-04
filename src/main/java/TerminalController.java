@@ -13,7 +13,7 @@ import java.util.logging.Logger;
  * See LICENSE for details.
  */
 
-public class Terminal {
+public class TerminalController {
 
     @FXML private JFXTextArea textArea;
 

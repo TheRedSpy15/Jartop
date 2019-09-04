@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--/*
- * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
+ * Jartop - Virtual DesktopController Emulator. The MIT License (MIT).
  * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
  * See LICENSE for details.
  */-->
@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
-<AnchorPane prefHeight="820.0" prefWidth="1280.0" style="-fx-background-color: #170c01;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MoviePlayer">
+<AnchorPane prefHeight="820.0" prefWidth="1280.0" style="-fx-background-color: #170c01;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MoviePlayerController">
    <children>
       <MediaView fx:id="player" fitHeight="720.0" fitWidth="1280.0" layoutX="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
       <Separator layoutY="719.0" prefHeight="0.0" prefWidth="1280.0" AnchorPane.bottomAnchor="98.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="8.0" />

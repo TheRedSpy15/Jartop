@@ -15,7 +15,7 @@ import java.io.IOException;
  */
 
 @Beta
-public class PasswordManager {
+public class PasswordManagerController {
 
     // need service column
     @FXML private TableColumn accounts, passwords;
@@ -24,7 +24,7 @@ public class PasswordManager {
     @FXML private void create() throws IOException {
 
         Parent changeNamePane = FXMLLoader.load(Core.class.getResource("NewPassword.fxml"));
-        Desktop.getAppWindow().setScene(new Scene(changeNamePane));
+        DesktopController.getAppWindow().setScene(new Scene(changeNamePane));
     }
 
     @FXML private void initialize(){
