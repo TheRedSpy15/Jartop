@@ -1,6 +1,5 @@
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
-import io.sentry.Sentry;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -24,87 +23,6 @@ import java.util.logging.Logger;
  */
 
 public class Core extends Application {
-
-    /*
-        PLANS
-
-    * BROWSER
-    * - ad-blocker (Long term)
-    * - history button - needs finished
-    * - option to change search engine
-    * - manually clear cookies and history button - separate
-    *
-    * MOVIE PLAYER
-    * - time-line
-    * - resize support
-    *
-    * TERMINAL
-    * -
-    *
-    * PASSWORD MANAGER
-    * - needs finished - first draft
-    *
-    * EMAIL CLIENT
-    * - way to receive emails
-    * - contact button to quickly select an address to send to
-    * - make more responsive by removing freeze when sending
-    * - better exception handling
-    * - multiple recipients support
-    * - default buttons
-    *
-    * LOGIN
-    * - need a confirm dialog to overwrite original file when making a new one
-    *   assuming one with the same name exists. dialog should also have a note
-    *   with a suggestion to rename the file, and an option to bleach it before
-    *   overwriting it
-    * - optional remember last loaded user file
-    *
-    * CALCULATOR
-    * - multiplication
-    * - division
-    * - subtraction
-    *
-    * NEW APPS
-    * - chat app
-    * - paint app
-    * - word app
-    * - how to use app
-    * - music app
-    * - calender app
-    * - password manager app - needs finished
-    * - contact app
-    * - check list app
-    * - photo viewer app
-    * - photo editor app
-    * - world map app - controlsfx
-    * - printing app
-    *
-    * SETTINGS
-    * - change file name option when changing username - needs finished
-    * - replace proxies, with tor
-    * - volume slider - needs finished
-    * - wallpaper preview does not move with anchorpane
-    * - ip info on networking tab
-    *
-    * DESKTOP
-    * - desktop tabs in replace of multiple stages (Long term)
-    * - auto resizing wallpaper and icons - basically a listener
-    *
-    * BUGS
-    * - changing wallpaper changes preview, not wallpaper itself
-    * - enabling clear on exit throws exception
-    *
-    * BACK END
-    * - unit tests
-    * - scaling support
-    * - move code to a package
-    * - log4j - needed for sentry
-    * - custom app support (Long term)
-    * - auto saving along with frequency slider
-    * - aspectj or observers
-    * - "everything else" section on trello page
-    * - update to java 9
-     */
 
     static boolean encryptionLimit = true;
 
