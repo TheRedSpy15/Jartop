@@ -11,19 +11,20 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<AnchorPane prefHeight="175.0" prefWidth="275.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AuthenticateController">
+
+<AnchorPane prefHeight="175.0" prefWidth="275.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AuthenticateController">
    <children>
-      <Label layoutX="76.0" layoutY="24.0" text="Verify user!">
+      <Label layoutX="67.0" layoutY="24.0" text="Verify user!" textFill="WHITE">
          <font>
-            <Font name="Tahoma Bold" size="21.0" />
+            <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <JFXPasswordField fx:id="passwordField" focusColor="BLACK" labelFloat="true" layoutX="49.0" layoutY="74.0" onAction="#ok" prefHeight="26.0" prefWidth="176.0" promptText="Password">
+      <JFXPasswordField fx:id="passwordField" focusColor="WHITE" labelFloat="true" layoutX="49.0" layoutY="74.0" onAction="#ok" prefHeight="26.0" prefWidth="176.0" promptText="Password" unFocusColor="#e8e8e8">
          <font>
             <Font name="Tahoma" size="16.0" />
          </font>
       </JFXPasswordField>
-      <JFXButton fx:id="okBtn" buttonType="RAISED" layoutX="95.0" layoutY="124.0" onAction="#ok" prefHeight="36.0" prefWidth="85.0" style="-fx-background-color: grey;" text="Ok">
+      <JFXButton fx:id="okBtn" buttonType="RAISED" layoutX="95.0" layoutY="124.0" onAction="#ok" prefHeight="36.0" prefWidth="85.0" style="-fx-background-color: grey;" text="Ok" textFill="WHITE">
          <font>
             <Font name="Tahoma" size="18.0" />
          </font>

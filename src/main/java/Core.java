@@ -1,5 +1,6 @@
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
+import io.sentry.Sentry;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

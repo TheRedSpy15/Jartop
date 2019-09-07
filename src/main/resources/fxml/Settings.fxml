@@ -106,7 +106,7 @@
                               <Font name="Tahoma" size="20.0" />
                            </font>
                         </Label>
-                        <JFXToggleButton fx:id="sentryToggle" disable="true" focusTraversable="false" layoutX="13.0" layoutY="14.0" text="Sentry error reporting" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="14.0">
+                        <JFXToggleButton fx:id="sentryToggle" focusTraversable="false" layoutX="13.0" layoutY="14.0" text="Sentry error reporting" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="14.0">
                            <font>
                               <Font name="Tahoma" size="16.0" />
                            </font>

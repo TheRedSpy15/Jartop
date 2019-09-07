@@ -228,6 +228,7 @@ public class User implements Serializable {
 
     public final void setName(String name) {
         this.name = name;
+        Logger.getAnonymousLogger().info("Set name to " + name);
     }
 
     protected final synchronized String getPassword() {
@@ -236,6 +237,7 @@ public class User implements Serializable {
 
     protected final synchronized void setPassword(String password) {
         this.password = password;
+        Logger.getAnonymousLogger().info("Updated password");
     }
 
     final boolean isGuest() {
@@ -244,6 +246,7 @@ public class User implements Serializable {
 
     final void setGuest(boolean guest) {
         this.guest = guest;
+        Logger.getAnonymousLogger().info("Set guest to " + guest);
     }
 
     final String getEmailPassword() {
@@ -252,6 +255,7 @@ public class User implements Serializable {
 
     final void setEmailPassword(String emailPassword) {
         this.emailPassword = emailPassword;
+        Logger.getAnonymousLogger().info("Updated email password");
     }
 
     final boolean isJavascriptAllow() {
@@ -260,6 +264,7 @@ public class User implements Serializable {
 
     final void setJavascriptAllow(boolean javascriptAllow) {
         this.javascriptAllow = javascriptAllow;
+        Logger.getAnonymousLogger().info("Set javascript to " + javascriptAllow);
     }
 
     final boolean isPopUpAllow() {
@@ -268,6 +273,7 @@ public class User implements Serializable {
 
     final void setPopUpAllow(boolean popUpAllow) {
         this.popUpAllow = popUpAllow;
+        Logger.getAnonymousLogger().info("Set pop ups to " + popUpAllow);
     }
 
     final boolean isAutoDelete() {
@@ -276,6 +282,7 @@ public class User implements Serializable {
 
     final void setAutoDelete(boolean autoDelete) {
         this.autoDelete = autoDelete;
+        Logger.getAnonymousLogger().info("Set auto delete to " + autoDelete);
     }
 
     final boolean isHttpsOnly() {
@@ -284,6 +291,7 @@ public class User implements Serializable {
 
     final void setHttpsOnly(boolean httpsOnly) {
         this.httpsOnly = httpsOnly;
+        Logger.getAnonymousLogger().info("Set https only to " + httpsOnly);
     }
 
     final boolean isCookiesAllowed() {
@@ -292,6 +300,7 @@ public class User implements Serializable {
 
     final void setCookiesAllowed(boolean cookiesAllowed) {
         this.cookiesAllowed = cookiesAllowed;
+        Logger.getAnonymousLogger().info("Set cookies to " + cookiesAllowed);
     }
 
     final String getHomePageUrl() {
@@ -300,6 +309,7 @@ public class User implements Serializable {
 
     final void setHomePageUrl(String homePageUrl) {
         this.homePageUrl = homePageUrl;
+        Logger.getAnonymousLogger().info("Set home url to " + homePageUrl);
     }
 
     final int getMaxHistory() {
@@ -308,6 +318,7 @@ public class User implements Serializable {
 
     final void setMaxHistory(int maxHistory) {
         this.maxHistory = maxHistory;
+        Logger.getAnonymousLogger().info("Set max history to " + maxHistory);
     }
 
     public final Deque<String> getTodos() {
@@ -316,6 +327,7 @@ public class User implements Serializable {
 
     public final void setTodos(Deque<String> todos) {
         this.todos = todos;
+        Logger.getAnonymousLogger().info("Updated todo");
     }
 
     final Deque<Account> getPasswords() {
@@ -324,6 +336,7 @@ public class User implements Serializable {
 
     public final void setPasswords(Deque<Account> accountDeque) {
         this.accountDeque = accountDeque;
+        Logger.getAnonymousLogger().info("Updated passwords");
     }
 
     final boolean isSslConnection() {
@@ -332,6 +345,7 @@ public class User implements Serializable {
 
     final void setSslConnection(boolean sslConnection) {
         this.sslConnection = sslConnection;
+        Logger.getAnonymousLogger().info("Set ssl to " + sslConnection);
     }
 
     final String getEmailAddress() {
@@ -340,6 +354,7 @@ public class User implements Serializable {
 
     final void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
+        Logger.getAnonymousLogger().info("Set email address to " + emailAddress);
     }
 
     final String getHostName() {
@@ -348,6 +363,7 @@ public class User implements Serializable {
 
     final void setHostName(String hostName) {
         this.hostName = hostName;
+        Logger.getAnonymousLogger().info("Set hostname to " + hostName);
     }
 
     final short getSmtpPort() {
@@ -356,6 +372,7 @@ public class User implements Serializable {
 
     final void setSmtpPort(short smtpPort) {
         this.smtpPort = smtpPort;
+        Logger.getAnonymousLogger().info("Set smtp port to " + smtpPort);
     }
 
     public final HashMap<String, String> getContacts() {
@@ -364,6 +381,7 @@ public class User implements Serializable {
 
     public final void setContacts(HashMap<String, String> contacts) {
         this.contacts = contacts;
+        Logger.getAnonymousLogger().info("Updated contacts");
     }
 
     public final String getProxyAddress() {
@@ -372,6 +390,7 @@ public class User implements Serializable {
 
     final void setProxyAddress(String proxyAddress) {
         this.proxyAddress = proxyAddress;
+        Logger.getAnonymousLogger().info("Set proxy address to " + proxyAddress);
     }
 
     public final short getProxyPort() {
@@ -380,6 +399,7 @@ public class User implements Serializable {
 
     final void setProxyPort(short proxyPort) {
         this.proxyPort = proxyPort;
+        Logger.getAnonymousLogger().info("Set proxy port to " + proxyPort);
     }
 
     final boolean isSentryReporting() {
@@ -388,6 +408,7 @@ public class User implements Serializable {
 
     final void setSentryReporting(boolean sentryReporting) {
         this.sentryReporting = sentryReporting;
+        Logger.getAnonymousLogger().info("Set sentry reporting to " + sentryReporting);
     }
 
     final String getWallpaperPath() {
@@ -396,6 +417,7 @@ public class User implements Serializable {
 
     final void setWallpaperPath(String wallpaperPath) {
         this.wallpaperPath = wallpaperPath;
+        Logger.getAnonymousLogger().info("Set wallpaper path to " + wallpaperPath);
     }
 
     public final String getPreferredColor() {
@@ -404,6 +426,7 @@ public class User implements Serializable {
 
     final void setPreferredColor(String preferredColor) {
         this.preferredColor = preferredColor;
+        Logger.getAnonymousLogger().info("Set preferred color to " + preferredColor);
     }
 
     final double getVolume() {
@@ -412,6 +435,7 @@ public class User implements Serializable {
 
     public final void setVolume(double volume) {
         this.volume = volume;
+        Logger.getAnonymousLogger().info("Set volume to " + volume);
     }
 
     final File getUserFile() {
@@ -420,6 +444,7 @@ public class User implements Serializable {
 
     final void setUserFile(File userFile) {
         this.userFile = userFile;
+        Logger.getAnonymousLogger().info("Set userfile to " + userFile);
     }
 
     final boolean isEncryptWith256() {
@@ -436,6 +461,7 @@ public class User implements Serializable {
 
     final void setUserAgent(String userAgent) {
         this.userAgent = userAgent;
+        Logger.getAnonymousLogger().info("Set user agent to " + userAgent);
     }
 
     final boolean isTorConnection() {
@@ -444,5 +470,6 @@ public class User implements Serializable {
 
     final void setTorConnection(boolean torConnection) {
         this.torConnection = torConnection;
+        Logger.getAnonymousLogger().info("Set tor connection to " + torConnection);
     }
 }

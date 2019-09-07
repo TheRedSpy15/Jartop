@@ -1,3 +1,4 @@
+import io.sentry.Sentry;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -88,6 +89,10 @@ public class DesktopController {
     }
 
     @FXML private void initialize() {
+
+        if (Core.getUserData().isSentryReporting())
+            Sentry.init("https://6db11d4c3f864632aa5b1932f6c80c82@sentry.io/220483");
+
 
         // resize wallpaper listener
         wallpaper.fitHeightProperty().bind(Core.getDesktop().heightProperty());

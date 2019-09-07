@@ -10,6 +10,7 @@ import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
+import org.controlsfx.control.Notifications;
 
 import java.io.File;
 import java.io.IOException;
@@ -149,7 +150,15 @@ public class SettingsController {
         // sentry
         sentryToggle.selectedProperty().setValue(Core.getUserData().isSentryReporting());
         sentryToggle.setOnAction(
-                e -> Core.getUserData().setSentryReporting(sentryToggle.selectedProperty().getValue())
+                e -> {
+                    Core.getUserData().setSentryReporting(sentryToggle.selectedProperty().getValue());
+                    Notifications
+                            .create()
+                            .title("Notice")
+                            .text("Will take effect on restart")
+                            .darkStyle()
+                            .showInformation();
+                }
         );
 
         // aes-256
