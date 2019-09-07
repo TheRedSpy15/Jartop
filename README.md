@@ -27,7 +27,6 @@ Jartop was written in Java, and runs in a JVM, inherently making it secure.
 
 But there are ___many___ other security measures built in:
 
-- Tor (___Connections___)
 - AES-128/256 with SHA-128/256 hashing (___Encryption___)
 - Secure wiping of account after so many failed attempts (___Forensics___)
 - Secure and private browser (___Browsing___)
