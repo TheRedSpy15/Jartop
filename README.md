@@ -1,4 +1,6 @@
 # Jartop
+[![CodeFactor](https://www.codefactor.io/repository/github/theredspy15/jartop/badge)](https://www.codefactor.io/repository/github/theredspy15/jartop)
+
 A virtual desktop running in Java, designed to emulate an actual desktop. Meant for seniors who need a simple computer, schools
 whom need specific functionality in their computers, and for those who just want a sandbox enviroment to mess around in.
 
