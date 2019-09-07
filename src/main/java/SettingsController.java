@@ -31,7 +31,7 @@ public class SettingsController {
     @FXML private JFXColorPicker colorPicker;
     @FXML private JFXToggleButton torToggle;
     @FXML private TabPane background;
-    @FXML private JFXButton createBtn, bleachBtn;
+    @FXML private JFXButton createBtn, bleachBtn, changeNameBtn;
 
     @FXML private void changeWallpaper() {
 
@@ -123,6 +123,13 @@ public class SettingsController {
 
     @FXML private void initialize() throws IOException {
 
+        // guest checks
+        if (Core.getUserData().isGuest()) {
+            changeNameBtn.setDisable(true);
+            bleachBtn.setDisable(true);
+            aes256Toggle.setDisable(true);
+        }
+
         // background
         background.setStyle("-fx-background-color: " + Core.getUserData().getPreferredColor());
 
@@ -162,7 +169,7 @@ public class SettingsController {
         );
 
         // aes-256
-        aes256Toggle.setDisable(Core.encryptionLimit);
+        if (!Core.getUserData().isGuest()) aes256Toggle.setDisable(Core.encryptionLimit);
         aes256Toggle.selectedProperty().setValue(Core.getUserData().isEncryptWith256());
         aes256Toggle.setOnAction(
                 e -> Core.getUserData().setEncryptWith256(aes256Toggle.selectedProperty().getValue())
