@@ -47,7 +47,7 @@ We have long term plans for Jartop. Many of those plans are big, and some are sm
 We have a trello page with all the currently planned, and still considering features for
 the future of Jartop
 
-Trello: link pending
+Projects: https://github.com/TheRedSpy15/Jartop/projects 
 
 ## More Questions?
 For more info, go to the wiki on our Github page. It is covers multiple questions about Jartop. We highly
