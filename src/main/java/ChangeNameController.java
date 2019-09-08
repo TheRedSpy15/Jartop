@@ -1,9 +1,6 @@
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXToggleButton;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.File;
@@ -30,9 +27,7 @@ public class ChangeNameController {
 
         if(fileNameToggle.selectedProperty().getValue()) changeFileName();
 
-        Parent settingsPane = FXMLLoader.load(Core.class.getResource("Settings.fxml"));
-
-        DesktopController.getAppWindow().setScene(new Scene(settingsPane));
+        Core.loadAndTitle("Settings", true);
     }
 
     private void changeFileName(){

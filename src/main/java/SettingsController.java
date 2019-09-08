@@ -93,7 +93,8 @@ public class SettingsController {
 
     @FXML private void createAccount() throws IOException {
 
-        Core.loadAndTitle("NewUser", true);
+        Core.getUserData().setGuest(false);
+        Core.loadAndTitle("ChangeName", true);
     }
 
     @FXML private void bleach() throws IOException {

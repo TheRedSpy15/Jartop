@@ -34,16 +34,14 @@ public class SignOutController {
         signOut(true);
     }
 
-    final void signOut(boolean saveOnOut) throws IOException {
+    static void signOut(boolean saveOnOut) throws IOException {
 
         if (saveOnOut) Core.nonGuestSave();
-
-        Parent loginScene = FXMLLoader.load(Core.class.getResource("login.fxml"));
 
         if (DesktopController.getAppWindow().isShowing()) DesktopController.getAppWindow().close();
         if (Core.getSecurity().getSecurityWindow().isShowing()) Core.getSecurity().getSecurityWindow().close();
 
-        Core.getDesktop().setScene(new Scene(loginScene));
+        Core.loadAndTitle("Login", false);
 
         Core.setUserData(new User());
         Core.setSecurity(new UserAccountSecurity());

@@ -49,7 +49,7 @@ public class Core extends Application {
 
         desktop = primaryStage;
 
-        Parent loginScene = FXMLLoader.load(getClass().getResource("fxml/login.fxml"));
+        Parent loginScene = FXMLLoader.load(getClass().getResource("fxml/Login.fxml"));
 
         // window config
         desktop.setScene(new Scene(loginScene));
