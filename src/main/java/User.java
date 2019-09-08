@@ -2,21 +2,9 @@ import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
 import org.controlsfx.control.Notifications;
 
-import javax.crypto.BadPaddingException;
-import javax.crypto.Cipher;
-import javax.crypto.CipherInputStream;
-import javax.crypto.CipherOutputStream;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.NoSuchPaddingException;
-import javax.crypto.SealedObject;
+import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayDeque;
@@ -78,7 +66,7 @@ public class User implements Serializable {
     private boolean torConnection = false;
 
     private String wallpaperPath = "images/wallpapericon.jpg";
-    private String preferredColor = "#FFFFFF";
+    private String preferredColor = "#D2B48C";
 
     private double volume = 0.3;
 
