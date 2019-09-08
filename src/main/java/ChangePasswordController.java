@@ -1,8 +1,5 @@
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import org.controlsfx.control.Notifications;
 
@@ -93,7 +90,6 @@ public class ChangePasswordController {
             }
         }
 
-        Parent settingsPane = FXMLLoader.load(Core.class.getResource("Settings.fxml"));
-        DesktopController.getAppWindow().setScene(new Scene(settingsPane));
+        Core.loadAndTitle("Settings", true);
     }
 }

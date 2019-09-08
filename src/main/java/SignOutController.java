@@ -1,7 +1,4 @@
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import org.controlsfx.control.Notifications;
 
@@ -20,13 +17,7 @@ public class SignOutController {
 
     @FXML private void back() throws IOException {
 
-        String nameOfApp = "Settings";
-
-        Parent settingsPane = FXMLLoader.load(Core.class.getResource(nameOfApp + ".fxml"));
-
-        DesktopController.getAppWindow().setScene(new Scene(settingsPane));
-        DesktopController.getAppWindow().show();
-        DesktopController.getAppWindow().setTitle(nameOfApp);
+        Core.loadAndTitle("Settings", true);
     }
 
     @FXML private void signOut() throws IOException {

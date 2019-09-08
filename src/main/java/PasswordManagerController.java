@@ -1,8 +1,5 @@
 import com.google.common.annotations.Beta;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
@@ -23,8 +20,7 @@ public class PasswordManagerController {
 
     @FXML private void create() throws IOException {
 
-        Parent changeNamePane = FXMLLoader.load(Core.class.getResource("NewPassword.fxml"));
-        DesktopController.getAppWindow().setScene(new Scene(changeNamePane));
+        Core.loadAndTitle("NewPassword", true);
     }
 
     @FXML private void initialize(){
