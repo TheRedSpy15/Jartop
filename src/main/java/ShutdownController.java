@@ -18,7 +18,7 @@ public class ShutdownController {
 
     @FXML private void back(){
 
-        DesktopController.getAppWindow().close();
+        background.getScene().getWindow().hide();
     }
 
     @FXML private void shutdown(){

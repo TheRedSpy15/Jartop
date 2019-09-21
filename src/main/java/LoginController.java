@@ -3,10 +3,11 @@ import com.jfoenix.controls.JFXToggleButton;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import org.controlsfx.control.Notifications;
 
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.io.File;
@@ -25,6 +26,7 @@ public class LoginController {
     @FXML private Label userLbl, defaultLbl;
     @FXML private JFXToggleButton load256Toggle;
     @FXML private ImageView wallpaper;
+    @FXML private AnchorPane anchor;
     private File userFile;
 
     @FXML private void login() throws IOException {
@@ -55,7 +57,7 @@ public class LoginController {
                         "*" + User.saveExtension)
         );
 
-        userFile = fileChooser.showOpenDialog(DesktopController.getAppWindow());
+        userFile = fileChooser.showOpenDialog(wallpaper.getScene().getWindow());
         if (userFile != null) {
 
             userLbl.setText("Selected User: " + userFile.getName());

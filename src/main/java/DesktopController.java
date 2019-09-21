@@ -23,8 +23,7 @@ import java.util.logging.Logger;
 
 public class DesktopController {
 
-    private static Stage appWindow;
-    static List<Stage> appWindows = new ArrayList<>(10);
+    static List<Stage> appWindows = new ArrayList<>(20);
     @FXML private Label timeLbl;
     @FXML private ImageView wallpaper;
 
@@ -99,6 +98,14 @@ public class DesktopController {
         loadApp(nameOfApp, UASApp);
     }
 
+    @FXML private void notepad() throws IOException {
+
+        final String nameOfApp = "Notepad";
+        final boolean UASApp = false;
+
+        loadApp(nameOfApp, UASApp);
+    }
+
     @FXML private void initialize() {
 
         if (Core.getUserData().isSentryReporting())
@@ -110,17 +117,12 @@ public class DesktopController {
         wallpaper.fitWidthProperty().bind(Core.getDesktop().widthProperty());
         updateWallpaper();
 
-        appWindow = new Stage();
-
         // clock thread
         Thread timeThread = new Thread(this::updateTime);
         timeThread.setPriority(Thread.currentThread().getPriority() - 1);
         timeThread.start();
 
         Core.testConnection();
-
-        appWindow.setOnCloseRequest(e -> Logger.getAnonymousLogger().info("App window closed"));
-        appWindow.setAlwaysOnTop(true);
     }
 
     static int newWindow() {
@@ -172,13 +174,5 @@ public class DesktopController {
         wallpaper.setImage(new Image(Core.getUserData().getWallpaperPath()));
 
         Logger.getAnonymousLogger().info("Wallpaper updated");
-    }
-
-    public static Stage getAppWindow() {
-        return appWindow;
-    }
-
-    private static void setAppWindow(Stage appWindow) {
-        DesktopController.appWindow = appWindow;
     }
 }

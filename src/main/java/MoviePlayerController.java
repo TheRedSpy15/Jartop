@@ -41,7 +41,7 @@ public class MoviePlayerController {
                         "*.*")
         );
 
-        file = fileChooser.showOpenDialog(DesktopController.getAppWindow());
+        file = fileChooser.showOpenDialog(player.getScene().getWindow());
         if (file != null) {
             Media media = new Media(file.toURI().toString());
             MediaPlayer mediaPlayer = new MediaPlayer(media);

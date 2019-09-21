@@ -32,7 +32,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXMasonryPane prefWidth="300.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="25.0">
+      <JFXMasonryPane cache="true" cacheHint="SCALE" cellHeight="50.0" limitColumn="4" limitRow="50" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
          <children>
             <JFXButton fx:id="calculatorBtn" focusTraversable="false" onAction="#calculator" text=" ">
                <graphic>
@@ -106,7 +106,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="noteBtn" focusTraversable="false" layoutX="160.0" layoutY="460.0" text=" ">
+            <JFXButton fx:id="noteBtn" focusTraversable="false" layoutX="160.0" layoutY="460.0" onAction="#notepad" text=" ">
                <graphic>
                   <ImageView fitHeight="92.0" fitWidth="100.0" preserveRatio="true">
                      <image>

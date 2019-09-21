@@ -23,7 +23,7 @@ import java.util.Deque;
 public class EmailClientController {
 
     private MultiPartEmail mail = new MultiPartEmail();
-    private Deque<EmailAttachment> attachments = new ArrayDeque<>();
+    private Deque<EmailAttachment> attachments = new ArrayDeque<>(5);
 
     @FXML private JFXTextField addressField, subjectField, bccField, ccField;
     @FXML private Label attachLbl;
@@ -75,7 +75,7 @@ public class EmailClientController {
 
         mail.send();
 
-        DesktopController.getAppWindow().close();
+        background.getScene().getWindow().hide();
     }
 
     @FXML private void attach(){
@@ -94,7 +94,7 @@ public class EmailClientController {
                         "*.*")
         );
 
-        file = fileChooser.showOpenDialog(DesktopController.getAppWindow());
+        file = fileChooser.showOpenDialog(background.getScene().getWindow());
         if (file != null) {
 
             attachment.setPath(file.getPath());

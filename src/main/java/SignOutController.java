@@ -1,5 +1,6 @@
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import org.controlsfx.control.Notifications;
 
 import java.io.IOException;
@@ -29,7 +30,7 @@ public class SignOutController {
 
         if (saveOnOut) Core.nonGuestSave();
 
-        if (DesktopController.getAppWindow().isShowing()) DesktopController.getAppWindow().close();
+        for (Stage stage : DesktopController.appWindows) if (stage.isShowing()) stage.close();
         if (Core.getSecurity().getSecurityWindow().isShowing()) Core.getSecurity().getSecurityWindow().close();
 
         Core.loadAndTitle("Login", false);

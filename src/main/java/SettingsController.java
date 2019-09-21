@@ -50,7 +50,7 @@ public class SettingsController {
                         "*.*")
         );
 
-        file = fileChooser.showOpenDialog(DesktopController.getAppWindow());
+        file = fileChooser.showOpenDialog(background.getScene().getWindow());
         if (file != null) {
             Core.getUserData().setWallpaperPath(file.getPath());
             wallpaperPreview.setImage(new Image(Core.getUserData().getWallpaperPath()));

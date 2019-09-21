@@ -1,9 +1,12 @@
 import javafx.fxml.FXML;
+import javafx.scene.layout.AnchorPane;
 
 public class HelpController {
 
+    @FXML AnchorPane anchor;
+
     @FXML private void ok() {
 
-        DesktopController.getAppWindow().close();
+        anchor.getScene().getWindow().hide();
     }
 }
