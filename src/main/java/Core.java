@@ -96,9 +96,10 @@ public class Core extends Application {
 
         // app window vs desktop window
         if (isApp) {
-            DesktopController.getAppWindow().setTitle(fxmlName);
-            DesktopController.getAppWindow().setScene(new Scene(pane));
-            DesktopController.getAppWindow().show();
+            int id = DesktopController.newWindow();
+            DesktopController.appWindows.get(id).setTitle(fxmlName);
+            DesktopController.appWindows.get(id).setScene(new Scene(pane));
+            DesktopController.appWindows.get(id).show();
             Logger.getAnonymousLogger().info("Loading app : " + fxmlName);
         } else {
             desktop.getScene().setRoot(pane);

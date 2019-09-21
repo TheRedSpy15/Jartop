@@ -39,10 +39,10 @@ public class User implements Serializable {
     private int maxHistory = BrowserSettingsController.defaultHistory;
 
     // Check List
-    private Deque<String> todos = new ArrayDeque<>(); // not yet used
+    private Deque<String> todos = new ArrayDeque<>(100); // not yet used
 
     // Password Manager
-    private Deque<Account> accountDeque = new ArrayDeque<>();
+    private Deque<Account> accountDeque = new ArrayDeque<>(100);
 
     // EmailClient
     private boolean sslConnection;
@@ -54,7 +54,7 @@ public class User implements Serializable {
     private short smtpPort;
 
     // Contacts
-    private HashMap<String, String> contacts = new HashMap<>(); // <name, address> // not yet used
+    private HashMap<String, String> contacts = new HashMap<>(100); // <name, address> // not yet used
 
     // Proxy
     private String proxyAddress;

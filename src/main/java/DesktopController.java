@@ -10,7 +10,9 @@ import org.controlsfx.control.Notifications;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.logging.Logger;
 
 /*
@@ -22,6 +24,7 @@ import java.util.logging.Logger;
 public class DesktopController {
 
     private static Stage appWindow;
+    static List<Stage> appWindows = new ArrayList<>(10);
     @FXML private Label timeLbl;
     @FXML private ImageView wallpaper;
 
@@ -118,6 +121,18 @@ public class DesktopController {
 
         appWindow.setOnCloseRequest(e -> Logger.getAnonymousLogger().info("App window closed"));
         appWindow.setAlwaysOnTop(true);
+    }
+
+    static int newWindow() {
+
+        Stage stage = new Stage();
+        stage.setOnCloseRequest(e -> {
+            Logger.getAnonymousLogger().info("App window closed");
+            appWindows.remove(stage);
+        });
+        stage.setAlwaysOnTop(true);
+        appWindows.add(stage);
+        return appWindows.indexOf(stage);
     }
 
     private static void loadApp(String nameOfApp, boolean UASApp) throws IOException {
