@@ -88,6 +88,14 @@ public class DesktopController {
         loadApp(nameOfApp, UASApp);
     }
 
+    @FXML private void help() throws IOException {
+
+        final String nameOfApp = "Help";
+        final boolean UASApp = false;
+
+        loadApp(nameOfApp, UASApp);
+    }
+
     @FXML private void initialize() {
 
         if (Core.getUserData().isSentryReporting())
@@ -109,6 +117,7 @@ public class DesktopController {
         Core.testConnection();
 
         appWindow.setOnCloseRequest(e -> Logger.getAnonymousLogger().info("App window closed"));
+        appWindow.setAlwaysOnTop(true);
     }
 
     private static void loadApp(String nameOfApp, boolean UASApp) throws IOException {
