@@ -4,7 +4,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
@@ -55,6 +57,7 @@ public class Core extends Application {
         desktop.setScene(new Scene(loginScene));
         desktop.setTitle("Jartop - " + version);
         desktop.setOnCloseRequest(e -> shutdown());
+        desktop.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
 
         desktop.setFullScreen(true);
         desktop.show();
@@ -99,6 +102,7 @@ public class Core extends Application {
             int id = DesktopController.newWindow();
             DesktopController.appWindows.get(id).setTitle(fxmlName);
             DesktopController.appWindows.get(id).setScene(new Scene(pane));
+            DesktopController.appWindows.get(id).initStyle(StageStyle.UTILITY);
             DesktopController.appWindows.get(id).show();
             Logger.getAnonymousLogger().info("Loading app : " + fxmlName);
         } else {
