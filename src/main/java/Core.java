@@ -7,10 +7,14 @@ import javafx.scene.Scene;
 import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import org.apache.commons.configuration2.Configuration;
+import org.apache.commons.configuration2.builder.fluent.Configurations;
+import org.apache.commons.configuration2.ex.ConfigurationException;
 
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -27,14 +31,13 @@ import java.util.logging.Logger;
 public class Core extends Application {
 
     static boolean encryptionLimit = true;
-
-    static final String defaultPassword = versionChecksum();
-
+    static boolean schoolMode = false;
+    static Configuration config;
+    static String defaultPassword = versionChecksum();
+    private static final Configurations configs = new Configurations();
     private static final String version = "Pre-Alpha";
-
     private static User userData = new User();
     private static UserAccountSecurity security = new UserAccountSecurity();
-
     private static Stage desktop;
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
@@ -42,6 +45,16 @@ public class Core extends Application {
         Logger.getAnonymousLogger().info("Booting up...");
 
         encryptionLimit = Cipher.getMaxAllowedKeyLength("RC5")<256;
+
+        if (new File("school.properties").exists()) {
+            schoolMode = true;
+            try {
+                config = configs.properties(new File("school.properties"));
+            } catch (ConfigurationException e) {
+                e.printStackTrace();
+            }
+            defaultPassword = config.getString("defaultPassword");
+        }
 
         launch(args);
     }

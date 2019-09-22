@@ -29,6 +29,8 @@ dependencies {
     implementation 'com.github.RandomAdversary:PwnedPasswords:3.0'
     implementation 'org.controlsfx:controlsfx:11.0.0'
     implementation 'io.sentry:sentry:1.7.27'
+    implementation group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.4'
+    implementation group: 'org.apache.commons', name: 'commons-configuration2', version: '2.6'
 }
 
 run {
