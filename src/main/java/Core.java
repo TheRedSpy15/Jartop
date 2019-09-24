@@ -53,7 +53,7 @@ public class Core extends Application {
             } catch (ConfigurationException e) {
                 e.printStackTrace();
             }
-            defaultPassword = config.getString("defaultPassword");
+            defaultPassword = config.getString("passwordStudent", versionChecksum());
         }
 
         launch(args);

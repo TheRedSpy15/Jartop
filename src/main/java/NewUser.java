@@ -20,6 +20,13 @@ class NewUser extends LoginController {
         Core.getUserData().setUserFile(userFile);
         Core.getUserData().setName(Core.getUserData().getUserFile().getName().replace(".ser",""));
 
+        if (Core.schoolMode) {
+            Core.getUserData().setPasswordSchool(Core.config.getString("passwordSchool", ""));
+            Core.getUserData().setPassword(Core.config.getString("passwordStudent", "student"));
+            Core.getUserData().setName(Core.config.getString("nameStudent", "student"));
+            Core.getUserData().setSentryReporting(Core.config.getBoolean("errorReporting", true));
+        }
+
         Core.loadAndTitle("Desktop", false);
 
         Core.nonGuestSave();

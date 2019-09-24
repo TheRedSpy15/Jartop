@@ -31,7 +31,7 @@ public class SettingsController {
     @FXML private JFXColorPicker colorPicker;
     @FXML private JFXToggleButton torToggle;
     @FXML private TabPane background;
-    @FXML private JFXButton createBtn, bleachBtn, changeNameBtn;
+    @FXML private JFXButton createBtn, bleachBtn, changeNameBtn, changePasswordBtn;
 
     @FXML private void changeWallpaper() {
 
@@ -129,6 +129,13 @@ public class SettingsController {
             changeNameBtn.setDisable(true);
             bleachBtn.setDisable(true);
             aes256Toggle.setDisable(true);
+        }
+
+        // school checks
+        if (Core.schoolMode) {
+            changePasswordBtn.setDisable(!Core.config.getBoolean("allowChangePassword", false));
+            bleachBtn.setDisable(!Core.config.getBoolean("allowBleach", false));
+            changeNameBtn.setDisable(!Core.config.getBoolean("allowChangeName", false));
         }
 
         // background

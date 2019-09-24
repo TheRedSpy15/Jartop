@@ -17,6 +17,13 @@ public class AuthenticateController extends UserAccountSecurity{
 
             Core.getSecurity().setVerified();
             Core.getSecurity().getSecurityWindow().close();
+        } else if (Core.schoolMode) {
+
+            if (passwordField.getText().equals(Core.getUserData().getPasswordSchool())) {
+
+                Core.getSecurity().setVerified();
+                Core.getSecurity().getSecurityWindow().close();
+            }
         }
     }
 }

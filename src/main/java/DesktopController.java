@@ -111,6 +111,9 @@ public class DesktopController {
         if (Core.getUserData().isSentryReporting())
             Sentry.init("https://6db11d4c3f864632aa5b1932f6c80c82@sentry.io/220483");
 
+        if (Core.schoolMode) {
+
+        }
 
         // resize wallpaper listener
         wallpaper.fitHeightProperty().bind(Core.getDesktop().heightProperty());
@@ -139,13 +142,21 @@ public class DesktopController {
 
     private static void loadApp(String nameOfApp, boolean UASApp) throws IOException {
 
-        if (UASApp) {
+        if (Core.config.getBoolean("allow" + nameOfApp)) {
+            if (UASApp) {
 
-            UserAccountSecurity.UASLoadFXML(nameOfApp, true);
-        } else {
+                UserAccountSecurity.UASLoadFXML(nameOfApp, true);
+            } else {
 
-            Core.loadAndTitle(nameOfApp, true);
-        }
+                Core.loadAndTitle(nameOfApp, true);
+            }
+        } else
+            Notifications
+                    .create()
+                    .title("Blocked")
+                    .text("App disabled by school")
+                    .darkStyle()
+                    .showWarning();
     }
 
     private void updateTime() {

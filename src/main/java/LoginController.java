@@ -109,7 +109,10 @@ public class LoginController {
 
         Logger.getAnonymousLogger().info("encryption size limited to 128 : " + Core.encryptionLimit);
 
-        defaultLbl.setText("Default password: " + Core.defaultPassword);
+        if (!Core.schoolMode)
+            defaultLbl.setText("Default password: " + Core.defaultPassword);
+        else
+            defaultLbl.setText("");
 
         load256Toggle.setDisable(Core.encryptionLimit);
     }

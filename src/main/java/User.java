@@ -77,6 +77,7 @@ public class User implements Serializable {
 
     private String name = "Guest";
     private String password = Core.defaultPassword; // default
+    private String passwordSchool = "";
 
     // Encryption
     private boolean encryptWith256 = false;
@@ -459,5 +460,13 @@ public class User implements Serializable {
     final void setTorConnection(boolean torConnection) {
         this.torConnection = torConnection;
         Logger.getAnonymousLogger().info("Set tor connection to " + torConnection);
+    }
+
+    public String getPasswordSchool() {
+        return passwordSchool;
+    }
+
+    public void setPasswordSchool(String passwordSchool) {
+        this.passwordSchool = passwordSchool;
     }
 }
