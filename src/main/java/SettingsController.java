@@ -52,9 +52,8 @@ public class SettingsController {
 
         file = fileChooser.showOpenDialog(background.getScene().getWindow());
         if (file != null) {
-            Core.getUserData().setWallpaperPath(file.getPath());
-            wallpaperPreview.setImage(new Image(Core.getUserData().getWallpaperPath()));
-            new DesktopController().updateWallpaper();
+            Core.getUserData().setWallpaperImage(new Image("file:" + file.getPath()));
+            wallpaperPreview.setImage(Core.getUserData().getWallpaperImage());
         }
     }
 
@@ -157,7 +156,7 @@ public class SettingsController {
         bleachBtn.setDisable(Core.getUserData().isGuest());
 
         // wallpaper
-        wallpaperPreview.setImage(new Image(Core.getUserData().getWallpaperPath()));
+        wallpaperPreview.setImage(Core.getUserData().getWallpaperImage());
 
         // volume
         // need a way to set it between 0 - 100 in GUI, but between 0.0 - 1.0 in code

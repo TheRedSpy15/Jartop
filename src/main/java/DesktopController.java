@@ -2,7 +2,6 @@ import io.sentry.Sentry;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.controlsfx.control.Notifications;
@@ -111,17 +110,12 @@ public class DesktopController {
         if (Core.getUserData().isSentryReporting())
             Sentry.init("https://6db11d4c3f864632aa5b1932f6c80c82@sentry.io/220483");
 
-        if (Core.schoolMode) {
-
-        }
-
         // resize wallpaper listener
         wallpaper.fitHeightProperty().bind(Core.getDesktop().heightProperty());
         wallpaper.fitWidthProperty().bind(Core.getDesktop().widthProperty());
-        updateWallpaper();
 
         // clock thread
-        Thread timeThread = new Thread(this::updateTime);
+        Thread timeThread = new Thread(this::updateTimeWallpaper);
         timeThread.setPriority(Thread.currentThread().getPriority() - 1);
         timeThread.start();
 
@@ -156,13 +150,15 @@ public class DesktopController {
                     .showWarning();
     }
 
-    private void updateTime() {
+    private void updateTimeWallpaper() {
 
         final short pollRate = 1_000;
 
         Logger.getAnonymousLogger().info("Starting clock thread");
 
         while (true) {
+
+            updateWallpaper();
 
             DateFormat df = new SimpleDateFormat("HH:mm");
             Date date = new Date();
@@ -179,7 +175,8 @@ public class DesktopController {
 
     final void updateWallpaper() {
 
-        wallpaper.setImage(new Image(Core.getUserData().getWallpaperPath()));
+        if (wallpaper.getImage() != Core.getUserData().getWallpaperImage())
+            wallpaper.setImage(Core.getUserData().getWallpaperImage());
 
         Logger.getAnonymousLogger().info("Wallpaper updated");
     }

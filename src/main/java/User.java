@@ -1,5 +1,6 @@
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
+import javafx.scene.image.Image;
 import org.controlsfx.control.Notifications;
 
 import javax.crypto.*;
@@ -65,7 +66,7 @@ public class User implements Serializable {
     private boolean sentryReporting = true;
     private boolean torConnection = false;
 
-    private String wallpaperPath = "images/wallpapericon.jpg";
+    private Image wallpaperImage = new Image("images/wallpapericon.jpg");
     private String preferredColor = "#D2B48C";
 
     private double volume = 0.3;
@@ -400,13 +401,13 @@ public class User implements Serializable {
         Logger.getAnonymousLogger().info("Set sentry reporting to " + sentryReporting);
     }
 
-    final String getWallpaperPath() {
-        return wallpaperPath;
+    final Image getWallpaperImage() {
+        return wallpaperImage;
     }
 
-    final void setWallpaperPath(String wallpaperPath) {
-        this.wallpaperPath = wallpaperPath;
-        Logger.getAnonymousLogger().info("Set wallpaper path to " + wallpaperPath);
+    final void setWallpaperImage(Image wallpaperImage) {
+        this.wallpaperImage = wallpaperImage;
+        Logger.getAnonymousLogger().info("Set wallpaper path to " + wallpaperImage);
     }
 
     public final String getPreferredColor() {
