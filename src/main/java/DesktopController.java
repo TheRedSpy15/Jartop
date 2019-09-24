@@ -142,7 +142,7 @@ public class DesktopController {
 
     private static void loadApp(String nameOfApp, boolean UASApp) throws IOException {
 
-        if (Core.config.getBoolean("allow" + nameOfApp)) {
+        if (Core.config.getBoolean("allow" + nameOfApp, true)) {
             if (UASApp) {
 
                 UserAccountSecurity.UASLoadFXML(nameOfApp, true);
