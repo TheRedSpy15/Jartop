@@ -143,13 +143,10 @@ public class DesktopController {
     private static void loadApp(String nameOfApp, boolean UASApp) throws IOException {
 
         if (Core.config.getBoolean("allow" + nameOfApp, true)) {
-            if (UASApp) {
-
+            if (UASApp)
                 UserAccountSecurity.UASLoadFXML(nameOfApp, true);
-            } else {
-
+            else
                 Core.loadAndTitle(nameOfApp, true);
-            }
         } else
             Notifications
                     .create()
