@@ -33,7 +33,7 @@ public class SettingsController {
     @FXML private TabPane background;
     @FXML private JFXButton createBtn, bleachBtn, changeNameBtn, changePasswordBtn;
 
-    @FXML private void changeWallpaper() {
+    @FXML private void changeWallpaper() throws IOException {
 
         File file;
 
@@ -54,6 +54,7 @@ public class SettingsController {
         if (file != null) {
             Core.getUserData().setWallpaperImage(new Image("file:" + file.getPath()));
             wallpaperPreview.setImage(Core.getUserData().getWallpaperImage());
+            Core.loadAndTitle("Desktop", false);
         }
     }
 

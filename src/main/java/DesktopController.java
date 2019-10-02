@@ -110,12 +110,14 @@ public class DesktopController {
         if (Core.getUserData().isSentryReporting())
             Sentry.init("https://6db11d4c3f864632aa5b1932f6c80c82@sentry.io/220483");
 
+        updateWallpaper();
+
         // resize wallpaper listener
         wallpaper.fitHeightProperty().bind(Core.getDesktop().heightProperty());
         wallpaper.fitWidthProperty().bind(Core.getDesktop().widthProperty());
 
         // clock thread
-        Thread timeThread = new Thread(this::updateTimeWallpaper);
+        Thread timeThread = new Thread(this::updateTime);
         timeThread.setPriority(Thread.currentThread().getPriority() - 1);
         timeThread.start();
 
@@ -150,15 +152,13 @@ public class DesktopController {
                     .showWarning();
     }
 
-    private void updateTimeWallpaper() {
+    private void updateTime() {
 
         final short pollRate = 1_000;
 
         Logger.getAnonymousLogger().info("Starting clock thread");
 
         while (true) {
-
-            updateWallpaper();
 
             DateFormat df = new SimpleDateFormat("HH:mm");
             Date date = new Date();
