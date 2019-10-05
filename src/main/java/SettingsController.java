@@ -29,7 +29,6 @@ public class SettingsController {
     @FXML private ImageView wallpaperPreview;
     @FXML private JFXSlider volumeSlider;
     @FXML private JFXColorPicker colorPicker;
-    @FXML private JFXToggleButton torToggle;
     @FXML private TabPane background;
     @FXML private JFXButton createBtn, bleachBtn, changeNameBtn, changePasswordBtn;
 
@@ -100,19 +99,6 @@ public class SettingsController {
     @FXML private void bleach() throws IOException {
 
         UserAccountSecurity.UASLoadFXML("Bleach", true);
-    }
-
-    @FXML private void toggleTor() { // change to tor
-
-        Core.getUserData().setTorConnection(torToggle.selectedProperty().getValue());
-
-        if (Core.getUserData().isTorConnection()) {
-
-            // need to connect to tor here
-        } else {
-
-            // need to disable tor here
-        }
     }
 
     @FXML private void testConnection() {

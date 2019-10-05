@@ -84,7 +84,7 @@ public class LoginController {
 
     @FXML private void newUser() throws IOException {
 
-        new NewUser().create();
+        NewUser.create();
     }
 
     @FXML private void exit(){

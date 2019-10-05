@@ -138,18 +138,25 @@ public class DesktopController {
 
     private static void loadApp(String nameOfApp, boolean UASApp) throws IOException {
 
-        if (Core.config.getBoolean("allow" + nameOfApp, true)) {
+        if (Core.schoolMode) {
+            if (Core.config.getBoolean("allow" + nameOfApp, true)) {
+                if (UASApp)
+                    UserAccountSecurity.UASLoadFXML(nameOfApp, true);
+                else
+                    Core.loadAndTitle(nameOfApp, true);
+            } else
+                Notifications
+                        .create()
+                        .title("Blocked")
+                        .text("App disabled by school")
+                        .darkStyle()
+                        .showWarning();
+        } else {
             if (UASApp)
                 UserAccountSecurity.UASLoadFXML(nameOfApp, true);
             else
                 Core.loadAndTitle(nameOfApp, true);
-        } else
-            Notifications
-                    .create()
-                    .title("Blocked")
-                    .text("App disabled by school")
-                    .darkStyle()
-                    .showWarning();
+        }
     }
 
     private void updateTime() {

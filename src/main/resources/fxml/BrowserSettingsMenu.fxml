@@ -6,16 +6,11 @@
  * See LICENSE for details.
  */-->
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXSlider?>
-<?import com.jfoenix.controls.JFXTextField?>
-<?import com.jfoenix.controls.JFXToggleButton?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-
-<AnchorPane fx:id="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrowserSettingsController">
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="background" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrowserSettingsController">
    <children>
       <Label layoutX="14.0" layoutY="14.0" text="Settings" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
          <font>
@@ -29,17 +24,17 @@
          </font>
       </Label>
       <JFXSlider fx:id="historySlider" layoutX="129.0" layoutY="77.0" snapToTicks="true" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="77.0" />
-      <JFXToggleButton fx:id="javaScriptToggle" focusTraversable="false" layoutX="14.0" layoutY="189.0" text="Javascript">
+      <JFXToggleButton fx:id="javaScriptToggle" focusTraversable="false" layoutX="14.0" layoutY="189.0" text="Javascript" AnchorPane.leftAnchor="14.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
       </JFXToggleButton>
-      <JFXToggleButton fx:id="popUpToggle" disable="true" focusTraversable="false" layoutX="12.0" layoutY="317.0" text="Block Pop-ups">
+      <JFXToggleButton fx:id="popUpToggle" disable="true" focusTraversable="false" layoutX="12.0" layoutY="317.0" text="Block Pop-ups" AnchorPane.leftAnchor="14.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
       </JFXToggleButton>
-      <Label layoutX="11.0" layoutY="109.0" text="Home-page URL:" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="109.0">
+      <Label layoutX="11.0" layoutY="109.0" text="Home-page URL:" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="109.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
@@ -49,22 +44,22 @@
             <Font name="Tahoma" size="18.0" />
          </font>
       </JFXTextField>
-      <JFXButton fx:id="applyBtn" layoutX="480.0" layoutY="393.0" onAction="#apply" text="Apply">
+      <JFXButton fx:id="applyBtn" layoutX="480.0" layoutY="393.0" onAction="#apply" text="Apply" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="Tahoma" size="23.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="backBtn" layoutX="4.0" layoutY="393.0" onAction="#back" text="Back">
+      <JFXButton fx:id="backBtn" layoutX="4.0" layoutY="393.0" onAction="#back" text="Back" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
          <font>
             <Font name="Tahoma" size="23.0" />
          </font>
       </JFXButton>
-      <JFXToggleButton fx:id="clearExitToggle" disable="true" focusTraversable="false" layoutX="339.0" layoutY="253.0" text="Clear on Exit" AnchorPane.rightAnchor="83.0">
+      <JFXToggleButton fx:id="clearExitToggle" contentDisplay="RIGHT" disable="true" focusTraversable="false" layoutX="339.0" layoutY="253.0" text="Clear on Exit" AnchorPane.rightAnchor="14.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
       </JFXToggleButton>
-      <JFXToggleButton fx:id="httpsToggle" focusTraversable="false" layoutX="12.0" layoutY="253.0" text="https Only">
+      <JFXToggleButton fx:id="httpsToggle" focusTraversable="false" layoutX="12.0" layoutY="253.0" text="https Only" AnchorPane.leftAnchor="14.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
@@ -74,7 +69,7 @@
             <Font name="Tahoma" size="17.0" />
          </font>
       </JFXButton>
-      <JFXToggleButton fx:id="cookieToggle" focusTraversable="false" layoutX="339.0" layoutY="317.0" text="Cookies" AnchorPane.bottomAnchor="57.0" AnchorPane.rightAnchor="83.0">
+      <JFXToggleButton fx:id="cookieToggle" contentDisplay="RIGHT" focusTraversable="false" layoutX="333.0" layoutY="187.0" text="Cookies" AnchorPane.rightAnchor="14.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
@@ -84,15 +79,10 @@
             <Font name="Tahoma" size="18.0" />
          </font>
       </JFXTextField>
-      <Label layoutX="11.0" layoutY="151.0" text="User Agent String:" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="151.0">
+      <Label layoutX="11.0" layoutY="151.0" text="User Agent String:" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="151.0">
          <font>
             <Font name="Tahoma" size="19.0" />
          </font>
       </Label>
-      <JFXToggleButton fx:id="torToggle" disable="true" focusTraversable="false" layoutX="339.0" layoutY="189.0" text="Tor">
-         <font>
-            <Font name="Tahoma" size="19.0" />
-         </font>
-      </JFXToggleButton>
    </children>
 </AnchorPane>

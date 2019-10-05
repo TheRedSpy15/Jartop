@@ -1,3 +1,4 @@
+import javafx.scene.image.Image;
 import org.controlsfx.control.Notifications;
 
 import java.io.File;
@@ -12,7 +13,7 @@ import java.util.logging.Logger;
 
 class NewUser extends LoginController {
 
-    final void create() throws IOException {
+    static void create() throws IOException {
 
         File userFile = new File(System.getProperty("user.name") + User.saveExtension);
 
@@ -25,6 +26,7 @@ class NewUser extends LoginController {
             Core.getUserData().setPassword(Core.config.getString("passwordStudent", "student"));
             Core.getUserData().setName(Core.config.getString("nameStudent", "student"));
             Core.getUserData().setSentryReporting(Core.config.getBoolean("errorReporting", true));
+            Core.getUserData().setWallpaperImage(new Image(Core.config.getString("wallpaper")));
         }
 
         Core.loadAndTitle("Desktop", false);

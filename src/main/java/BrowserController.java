@@ -3,6 +3,7 @@ import javafx.fxml.FXML;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.CookieManager;
 import java.util.logging.Logger;
@@ -71,13 +72,17 @@ public class BrowserController {
         UserAccountSecurity.UASLoadFXML("BrowsingHistory", true);
     }
 
+    @FXML private void save() {
+        File file = new File(engine.getTitle());
+    }
+
     @FXML private void initialize() {
 
         engine = browserView.getEngine();
 
         engine.load(homePage);
 
-        // browserView security settings
+        // browserView settings;
 
         // home page
         homePage = Core.getUserData().getHomePageUrl();

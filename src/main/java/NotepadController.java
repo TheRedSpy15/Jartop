@@ -18,7 +18,7 @@ public class NotepadController {
         String fileName = !nameField.getText().trim().isEmpty() ? nameField.getText().trim() : "note.txt";
 
         File file = new File(fileName);
-        Files.asCharSink(file, Charsets.UTF_8).write(editor.getHtmlText());
+        Core.getUserData().getFileSystem().add(file);
     }
 
     @FXML private void load() throws IOException {

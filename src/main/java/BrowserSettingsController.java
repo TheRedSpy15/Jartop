@@ -58,7 +58,6 @@ public class BrowserSettingsController extends BrowserController {
         Core.getUserData().setHttpsOnly(httpsToggle.selectedProperty().getValue());
         Core.getUserData().setAutoDelete(clearExitToggle.selectedProperty().getValue());
         Core.getUserData().setCookiesAllowed(cookieToggle.selectedProperty().getValue());
-        Core.getUserData().setTorConnection(torToggle.selectedProperty().getValue());
 
         back();
     }
@@ -98,9 +97,6 @@ public class BrowserSettingsController extends BrowserController {
         homePageField.setText(Core.getUserData().getHomePageUrl());
         agentField.setText(Core.getUserData().getUserAgent());
         historySlider.setValue(Core.getUserData().getMaxHistory());
-
-        // tor connection
-        torToggle.selectedProperty().setValue(Core.getUserData().isTorConnection());
 
         // javascript
         javaScriptToggle.selectedProperty().setValue(Core.getUserData().isJavascriptAllow());

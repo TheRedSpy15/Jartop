@@ -64,7 +64,6 @@ public class User implements Serializable {
 
     // System
     private boolean sentryReporting = true;
-    private boolean torConnection = false;
 
     private Image wallpaperImage = new Image("images/wallpapericon.jpg");
     private String preferredColor = "#D2B48C";
@@ -72,6 +71,9 @@ public class User implements Serializable {
     private double volume = 0.3;
 
     private File userFile = new File("guest" + saveExtension);
+
+    // File system - TODO: ability to export
+    private ArrayDeque<File> fileSystem = new ArrayDeque<>(500);
 
     // Credentials
     private boolean guest = true;
@@ -454,20 +456,19 @@ public class User implements Serializable {
         Logger.getAnonymousLogger().info("Set user agent to " + userAgent);
     }
 
-    final boolean isTorConnection() {
-        return torConnection;
-    }
-
-    final void setTorConnection(boolean torConnection) {
-        this.torConnection = torConnection;
-        Logger.getAnonymousLogger().info("Set tor connection to " + torConnection);
-    }
-
     public String getPasswordSchool() {
         return passwordSchool;
     }
 
     public void setPasswordSchool(String passwordSchool) {
         this.passwordSchool = passwordSchool;
+    }
+
+    public ArrayDeque<File> getFileSystem() {
+        return fileSystem;
+    }
+
+    public void setFileSystem(ArrayDeque<File> fileSystem) {
+        this.fileSystem = fileSystem;
     }
 }
