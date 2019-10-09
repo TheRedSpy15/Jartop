@@ -70,7 +70,6 @@ public class User implements Serializable {
 
     private File userFile = new File("guest" + saveExtension);
 
-    // File system - TODO: ability to export
     private List<JartopFile> fileSystem = new ArrayList<>(500);
 
     // Credentials
