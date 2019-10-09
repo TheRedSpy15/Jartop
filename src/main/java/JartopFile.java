@@ -1,5 +1,5 @@
 public class JartopFile {
-    private String name;
+    private String name = "file";
     private byte[] data;
 
     public String getName() {

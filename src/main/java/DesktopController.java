@@ -96,7 +96,7 @@ public class DesktopController {
 
         //loadApp(nameOfApp, UASApp);
 
-        System.out.println(FileSystem.findFile());
+        FileSystem.displayFiles();
     }
 
     @FXML private void notepad() throws IOException {

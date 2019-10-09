@@ -19,6 +19,7 @@ public class NotepadController {
 
     @FXML private void load() {
 
+        editor.setHtmlText("");
         for (String line : new String(FileSystem.findFile().getData()).split("\n"))
             editor.setHtmlText(editor.getHtmlText() + "\n" + line);
     }
