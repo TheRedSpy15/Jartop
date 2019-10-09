@@ -10,11 +10,11 @@ public class JartopFile {
         this.name = name;
     }
 
-    public byte[] getData() {
+    byte[] getData() {
         return data;
     }
 
-    public void setData(byte[] data) {
+    void setData(byte[] data) {
         this.data = data;
     }
 }
