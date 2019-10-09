@@ -1,10 +1,15 @@
 import com.jfoenix.controls.JFXButton;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -35,11 +40,28 @@ class FileSystem {
 
     }
 
-    static void exportFile(List<JartopFile> files) {
+    static void importFile() throws IOException {
+        File file;
+        FileChooser fileChooser = new FileChooser();
 
+        fileChooser.setTitle("Select a file");
+        fileChooser.getExtensionFilters().add(
+                new FileChooser.ExtensionFilter(
+                        "All Files",
+                        "*.*")
+        );
+
+        file = fileChooser.showOpenDialog(new Stage());
+
+        if (file != null) {
+            JartopFile jfile = new JartopFile();
+            jfile.setName(file.getName());
+            jfile.setData(Files.readAllBytes(Paths.get(file.toURI())));
+            Core.getUserData().getFileSystem().add(jfile);
+        }
     }
 
-    static void importFile() {
+    static void exportFile(List<JartopFile> files) {
 
     }
 }
