@@ -8,9 +8,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.io.*;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.HashMap;
+import java.util.*;
 import java.util.logging.Logger;
 
 /*
@@ -73,7 +71,7 @@ public class User implements Serializable {
     private File userFile = new File("guest" + saveExtension);
 
     // File system - TODO: ability to export
-    private ArrayDeque<File> fileSystem = new ArrayDeque<>(500);
+    private List<JartopFile> fileSystem = new ArrayList<>(500);
 
     // Credentials
     private boolean guest = true;
@@ -464,11 +462,11 @@ public class User implements Serializable {
         this.passwordSchool = passwordSchool;
     }
 
-    public ArrayDeque<File> getFileSystem() {
+    public List<JartopFile> getFileSystem() {
         return fileSystem;
     }
 
-    public void setFileSystem(ArrayDeque<File> fileSystem) {
+    public void setFileSystem(List<JartopFile> fileSystem) {
         this.fileSystem = fileSystem;
     }
 }

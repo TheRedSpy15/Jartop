@@ -94,7 +94,9 @@ public class DesktopController {
         final String nameOfApp = "Help";
         final boolean UASApp = false;
 
-        loadApp(nameOfApp, UASApp);
+        //loadApp(nameOfApp, UASApp);
+
+        System.out.println(FileSystem.findFile());
     }
 
     @FXML private void notepad() throws IOException {

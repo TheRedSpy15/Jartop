@@ -1,43 +1,25 @@
-import com.google.common.base.Charsets;
-import com.google.common.io.Files;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.scene.web.HTMLEditor;
-import javafx.stage.FileChooser;
-
-import java.io.File;
-import java.io.IOException;
 
 public class NotepadController {
 
     @FXML HTMLEditor editor;
     @FXML TextField nameField;
 
-    @FXML private void save() throws IOException {
+    @FXML private void save() {
 
-        String fileName = !nameField.getText().trim().isEmpty() ? nameField.getText().trim() : "note.txt";
+        String fileName = !nameField.getText().trim().isEmpty() ? nameField.getText().trim() : "note.jtxt";
 
-        File file = new File(fileName);
+        JartopFile file = new JartopFile();
+        file.setName(fileName);
+        file.setData(editor.getHtmlText().getBytes());
         Core.getUserData().getFileSystem().add(file);
     }
 
-    @FXML private void load() throws IOException {
+    @FXML private void load() {
 
-        File file;
-        FileChooser fileChooser = new FileChooser();
-
-        fileChooser.setTitle("Select a file");
-        fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter(
-                        "text files (*.txt)",
-                        "*.txt"),
-                new FileChooser.ExtensionFilter(
-                        "All Files",
-                        "*.*")
-        );
-
-        file = fileChooser.showOpenDialog(editor.getScene().getWindow());
-        if (file != null) for (String line : Files.asCharSource(file, Charsets.UTF_8).readLines())
+        for (String line : new String(FileSystem.findFile().getData()).split("\n"))
             editor.setHtmlText(editor.getHtmlText() + "\n" + line);
     }
 
