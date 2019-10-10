@@ -33,7 +33,7 @@ public class EmailSettingsController extends EmailClientController {
         Core.loadAndTitle("Settings", true);
     }
 
-    @FXML private void initialize(){
+    @FXML private void initialize() {
 
         // background
         background.setStyle("-fx-background-color: " + Core.getUserData().getPreferredColor());

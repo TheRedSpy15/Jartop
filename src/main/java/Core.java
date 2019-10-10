@@ -117,6 +117,7 @@ public class Core extends Application {
             DesktopController.appWindows.get(id).setScene(new Scene(pane));
             DesktopController.appWindows.get(id).initStyle(StageStyle.UTILITY);
             DesktopController.appWindows.get(id).show();
+            DesktopController.appWindows.get(id).toFront();
             Logger.getAnonymousLogger().info("Loading app : " + fxmlName);
         } else {
             desktop.getScene().setRoot(pane);
