@@ -42,6 +42,14 @@ public class DesktopController {
         loadApp(nameOfApp, UASApp);
     }
 
+    @FXML private void files() throws IOException {
+
+        final String nameOfApp = "Files";
+        final boolean UASApp = false;
+
+        loadApp(nameOfApp, UASApp);
+    }
+
     @FXML private void terminal() throws IOException {
 
         final String nameOfApp = "Terminal";

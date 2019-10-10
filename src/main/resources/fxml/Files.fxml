@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FilesController">
+   <children>
+      <JFXToolbar>
+         <left>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton focusTraversable="false" text="Import" />
+                  <JFXButton focusTraversable="false" text="Export" />
+               </children>
+            </HBox>
+         </left>
+      </JFXToolbar>
+      <JFXListView fx:id="listView" />
+   </children>
+</VBox>

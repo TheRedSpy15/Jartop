@@ -1,7 +1,5 @@
 import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXListView;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
@@ -36,24 +34,6 @@ class FileSystem {
         stage.showAndWait();
         stage.toFront();
         return rFile.get();
-    }
-
-    static void displayFiles() {
-        Stage stage = new Stage(StageStyle.UTILITY);
-        VBox vbox = new VBox();
-
-        JFXListView<Button> list = new JFXListView<>();
-        for(JartopFile file : Core.getUserData().getFileSystem()) {
-            Button label = new Button(file.getName());
-            list.getItems().add(label);
-        }
-        vbox.getChildren().add(list);
-
-        Scene scene = new Scene(vbox);
-        stage.setScene(scene);
-        stage.setTitle("Files");
-        stage.show();
-        stage.toFront();
     }
 
     static void importFile() throws IOException {

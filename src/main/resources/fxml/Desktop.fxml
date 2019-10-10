@@ -88,7 +88,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="filesBtn" focusTraversable="false" text=" ">
+            <JFXButton fx:id="filesBtn" focusTraversable="false" onAction="#files" text=" ">
                <graphic>
                   <ImageView fitHeight="92.0" fitWidth="100.0" preserveRatio="true">
                      <image>
