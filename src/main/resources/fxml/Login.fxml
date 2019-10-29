@@ -16,7 +16,7 @@
    <children>
       <ImageView fx:id="wallpaper" cache="true" cacheHint="SPEED" preserveRatio="true">
          <image>
-            <Image url="@../images/wallpapericon.jpg" />
+            <Image url="@../images/wallpaper.jpg" />
          </image>
       </ImageView>
       <HBox alignment="CENTER" layoutX="527.0" layoutY="14.0" AnchorPane.leftAnchor="527.0" AnchorPane.rightAnchor="527.0" AnchorPane.topAnchor="14.0">

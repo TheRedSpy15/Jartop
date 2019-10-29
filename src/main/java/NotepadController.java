@@ -17,11 +17,15 @@ public class NotepadController {
         Core.getUserData().getFileSystem().add(file);
     }
 
-    @FXML private void load() {
+    @FXML private void load() throws InterruptedException {
 
-        editor.setHtmlText("");
-        for (String line : new String(FileSystem.findFile().getData()).split("\n"))
-            editor.setHtmlText(editor.getHtmlText() + "\n" + line);
+        JartopFile file = FileSystem.findFileGUI();
+        if (file != null) {
+            nameField.setText(file.getName());
+            editor.setHtmlText("");
+            for (String line : new String(FileSystem.findFileGUI().getData()).split("\n"))
+                editor.setHtmlText(editor.getHtmlText() + "\n" + line);
+        }
     }
 
     @FXML private void initialize() {

@@ -1,10 +1,10 @@
-import com.jfoenix.controls.JFXTextArea;
-import javafx.application.Platform;
+import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
-import org.controlsfx.control.Notifications;
+import javafx.scene.control.TextArea;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 import java.util.logging.Logger;
 
 /*
@@ -15,53 +15,25 @@ import java.util.logging.Logger;
 
 public class TerminalController {
 
-    @FXML private JFXTextArea textArea;
+    @FXML private TextArea textArea;
+    @FXML private JFXTextField commandField;
 
-    private void executeCommand() {
-
-        String command = textArea.getText();
-
-        StringBuilder output = new StringBuilder();
-
-        Process process;
-        try {
-            process = Runtime.getRuntime().exec(command);
-            process.waitFor();
-            try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
-
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    output.append(line).append("\n");
-                }
-            }
-
-            Logger.getAnonymousLogger().info("Finished command");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-
-            Notifications
-                    .create()
-                    .title("Error")
-                    .text("Command failed")
-                    .darkStyle()
-                    .showError();
-        }
-
-        Platform.runLater(() -> textArea.appendText(output.toString()));
-    }
-
-    @FXML private synchronized void execute(){
-
-        Thread commandThread = new Thread(this::executeCommand);
-        commandThread.setPriority(10);
-        commandThread.start();
+    @FXML private void execute() throws IOException, InterruptedException {
 
         Logger.getAnonymousLogger().info("Running command : " + textArea.getText());
-    }
 
-    @FXML private synchronized void clear(){
+        // build my command as a list of strings
+        List<String> command = Arrays.asList(commandField.getText().trim().split(" "));
 
-        textArea.clear();
+        // execute my command
+        SystemCommandExecutor commandExecutor = new SystemCommandExecutor(command);
+        int result = commandExecutor.executeCommand();
+
+        // get the output from the command
+        StringBuilder stdout = commandExecutor.getStandardOutputFromCommand();
+        StringBuilder stderr = commandExecutor.getStandardErrorFromCommand();
+
+        // print the output from the command
+        textArea.setText(stdout + "\n" + stdout);
     }
 }

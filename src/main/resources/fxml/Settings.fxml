@@ -7,6 +7,7 @@
  */-->
 
 <?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -14,15 +15,15 @@
 <?import javafx.scene.text.*?>
 <AnchorPane style="-fx-background-color: #D2B48C;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SettingsController">
    <children>
-      <TabPane fx:id="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <TabPane fx:id="background" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <tabs>
-            <Tab text="Wallpaper">
+            <Tab closable="false" text="Wallpaper">
               <content>
                 <AnchorPane>
                      <children>
-                        <ImageView fx:id="wallpaperPreview" cache="true" cacheHint="SPEED" fitHeight="191.0" fitWidth="353.0" pickOnBounds="true" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="20.0">
+                        <ImageView fx:id="wallpaperPreview" cache="true" cacheHint="SPEED" fitHeight="191.0" fitWidth="353.0" pickOnBounds="true" AnchorPane.bottomAnchor="116.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="20.0">
                            <image>
-                              <Image url="@../images/wallpapericon.jpg" />
+                              <Image url="@../images/wallpaper.jpg" />
                            </image>
                         </ImageView>
                         <JFXButton fx:id="changeBtn" buttonType="RAISED" focusTraversable="false" layoutX="227.0" layoutY="263.0" onAction="#changeWallpaper" prefHeight="55.0" prefWidth="147.0" style="-fx-background-color: white;" text="Change" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="226.0">
@@ -33,64 +34,58 @@
                      </children></AnchorPane>
               </content>
             </Tab>
-            <Tab text="User">
+            <Tab closable="false" text="User">
               <content>
-                <AnchorPane>
+                  <VBox alignment="TOP_CENTER" spacing="10.0">
                      <children>
-                        <Label fx:id="nameLbl" layoutX="14.0" layoutY="14.0" text="Name: User" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                        <Label fx:id="nameLbl" text="Name: User">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="guestLbl" text="Guest: True">
                            <font>
                               <Font name="Tahoma" size="22.0" />
                            </font>
                         </Label>
-                        <JFXButton fx:id="changeNameBtn" focusTraversable="false" layoutX="13.0" layoutY="42.0" onAction="#changeName" text="Change" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="42.0">
-                           <font>
-                              <Font name="Tahoma" size="16.0" />
-                           </font>
-                        </JFXButton>
-                        <JFXButton fx:id="changePasswordBtn" focusTraversable="false" layoutX="446.0" layoutY="301.0" onAction="#changePassword" text="Change Password" AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="0.0">
-                           <font>
-                              <Font name="Tahoma" size="16.0" />
-                           </font>
-                        </JFXButton>
-                        <Label fx:id="guestLbl" layoutX="454.0" layoutY="14.0" text="Guest: True" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="14.0">
-                           <font>
-                              <Font name="Tahoma" size="22.0" />
-                           </font>
-                        </Label>
-                        <JFXButton fx:id="signOutBtn" focusTraversable="false" layoutX="484.0" layoutY="269.0" onAction="#signOut" text="Sign out" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="38.0">
-                           <font>
-                              <Font name="Tahoma" size="16.0" />
-                           </font>
-                        </JFXButton>
-                        <JFXButton fx:id="browserBtn" buttonType="RAISED" focusTraversable="false" layoutX="150.0" layoutY="88.0" minWidth="300.0" onAction="#browserSettings" style="-fx-background-color: white;" text="Browser Settings" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="88.0">
-                           <font>
-                              <Font name="Tahoma" size="19.0" />
-                           </font>
-                        </JFXButton>
-                        <JFXButton fx:id="emailBtn" buttonType="RAISED" focusTraversable="false" layoutX="150.0" layoutY="132.0" minWidth="300.0" onAction="#emailSettings" style="-fx-background-color: white;" text="Email Settings" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="132.0">
-                           <font>
-                              <Font name="Tahoma" size="19.0" />
-                           </font>
-                        </JFXButton>
-                        <Label fx:id="hashLbl" layoutX="13.0" layoutY="335.0" text="Account Hash: Guest Account" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="13.0">
+                        <Label fx:id="hashLbl" text="Account Hash: Guest Account">
                            <font>
                               <Font name="Tahoma" size="12.0" />
                            </font>
                         </Label>
-                        <JFXButton fx:id="createBtn" focusTraversable="false" layoutX="446.0" layoutY="42.0" onAction="#createAccount" text="Create Account" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="42.0">
+                        <JFXButton fx:id="changeNameBtn" buttonType="RAISED" focusTraversable="false" minWidth="300.0" onAction="#changeName" style="-fx-background-color: white;" text="Change Name">
                            <font>
                               <Font name="Tahoma" size="16.0" />
                            </font>
                         </JFXButton>
-                        <JFXButton fx:id="bleachBtn" focusTraversable="false" layoutX="13.0" layoutY="301.0" onAction="#bleach" text="Bleach Account" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="13.0">
+                        <JFXButton fx:id="changePasswordBtn" buttonType="RAISED" focusTraversable="false" minWidth="300.0" onAction="#changePassword" style="-fx-background-color: white;" text="Change Password" VBox.vgrow="ALWAYS">
                            <font>
                               <Font name="Tahoma" size="16.0" />
                            </font>
                         </JFXButton>
-                     </children></AnchorPane>
+                        <JFXButton fx:id="createBtn" buttonType="RAISED" focusTraversable="false" minWidth="300.0" onAction="#createAccount" style="-fx-background-color: white;" text="Create Account" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bleachBtn" buttonType="RAISED" focusTraversable="false" minWidth="300.0" onAction="#bleach" style="-fx-background-color: white;" text="Bleach Account" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="signOutBtn" buttonType="RAISED" focusTraversable="false" minWidth="300.0" onAction="#signOut" style="-fx-background-color: white;" text="Sign out" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Tahoma" size="16.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </VBox>
               </content>
             </Tab>
-            <Tab text="System">
+            <Tab closable="false" text="System">
               <content>
                 <AnchorPane>
                      <children>
@@ -112,7 +107,7 @@
                         </JFXToggleButton>
                         <JFXSlider fx:id="frequencySlider" disable="true" focusTraversable="false" layoutX="379.0" layoutY="85.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="85.0" />
                         <Separator layoutX="326.0" layoutY="20.0" orientation="VERTICAL" AnchorPane.bottomAnchor="20.0" AnchorPane.topAnchor="20.0" />
-                        <Label layoutX="348.0" layoutY="33.0" text="Save Freq." AnchorPane.bottomAnchor="243.0" AnchorPane.leftAnchor="347.0" AnchorPane.topAnchor="33.0">
+                        <Label layoutX="348.0" layoutY="33.0" text="Save Freq." AnchorPane.leftAnchor="347.0" AnchorPane.topAnchor="33.0">
                            <font>
                               <Font name="Tahoma" size="20.0" />
                            </font>
@@ -120,21 +115,25 @@
                      </children></AnchorPane>
               </content>
             </Tab>
-            <Tab text="Networking">
+            <Tab closable="false" text="Apps">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <VBox alignment="TOP_CENTER" spacing="15.0">
                      <children>
-                        <JFXButton fx:id="testBtn" buttonType="RAISED" focusTraversable="false" layoutX="14.0" layoutY="14.0" onAction="#testConnection" prefHeight="36.0" prefWidth="96.0" style="-fx-background-color: white;" text="Test" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                        <JFXButton fx:id="browserBtn" buttonType="RAISED" focusTraversable="false" minWidth="300.0" onAction="#browserSettings" style="-fx-background-color: white;" text="Browser Settings">
                            <font>
-                              <Font name="Tahoma" size="20.0" />
+                              <Font name="Tahoma" size="19.0" />
                            </font>
                         </JFXButton>
-                        <Label fx:id="statusLbl" layoutX="120.0" layoutY="17.0" prefHeight="45.0" prefWidth="140.0" text="Status: offline" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="17.0">
+                        <JFXButton fx:id="emailBtn" buttonType="RAISED" focusTraversable="false" minWidth="300.0" onAction="#emailSettings" style="-fx-background-color: white;" text="Email Settings">
                            <font>
-                              <Font name="Tahoma" size="16.0" />
+                              <Font name="Tahoma" size="19.0" />
                            </font>
-                        </Label>
-                     </children></AnchorPane>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
               </content>
             </Tab>
          </tabs>

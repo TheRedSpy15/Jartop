@@ -9,10 +9,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.FileChooser;
 import org.controlsfx.control.Notifications;
 
-import java.io.File;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.logging.Logger;
 
@@ -24,7 +23,7 @@ import java.util.logging.Logger;
 
 public class SettingsController {
 
-    @FXML private Label nameLbl, guestLbl, statusLbl, hashLbl;
+    @FXML private Label nameLbl, guestLbl, hashLbl;
     @FXML private JFXToggleButton sentryToggle, aes256Toggle;
     @FXML private ImageView wallpaperPreview;
     @FXML private JFXSlider volumeSlider;
@@ -34,25 +33,11 @@ public class SettingsController {
 
     @FXML private void changeWallpaper() throws IOException {
 
-        File file;
+        JartopFile file = FileSystem.findFileGUI();
 
-        FileChooser fileChooser = new FileChooser();
-
-        fileChooser.setTitle("Select an image");
-
-        fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter(
-                        "Image Files (.png, .jpg, .gif, .bmp)",
-                        "*.png", "*.jpg", "*.gif", "bmp"),
-                new FileChooser.ExtensionFilter(
-                        "All Files",
-                        "*.*")
-        );
-
-        file = fileChooser.showOpenDialog(background.getScene().getWindow());
         if (file != null) {
-            Core.getUserData().setWallpaperImage(new Image("file:" + file.getPath()));
-            wallpaperPreview.setImage(Core.getUserData().getWallpaperImage());
+            Core.getUserData().setWallpaperImageData(file.getData());
+            wallpaperPreview.setImage(new Image(new ByteArrayInputStream(Core.getUserData().getWallpaperImageData())));
             Core.loadAndTitle("Desktop", false);
         }
     }
@@ -101,13 +86,6 @@ public class SettingsController {
         UserAccountSecurity.UASLoadFXML("Bleach", true);
     }
 
-    @FXML private void testConnection() {
-
-        Core.testConnection();
-
-        statusLbl.setText("Status: " + User.internetConnection);
-    }
-
     @FXML private void initialize() throws IOException {
 
         // guest checks
@@ -141,9 +119,10 @@ public class SettingsController {
         // buttons
         createBtn.setDisable(!Core.getUserData().isGuest());
         bleachBtn.setDisable(Core.getUserData().isGuest());
+        changePasswordBtn.setDisable(Core.getUserData().isGuest());
 
         // wallpaper
-        wallpaperPreview.setImage(Core.getUserData().getWallpaperImage());
+        wallpaperPreview.setImage(new Image(new ByteArrayInputStream(Core.getUserData().getWallpaperImageData())));
 
         // volume
         // need a way to set it between 0 - 100 in GUI, but between 0.0 - 1.0 in code
@@ -168,7 +147,5 @@ public class SettingsController {
         aes256Toggle.setOnAction(
                 e -> Core.getUserData().setEncryptWith256(aes256Toggle.selectedProperty().getValue())
         );
-
-        testConnection();
     }
 }

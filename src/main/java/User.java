@@ -1,11 +1,12 @@
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
-import javafx.scene.image.Image;
 import org.controlsfx.control.Notifications;
 
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
@@ -19,11 +20,9 @@ import java.util.logging.Logger;
 
 public class User implements Serializable {
 
+    private static final long serialVersionUID = 6264015681931400897L;
     static boolean internetConnection = false;
     static final String saveExtension = ".jtop";
-    private static final long serialVersionUID = 42L; // NEVER change unless ABSOLUTELY necessary
-    // changing will prevent all .jtop files with a different value from being deserialized
-    // MIGHT remove with a full release, and this class rarely changes
 
     // Browser
     private boolean javascriptAllow = BrowserSettingsController.defaultJavaScript;
@@ -63,7 +62,7 @@ public class User implements Serializable {
     // System
     private boolean sentryReporting = true;
 
-    private Image wallpaperImage = new Image("images/wallpapericon.jpg");
+    private byte[] wallpaperImageData = Files.readAllBytes(Paths.get("src/main/resources/images/wallpaper.jpg"));
     private String preferredColor = "#D2B48C";
 
     private double volume = 0.3;
@@ -81,6 +80,9 @@ public class User implements Serializable {
 
     // Encryption
     private boolean encryptWith256 = false;
+
+    public User() throws IOException {
+    }
 
     // Serialization
     final synchronized void saveData() throws
@@ -400,13 +402,13 @@ public class User implements Serializable {
         Logger.getAnonymousLogger().info("Set sentry reporting to " + sentryReporting);
     }
 
-    final Image getWallpaperImage() {
-        return wallpaperImage;
+    final byte[] getWallpaperImageData() {
+        return wallpaperImageData;
     }
 
-    final void setWallpaperImage(Image wallpaperImage) {
-        this.wallpaperImage = wallpaperImage;
-        Logger.getAnonymousLogger().info("Set wallpaper path to " + wallpaperImage);
+    final void setWallpaperImageData(byte[] wallpaperImageData) {
+        this.wallpaperImageData = wallpaperImageData;
+        Logger.getAnonymousLogger().info("Set wallpaper path to " + wallpaperImageData);
     }
 
     public final String getPreferredColor() {

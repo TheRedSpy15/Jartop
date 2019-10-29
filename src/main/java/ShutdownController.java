@@ -1,5 +1,7 @@
 import javafx.fxml.FXML;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+
+import java.io.IOException;
 
 /*
  * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
@@ -9,14 +11,13 @@ import javafx.scene.layout.AnchorPane;
 
 public class ShutdownController {
 
-    @FXML private AnchorPane background;
+    @FXML private HBox background;
 
     @FXML private void initialize(){
 
-        background.setStyle("-fx-background-color: " + Core.getUserData().getPreferredColor());
     }
 
-    @FXML private void back(){
+    @FXML private void cancel(){
 
         background.getScene().getWindow().hide();
     }
@@ -24,5 +25,10 @@ public class ShutdownController {
     @FXML private void shutdown(){
 
         Core.shutdown();
+    }
+
+    @FXML private void signOut() throws IOException {
+        if (!Core.getUserData().isGuest()) SignOutController.signOut(true);
+        else SignOutController.signOut(false);
     }
 }

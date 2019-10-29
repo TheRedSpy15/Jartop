@@ -36,11 +36,11 @@ public class Core extends Application {
     static String defaultPassword = versionChecksum();
     private static final Configurations configs = new Configurations();
     private static final String version = "Pre-Alpha";
-    private static User userData = new User();
+    private static User userData;
     private static UserAccountSecurity security = new UserAccountSecurity();
     private static Stage desktop;
 
-    public static void main(String[] args) throws NoSuchAlgorithmException {
+    public static void main(String[] args) throws NoSuchAlgorithmException, IOException {
 
         Logger.getAnonymousLogger().info("Booting up...");
 

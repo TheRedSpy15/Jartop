@@ -15,7 +15,7 @@
    <children>
       <ImageView fx:id="wallpaper" cache="true" cacheHint="QUALITY" smooth="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@../images/wallpapericon.jpg" />
+            <Image url="@../images/wallpaper.jpg" />
          </image>
       </ImageView>
       <Label fx:id="timeLbl" layoutX="568.0" layoutY="634.0" text="00:00" textFill="WHITE" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="50.0">

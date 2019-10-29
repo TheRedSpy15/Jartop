@@ -2,10 +2,12 @@ import io.sentry.Sentry;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.controlsfx.control.Notifications;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -190,8 +192,7 @@ public class DesktopController {
 
     final void updateWallpaper() {
 
-        if (wallpaper.getImage() != Core.getUserData().getWallpaperImage())
-            wallpaper.setImage(Core.getUserData().getWallpaperImage());
+        wallpaper.setImage(new Image(new ByteArrayInputStream(Core.getUserData().getWallpaperImageData())));
 
         Logger.getAnonymousLogger().info("Wallpaper updated");
     }

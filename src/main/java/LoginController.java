@@ -68,6 +68,7 @@ public class LoginController {
 
     @FXML private void guest() throws IOException {
 
+        Core.setUserData(new User());
         Core.getUserData().setGuest(true);
 
         Core.loadAndTitle("Desktop", false);

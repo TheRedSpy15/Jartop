@@ -1,5 +1,6 @@
 import com.jfoenix.controls.JFXButton;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
@@ -15,10 +16,11 @@ import java.util.concurrent.atomic.AtomicReference;
 
 class FileSystem {
 
-    static JartopFile findFile() {
+    static JartopFile findFileGUI() {
         Stage stage = new Stage(StageStyle.UTILITY);
         AtomicReference<JartopFile> rFile = new AtomicReference<>(new JartopFile());
         VBox vbox = new VBox();
+        short fileCount = 0;
         for (JartopFile file : Core.getUserData().getFileSystem()) {
             JFXButton button = new JFXButton(file.getName());
             button.setOnAction(e -> {
@@ -26,14 +28,24 @@ class FileSystem {
                 stage.close();
             });
             vbox.getChildren().add(button);
+            fileCount+=1;
+        }
+        if(fileCount == 0) {
+            vbox.getChildren().add(new Label("No files found"));
         }
         Scene scene = new Scene(vbox);
         stage.setScene(scene);
         stage.setTitle("Files");
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.showAndWait();
-        stage.toFront();
         return rFile.get();
+    }
+
+    static JartopFile findFile(String name) {
+        for (JartopFile file : Core.getUserData().getFileSystem()) {
+            if (file.getName().equals(name)) return file;
+        }
+        return null;
     }
 
     static void importFile() throws IOException {
@@ -48,9 +60,9 @@ class FileSystem {
         );
 
         file = fileChooser.showOpenDialog(new Stage());
-
+        JartopFile jfile = new JartopFile();
         if (file != null) {
-            JartopFile jfile = new JartopFile();
+            jfile = new JartopFile();
             jfile.setName(file.getName());
             jfile.setData(Files.readAllBytes(Paths.get(file.toURI())));
             Core.getUserData().getFileSystem().add(jfile);

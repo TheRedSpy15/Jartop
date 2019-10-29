@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXListView?>
 <?import com.jfoenix.controls.JFXToolbar?>
@@ -13,12 +12,11 @@
          <left>
             <HBox BorderPane.alignment="CENTER">
                <children>
-                  <JFXButton focusTraversable="false" text="Import" />
-                  <JFXButton focusTraversable="false" text="Export" />
+                  <JFXButton focusTraversable="false" onAction="#importFile" text="Import" />
                </children>
             </HBox>
          </left>
       </JFXToolbar>
-      <JFXListView fx:id="listView" />
+      <JFXListView fx:id="listView" VBox.vgrow="ALWAYS" />
    </children>
 </VBox>

@@ -23,7 +23,8 @@ public class SignOutController {
 
     @FXML private void signOut() throws IOException {
 
-        signOut(true);
+        if (!Core.getUserData().isGuest()) signOut(true);
+        else signOut(false);
     }
 
     static void signOut(boolean saveOnOut) throws IOException {
