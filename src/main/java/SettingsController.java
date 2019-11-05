@@ -44,22 +44,22 @@ public class SettingsController {
 
     @FXML private void changeName() throws IOException {
 
-        UserAccountSecurity.UASLoadFXML("ChangeName", true);
+        UserAccountSecurity.UASLoadFXML("ChangeName");
     }
 
     @FXML private void changePassword() throws IOException {
 
-        UserAccountSecurity.UASLoadFXML("ChangePassword", true);
+        UserAccountSecurity.UASLoadFXML("ChangePassword");
     }
 
     @FXML private void browserSettings() throws IOException {
 
-        UserAccountSecurity.UASLoadFXML("BrowserSettingsMenu", true);
+        UserAccountSecurity.UASLoadFXML("BrowserSettingsMenu");
     }
 
     @FXML private void emailSettings() throws IOException {
 
-        UserAccountSecurity.UASLoadFXML("EmailSettings", true);
+        UserAccountSecurity.UASLoadFXML("EmailSettings");
     }
 
     @FXML private void changeColor() {
@@ -79,11 +79,13 @@ public class SettingsController {
 
         Core.getUserData().setGuest(false);
         Core.loadAndTitle("ChangeName", true);
+
+        background.getScene().getWindow().hide();
     }
 
     @FXML private void bleach() throws IOException {
 
-        UserAccountSecurity.UASLoadFXML("Bleach", true);
+        UserAccountSecurity.UASLoadFXML("Bleach");
     }
 
     @FXML private void initialize() throws IOException {

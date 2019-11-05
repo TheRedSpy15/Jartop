@@ -38,7 +38,8 @@ class UserAccountSecurity {
         Parent authenticatePane = FXMLLoader.load(Core.class.getResource("fxml/Authenticate.fxml"));
 
         securityWindow.setScene(new Scene(authenticatePane));
-        securityWindow.showAndWait();
+        securityWindow.show();
+        securityWindow.toFront();
     }
 
     final synchronized void secureDelete(File file, boolean signOut) throws IOException {
@@ -60,36 +61,36 @@ class UserAccountSecurity {
                 }
             } finally {
 
-                file.delete();
+                if(file.delete()) {
+                    Logger.getAnonymousLogger().warning("File bleached");
 
-                Logger.getAnonymousLogger().warning("File bleached");
-
-                Notifications
-                        .create()
-                        .title("Warning")
-                        .text("File bleached")
-                        .darkStyle()
-                        .showError();
+                    Notifications
+                            .create()
+                            .title("Warning")
+                            .text("File bleached")
+                            .darkStyle()
+                            .showError();
+                }
             }
         }
 
-        if (signOut) new SignOutController().signOut(false);
+        if (signOut) SignOutController.signOut(false);
     }
 
-    static void UASLoadFXML(String fxmlName, boolean isApp) throws IOException {
+    static void UASLoadFXML(String fxmlName) throws IOException {
 
         if (Core.getSecurity().verified || // load
                 Core.getUserData().isGuest() ||
                 Core.getUserData().getPassword().trim().isEmpty()){
 
-            Core.loadAndTitle(fxmlName, isApp);
+            Core.loadAndTitle(fxmlName, true);
         } else {
 
             Core.getSecurity().authenticate();
 
             if (Core.getSecurity().verified){ // load
 
-                Core.loadAndTitle(fxmlName, isApp);
+                Core.loadAndTitle(fxmlName, true);
             }
         }
     }

@@ -3,8 +3,6 @@ import com.jfoenix.controls.JFXToggleButton;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 
-import java.io.IOException;
-
 /*
  * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
  * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
@@ -17,7 +15,7 @@ public class EmailSettingsController extends EmailClientController {
     @FXML private JFXToggleButton sslToggle;
     @FXML private AnchorPane background;
 
-    @FXML private void apply() throws IOException {
+    @FXML private void apply() {
 
         Core.getUserData().setEmailAddress(addressField.getText());
         Core.getUserData().setEmailPassword(passwordField.getText());
@@ -28,9 +26,9 @@ public class EmailSettingsController extends EmailClientController {
         back();
     }
 
-    @FXML private void back() throws IOException {
+    @FXML private void back() {
 
-        Core.loadAndTitle("Settings", true);
+        background.getScene().getWindow().hide();
     }
 
     @FXML private void initialize() {

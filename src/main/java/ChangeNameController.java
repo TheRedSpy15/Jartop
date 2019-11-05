@@ -1,10 +1,7 @@
 import com.jfoenix.controls.JFXTextField;
-import com.jfoenix.controls.JFXToggleButton;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.logging.Logger;
 
 /*
@@ -16,24 +13,15 @@ import java.util.logging.Logger;
 public class ChangeNameController {
 
     @FXML private JFXTextField nameField;
-    @FXML private JFXToggleButton fileNameToggle;
     @FXML private AnchorPane background;
 
-    @FXML private void change() throws IOException {
+    @FXML private void change() {
 
         Core.getUserData().setName(nameField.getText());
 
         Logger.getAnonymousLogger().info("Named changed");
 
-        if(fileNameToggle.selectedProperty().getValue()) changeFileName();
-
-        Core.loadAndTitle("Settings", true);
-    }
-
-    private void changeFileName(){
-
-        // Creates a new file with new name, but does not replace old one
-        Core.getUserData().getUserFile().renameTo(new File(nameField.getText() + User.saveExtension));
+        background.getScene().getWindow().hide();
     }
 
     @FXML private void initialize(){

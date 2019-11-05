@@ -60,11 +60,9 @@ class FileSystem {
         );
 
         file = fileChooser.showOpenDialog(new Stage());
-        JartopFile jfile = new JartopFile();
+        JartopFile jfile;
         if (file != null) {
-            jfile = new JartopFile();
-            jfile.setName(file.getName());
-            jfile.setData(Files.readAllBytes(Paths.get(file.toURI())));
+            jfile = new JartopFile(file.getName(), Files.readAllBytes(Paths.get(file.toURI())));
             Core.getUserData().getFileSystem().add(jfile);
         }
     }

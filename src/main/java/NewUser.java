@@ -21,7 +21,7 @@ class NewUser extends LoginController {
         Core.setUserData(new User());
         Core.getUserData().setGuest(false);
         Core.getUserData().setUserFile(userFile);
-        Core.getUserData().setName(Core.getUserData().getUserFile().getName().replace(".ser",""));
+        Core.getUserData().setName(Core.getUserData().getUserFile().getName().replace(".jtop",""));
 
         if (Core.schoolMode) {
             Core.getUserData().setPasswordSchool(Core.config.getString("passwordSchool", ""));

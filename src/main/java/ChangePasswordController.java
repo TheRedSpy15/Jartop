@@ -90,6 +90,6 @@ public class ChangePasswordController {
             }
         }
 
-        Core.loadAndTitle("Settings", true);
+        background.getScene().getWindow().hide();
     }
 }

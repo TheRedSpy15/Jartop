@@ -28,7 +28,7 @@ public class FilesController {
     private void createLabel(JartopFile file) {
         Label label = new Label(file.getName());
 
-        if (label.getText().contains(".png") || label.getText().contains(".bmp") || label.getText().contains(".gif") || label.getText().contains(".jpeg") ) {
+        if (label.getText().contains(".png") || label.getText().contains(".bmp") || label.getText().contains(".gif") || label.getText().contains(".jpeg") || label.getText().contains(".jpg")) {
             label.setOnMouseClicked(e -> {
                 if(e.getButton().equals(MouseButton.PRIMARY)){
                     if(e.getClickCount() == 2){

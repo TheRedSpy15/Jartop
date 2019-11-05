@@ -2,10 +2,12 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
+import org.apache.commons.io.IOUtils;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.CookieManager;
+import java.net.URL;
 import java.util.logging.Logger;
 
 /*
@@ -43,7 +45,7 @@ public class BrowserController {
 
     @FXML private void settings() throws IOException {
 
-        UserAccountSecurity.UASLoadFXML("BrowserSettingsMenu", true);
+        UserAccountSecurity.UASLoadFXML("BrowserSettingsMenu");
     }
 
     @FXML private void refresh() {
@@ -69,11 +71,19 @@ public class BrowserController {
 
     @FXML private void history() throws IOException {
 
-        UserAccountSecurity.UASLoadFXML("BrowsingHistory", true);
+        UserAccountSecurity.UASLoadFXML("BrowsingHistory");
     }
 
-    @FXML private void save() {
-        File file = new File(engine.getTitle());
+    @FXML private void download() throws IOException {
+        String name = engine.getLocation().substring(engine.getLocation().lastIndexOf('/')+1);
+        URL url = new URL(engine.getLocation());
+        try (InputStream is = url.openStream()) {
+            Core.getUserData().getFileSystem().add(new JartopFile(name, IOUtils.toByteArray(is)));
+        } catch (IOException e) {
+            System.err.printf("Failed while reading bytes from %s: %s", url.toExternalForm(), e.getMessage());
+            e.printStackTrace();
+            // Perform any other exception handling that's appropriate.
+        }
     }
 
     @FXML private void initialize() {

@@ -4,8 +4,6 @@ import com.jfoenix.controls.JFXToggleButton;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 
-import java.io.IOException;
-
 /*
  * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
  * Copyright (c) TheRedSpy15 (hjadar15@protonmail.com).
@@ -41,12 +39,12 @@ public class BrowserSettingsController extends BrowserController {
     @FXML private JFXTextField homePageField, agentField;
     @FXML private AnchorPane background;
 
-    @FXML private void back() throws IOException {
+    @FXML private void back() {
 
-        new DesktopController().browser();
+        background.getScene().getWindow().hide();
     }
 
-    @FXML private void apply() throws IOException {
+    @FXML private void apply() {
 
         if (!homePageField.getText().trim().isEmpty())
             Core.getUserData().setHomePageUrl(homePageField.getText());

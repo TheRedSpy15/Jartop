@@ -11,13 +11,11 @@ public class NotepadController {
 
         String fileName = !nameField.getText().trim().isEmpty() ? nameField.getText().trim() : "note.jtxt";
 
-        JartopFile file = new JartopFile();
-        file.setName(fileName);
-        file.setData(editor.getHtmlText().getBytes());
+        JartopFile file = new JartopFile(fileName, editor.getHtmlText().getBytes());
         Core.getUserData().getFileSystem().add(file);
     }
 
-    @FXML private void load() throws InterruptedException {
+    @FXML private void load() {
 
         JartopFile file = FileSystem.findFileGUI();
         if (file != null) {

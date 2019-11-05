@@ -31,7 +31,6 @@ public class TerminalController {
 
         // get the output from the command
         StringBuilder stdout = commandExecutor.getStandardOutputFromCommand();
-        StringBuilder stderr = commandExecutor.getStandardErrorFromCommand();
 
         // print the output from the command
         textArea.setText(stdout + "\n" + stdout);

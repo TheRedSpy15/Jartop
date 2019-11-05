@@ -7,13 +7,13 @@ import javafx.fxml.FXML;
  * See LICENSE for details.
  */
 
-public class AuthenticateController extends UserAccountSecurity{
+public class AuthenticateController extends UserAccountSecurity {
 
     @FXML private JFXPasswordField passwordField;
 
-    @FXML private void ok(){
+    @FXML private void ok() {
 
-        if (passwordField.getText().equals(Core.getUserData().getPassword())){
+        if (passwordField.getText().equals(Core.getUserData().getPassword())) {
 
             Core.getSecurity().setVerified();
             Core.getSecurity().getSecurityWindow().close();

@@ -151,7 +151,7 @@ public class DesktopController {
         if (Core.schoolMode) {
             if (Core.config.getBoolean("allow" + nameOfApp, true)) {
                 if (UASApp)
-                    UserAccountSecurity.UASLoadFXML(nameOfApp, true);
+                    UserAccountSecurity.UASLoadFXML(nameOfApp);
                 else
                     Core.loadAndTitle(nameOfApp, true);
             } else
@@ -163,7 +163,7 @@ public class DesktopController {
                         .showWarning();
         } else {
             if (UASApp)
-                UserAccountSecurity.UASLoadFXML(nameOfApp, true);
+                UserAccountSecurity.UASLoadFXML(nameOfApp);
             else
                 Core.loadAndTitle(nameOfApp, true);
         }
@@ -190,7 +190,7 @@ public class DesktopController {
         }
     }
 
-    final void updateWallpaper() {
+    private void updateWallpaper() {
 
         wallpaper.setImage(new Image(new ByteArrayInputStream(Core.getUserData().getWallpaperImageData())));
 

@@ -6,7 +6,6 @@
  * See LICENSE for details.
  */-->
 
-
 <?import com.jfoenix.controls.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Separator?>
@@ -28,6 +27,7 @@
          <right>
             <HBox BorderPane.alignment="CENTER">
                <children>
+                  <JFXButton focusTraversable="false" onAction="#download" text="Download" />
                   <JFXButton focusTraversable="false" onAction="#history" text="History" />
                   <JFXButton focusTraversable="false" onAction="#settings" text="Settings" />
                   <JFXButton focusTraversable="false" onAction="#home" text="Home" />
