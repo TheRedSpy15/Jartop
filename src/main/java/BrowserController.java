@@ -64,9 +64,15 @@ public class BrowserController {
         }
     }
 
-    @FXML private void home() {
+    @FXML private void home() throws IOException {
 
         engine.load(homePage);
+        Core.loadAndTitle("Desktop", false);
+    }
+
+    @FXML private void createApp() {
+
+
     }
 
     @FXML private void history() throws IOException {

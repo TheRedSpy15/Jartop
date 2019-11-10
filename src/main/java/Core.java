@@ -40,7 +40,7 @@ public class Core extends Application {
     private static UserAccountSecurity security = new UserAccountSecurity();
     private static Stage desktop;
 
-    public static void main(String[] args) throws NoSuchAlgorithmException, IOException {
+    public static void main(String[] args) throws NoSuchAlgorithmException {
 
         Logger.getAnonymousLogger().info("Booting up...");
 
@@ -69,16 +69,25 @@ public class Core extends Application {
         // window config
         desktop.setScene(new Scene(loginScene));
         desktop.setTitle("Jartop - " + version);
-        desktop.setOnCloseRequest(e -> shutdown());
+        desktop.setOnCloseRequest(e -> {
+            try {
+                shutdown();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        });
         desktop.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
 
         desktop.setFullScreen(true);
         desktop.show();
     }
 
-    static void shutdown() {
+    static void shutdown() throws IOException {
 
-        nonGuestSave();
+        if (User.loggedIn) {
+            if (!Core.getUserData().isGuest()) SignOutController.signOut(true);
+            else SignOutController.signOut(false);
+        }
 
         Logger.getAnonymousLogger().info("Shutting down...");
 
@@ -87,19 +96,17 @@ public class Core extends Application {
 
     static void nonGuestSave() {
 
-        if (!Core.getUserData().isGuest()) {
+        try {
             try {
-                try {
-                    Core.getUserData().saveData();
-                } catch (NoSuchPaddingException |
-                        NoSuchAlgorithmException |
-                        IllegalBlockSizeException |
-                        InvalidKeyException e1) {
-                    e1.printStackTrace();
-                }
-            } catch (IOException e1) {
+                User.saveData();
+            } catch (NoSuchPaddingException |
+                    NoSuchAlgorithmException |
+                    IllegalBlockSizeException |
+                    InvalidKeyException e1) {
                 e1.printStackTrace();
             }
+        } catch (IOException e1) {
+            e1.printStackTrace();
         }
     }
 
@@ -119,6 +126,13 @@ public class Core extends Application {
             DesktopController.appWindows.get(id).show();
             DesktopController.appWindows.get(id).toFront();
             Logger.getAnonymousLogger().info("Loading app : " + fxmlName);
+
+            // theme / style sheets
+            if (!Core.getUserData().getThemeName().equals("default")) {
+                DesktopController.appWindows.get(id).getScene().getStylesheets().add(Core.class.getResource(
+                        Core.getUserData().getThemeName()
+                ).toExternalForm());
+            }
         } else {
             desktop.getScene().setRoot(pane);
             Logger.getAnonymousLogger().info("Loading scene : " + fxmlName);

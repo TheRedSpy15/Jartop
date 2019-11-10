@@ -7,6 +7,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -36,6 +37,7 @@ public class FilesController {
                         Image image = new Image(new ByteArrayInputStream(Objects.requireNonNull(FileSystem.findFile(label.getText())).getData()));
                         ImageView view = new ImageView(image);
                         Stage stage = new Stage();
+                        stage.initStyle(StageStyle.UTILITY);
                         StackPane pane = new StackPane();
                         pane.getChildren().add(view);
                         Scene scene = new Scene(pane);

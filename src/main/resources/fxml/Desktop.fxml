@@ -32,7 +32,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXMasonryPane cache="true" cacheHint="SCALE" cellHeight="50.0" limitColumn="4" limitRow="50" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
+      <JFXMasonryPane fx:id="appPane" cache="true" cacheHint="SCALE" cellHeight="50.0" limitColumn="4" limitRow="50" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0">
          <children>
             <JFXButton fx:id="calculatorBtn" focusTraversable="false" onAction="#calculator" text=" ">
                <graphic>

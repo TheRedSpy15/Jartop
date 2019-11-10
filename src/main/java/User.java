@@ -23,6 +23,7 @@ public class User implements Serializable {
     private static final long serialVersionUID = 6264015681931400897L;
     static boolean internetConnection = false;
     static final String saveExtension = ".jtop";
+    static boolean loggedIn = false;
 
     // Browser
     private boolean javascriptAllow = BrowserSettingsController.defaultJavaScript;
@@ -34,7 +35,7 @@ public class User implements Serializable {
     private String homePageUrl = BrowserSettingsController.defaultHomePage;
     private String userAgent = BrowserSettingsController.defaultUserAgent;
 
-    private int maxHistory = BrowserSettingsController.defaultHistory;
+    private short maxHistory = BrowserSettingsController.defaultHistory;
 
     // Check List
     private Deque<String> todos = new ArrayDeque<>(100); // not yet used
@@ -64,12 +65,14 @@ public class User implements Serializable {
 
     private byte[] wallpaperImageData = Files.readAllBytes(Paths.get("src/main/resources/images/wallpaper.jpg"));
     private String preferredColor = "#D2B48C";
+    private String themeName = "default";
 
     private double volume = 0.3;
 
     private File userFile = new File("guest" + saveExtension);
 
-    private List<JartopFile> fileSystem = new ArrayList<>(500);
+    private List<JartopFile> fileSystem = new ArrayList<>(100);
+    private List<App> apps = new ArrayList<>(100);
 
     // Credentials
     private boolean guest = true;
@@ -85,7 +88,7 @@ public class User implements Serializable {
     }
 
     // Serialization
-    final synchronized void saveData() throws
+    static synchronized void saveData() throws
             IOException,
             NoSuchPaddingException,
             NoSuchAlgorithmException,
@@ -98,7 +101,7 @@ public class User implements Serializable {
         // Hashing
         final String hash =
                 Hashing.sha256()
-                        .hashString(password, Charsets.UTF_8)
+                        .hashString(Core.getUserData().password, Charsets.UTF_8)
                         .toString().substring(0, keySize);
 
         // Creating keys
@@ -113,7 +116,7 @@ public class User implements Serializable {
         final SealedObject sealedUser = new SealedObject(Core.getUserData(), cipher);
 
         // Streams
-        final FileOutputStream fileOutputStream = new FileOutputStream(userFile.getAbsoluteFile());
+        final FileOutputStream fileOutputStream = new FileOutputStream(Core.getUserData().userFile.getAbsoluteFile());
         final CipherOutputStream cipherOutputStream = new CipherOutputStream(fileOutputStream, cipher);
         try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(cipherOutputStream)) {
 
@@ -124,7 +127,7 @@ public class User implements Serializable {
         cipherOutputStream.close();
     }
 
-    final synchronized void login(String password, boolean loadWith256) throws
+    static synchronized void login(String password, boolean loadWith256) throws
             IOException, InterruptedException {
 
         boolean loggedIn = true;
@@ -153,7 +156,7 @@ public class User implements Serializable {
                 cipher.init(Cipher.DECRYPT_MODE, sks);
 
                 // Streams
-                final FileInputStream fileInputStream = new FileInputStream(userFile.getAbsoluteFile());
+                final FileInputStream fileInputStream = new FileInputStream(Core.getUserData().userFile.getAbsoluteFile());
                 try (fileInputStream; CipherInputStream cipherInputStream = new CipherInputStream(fileInputStream, cipher); ObjectInputStream objectInputStream = new ObjectInputStream(cipherInputStream)) {
 
                     // Reading
@@ -190,7 +193,7 @@ public class User implements Serializable {
             Notifications
                     .create()
                     .title("Warning")
-                    .text("Log in failed - likely wrong password")
+                    .text("Log in failed - likely wrong password or forgot to toggle AES-256")
                     .darkStyle()
                     .showWarning();
         }
@@ -206,7 +209,7 @@ public class User implements Serializable {
             Notifications
                     .create()
                     .title("Notice")
-                    .text("Logged in as " + name)
+                    .text("Logged in as " + Core.getUserData().name)
                     .darkStyle()
                     .showInformation();
         }
@@ -303,22 +306,17 @@ public class User implements Serializable {
         Logger.getAnonymousLogger().info("Set home url to " + homePageUrl);
     }
 
-    final int getMaxHistory() {
+    final short getMaxHistory() {
         return maxHistory;
     }
 
-    final void setMaxHistory(int maxHistory) {
+    final void setMaxHistory(short maxHistory) {
         this.maxHistory = maxHistory;
         Logger.getAnonymousLogger().info("Set max history to " + maxHistory);
     }
 
     public final Deque<String> getTodos() {
         return todos;
-    }
-
-    public final void setTodos(Deque<String> todos) {
-        this.todos = todos;
-        Logger.getAnonymousLogger().info("Updated todo");
     }
 
     final Deque<Account> getPasswords() {
@@ -370,11 +368,6 @@ public class User implements Serializable {
         return contacts;
     }
 
-    public final void setContacts(HashMap<String, String> contacts) {
-        this.contacts = contacts;
-        Logger.getAnonymousLogger().info("Updated contacts");
-    }
-
     public final String getProxyAddress() {
         return proxyAddress;
     }
@@ -411,7 +404,7 @@ public class User implements Serializable {
         Logger.getAnonymousLogger().info("Set wallpaper path to " + wallpaperImageData);
     }
 
-    public final String getPreferredColor() {
+    final String getPreferredColor() {
         return preferredColor;
     }
 
@@ -455,19 +448,27 @@ public class User implements Serializable {
         Logger.getAnonymousLogger().info("Set user agent to " + userAgent);
     }
 
-    public String getPasswordSchool() {
+    String getPasswordSchool() {
         return passwordSchool;
     }
 
-    public void setPasswordSchool(String passwordSchool) {
+    void setPasswordSchool(String passwordSchool) {
         this.passwordSchool = passwordSchool;
     }
 
-    public List<JartopFile> getFileSystem() {
+    List<JartopFile> getFileSystem() {
         return fileSystem;
     }
 
-    public void setFileSystem(List<JartopFile> fileSystem) {
-        this.fileSystem = fileSystem;
+    List<App> getApps() {
+        return apps;
+    }
+
+    String getThemeName() {
+        return themeName;
+    }
+
+    public void setThemeName(String themeName) {
+        this.themeName = themeName;
     }
 }

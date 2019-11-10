@@ -1,7 +1,6 @@
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import org.controlsfx.control.Notifications;
 
 import java.io.IOException;
 import java.util.logging.Logger;
@@ -36,17 +35,7 @@ public class SignOutController {
 
         Core.loadAndTitle("Login", false);
 
-        Core.setUserData(new User());
-        Core.setSecurity(new UserAccountSecurity());
-
         Logger.getAnonymousLogger().info("Signed out");
-
-        Notifications
-                .create()
-                .title("Info")
-                .text("Signed out")
-                .darkStyle()
-                .showInformation();
     }
 
     @FXML private void initialize(){

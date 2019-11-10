@@ -49,7 +49,7 @@ public class BrowserSettingsController extends BrowserController {
         if (!homePageField.getText().trim().isEmpty())
             Core.getUserData().setHomePageUrl(homePageField.getText());
 
-        Core.getUserData().setMaxHistory((int) historySlider.getValue());
+        Core.getUserData().setMaxHistory((short) historySlider.getValue());
         Core.getUserData().setPopUpAllow(popUpToggle.selectedProperty().getValue());
         Core.getUserData().setJavascriptAllow(javaScriptToggle.selectedProperty().getValue());
         Core.getUserData().setUserAgent(agentField.getText());

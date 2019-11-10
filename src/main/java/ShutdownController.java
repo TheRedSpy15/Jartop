@@ -2,6 +2,7 @@ import javafx.fxml.FXML;
 import javafx.scene.layout.HBox;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
 /*
  * Jartop - Virtual Desktop Emulator. The MIT License (MIT).
@@ -22,12 +23,17 @@ public class ShutdownController {
         background.getScene().getWindow().hide();
     }
 
-    @FXML private void shutdown(){
+    @FXML private void shutdown() throws IOException {
 
-        Core.shutdown();
+        if (!Core.getUserData().isGuest()) SignOutController.signOut(true);
+        else SignOutController.signOut(false);
+
+        Logger.getAnonymousLogger().info("Shutting down...");
+        System.exit(0);
     }
 
     @FXML private void signOut() throws IOException {
+
         if (!Core.getUserData().isGuest()) SignOutController.signOut(true);
         else SignOutController.signOut(false);
     }

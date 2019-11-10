@@ -27,6 +27,7 @@
          <right>
             <HBox BorderPane.alignment="CENTER">
                <children>
+                  <JFXButton focusTraversable="false" layoutX="10.0" layoutY="10.0" onAction="#createApp" text="Create App" />
                   <JFXButton focusTraversable="false" onAction="#download" text="Download" />
                   <JFXButton focusTraversable="false" onAction="#history" text="History" />
                   <JFXButton focusTraversable="false" onAction="#settings" text="Settings" />

@@ -3,7 +3,6 @@ import com.jfoenix.controls.JFXToggleButton;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import org.controlsfx.control.Notifications;
 
@@ -26,17 +25,16 @@ public class LoginController {
     @FXML private Label userLbl, defaultLbl;
     @FXML private JFXToggleButton load256Toggle;
     @FXML private ImageView wallpaper;
-    @FXML private AnchorPane anchor;
     private File userFile;
 
     @FXML private void login() throws IOException {
 
-        if (userFile != null && passwordField.getText() != null){
+        if (this.userFile != null && passwordField.getText() != null){
 
             Core.getUserData().setUserFile(this.userFile);
 
             try {
-                Core.getUserData().login(passwordField.getText(), load256Toggle.selectedProperty().getValue());
+                User.login(passwordField.getText(), load256Toggle.selectedProperty().getValue());
             } catch (NullPointerException | InterruptedException e){
                 e.printStackTrace();
             }
@@ -102,7 +100,11 @@ public class LoginController {
         clipBoard.setContents(stringSelection, null);
     }
 
-    @FXML private void initialize() {
+    @FXML private void initialize() throws IOException {
+
+        User.loggedIn = false;
+        Core.setUserData(new User());
+        Core.setSecurity(new UserAccountSecurity());
 
         // resize wallpaper listener
         wallpaper.fitHeightProperty().bind(Core.getDesktop().heightProperty());

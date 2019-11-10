@@ -1,3 +1,5 @@
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXMasonryPane;
 import io.sentry.Sentry;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -27,6 +29,7 @@ public class DesktopController {
     static List<Stage> appWindows = new ArrayList<>(20);
     @FXML private Label timeLbl;
     @FXML private ImageView wallpaper;
+    @FXML private JFXMasonryPane appPane;
 
     @FXML private void calculator() throws IOException {
 
@@ -117,10 +120,13 @@ public class DesktopController {
 
     @FXML private void initialize() {
 
+        User.loggedIn = true;
+
         if (Core.getUserData().isSentryReporting())
             Sentry.init("https://6db11d4c3f864632aa5b1932f6c80c82@sentry.io/220483");
 
         updateWallpaper();
+        loadApps();
 
         // resize wallpaper listener
         wallpaper.fitHeightProperty().bind(Core.getDesktop().heightProperty());
@@ -132,6 +138,18 @@ public class DesktopController {
         timeThread.start();
 
         Core.testConnection();
+    }
+
+    private void loadApps() {
+        for (App app : Core.getUserData().getApps()) {
+            ImageView view = new ImageView(new Image(new ByteArrayInputStream(app.getImageData())));
+            view.setFitWidth(100.0);
+            view.setFitHeight(92.0);
+            JFXButton button = new JFXButton("", view);
+            button.setOnAction(e -> app.open());
+
+            appPane.getChildren().add(button);
+        }
     }
 
     static int newWindow() {

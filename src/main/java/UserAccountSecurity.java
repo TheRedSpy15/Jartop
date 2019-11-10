@@ -31,6 +31,7 @@ class UserAccountSecurity {
 
         securityWindow.initModality(Modality.APPLICATION_MODAL);
         securityWindow.setTitle("UAS");
+        securityWindow.setAlwaysOnTop(true);
     }
 
     private void authenticate() throws IOException {
@@ -38,8 +39,7 @@ class UserAccountSecurity {
         Parent authenticatePane = FXMLLoader.load(Core.class.getResource("fxml/Authenticate.fxml"));
 
         securityWindow.setScene(new Scene(authenticatePane));
-        securityWindow.show();
-        securityWindow.toFront();
+        securityWindow.showAndWait();
     }
 
     final synchronized void secureDelete(File file, boolean signOut) throws IOException {
