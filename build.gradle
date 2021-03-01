@@ -27,7 +27,7 @@ dependencies {
     implementation 'com.google.guava:guava:30.0-jre'
     implementation 'org.apache.commons:commons-email:1.5'
     implementation 'com.github.RandomAdversary:PwnedPasswords:3.0'
-    implementation 'org.controlsfx:controlsfx:11.0.3'
+    implementation 'org.controlsfx:controlsfx:11.1.0'
     implementation 'io.sentry:sentry:1.7.30'
     implementation group: 'commons-io', name: 'commons-io', version: '2.8.0'
     implementation group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.4'
